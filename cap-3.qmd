@@ -1,0 +1,24 @@
+---
+title: "Famílias Comuns de Distribuições"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Introdução
+- Distribuições Discretas
+- Distribuições Contínuas
+- Famílias Exponenciais
+- Famílias de Localização e Escala
+- Desigualdades e Identidades
+

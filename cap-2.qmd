@@ -1,0 +1,22 @@
+---
+title: "Transformações e Esperanças"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Distribuições de Funções de uma Variável Aleatória
+- Valores Esperados (Esperança)
+- Momentos e Funções Geradoras de Momentos
+- Diferenciação sob o Sinal de Integral
+

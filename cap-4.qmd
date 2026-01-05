@@ -1,0 +1,25 @@
+---
+title: "Múltiplas Variáveis Aleatórias"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Distribuições Conjuntas e Marginais
+- Distribuições Condicionais e Independência
+- Transformações Bivariadas
+- Modelos Hierárquicos e Distribuições de Mistura
+- Covariância e Correlação
+- Distribuições Multivariadas
+- Desigualdades
+

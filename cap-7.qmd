@@ -1,0 +1,28 @@
+---
+title: "Estimação Pontual"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Métodos para Encontrar Estimadores
+  - Método dos Momentos
+  - Estimadores de Máxima Verossimilhança
+  - Estimadores de Bayes
+  - O Algoritmo EM
+- Métodos de Avaliação de Estimadores
+  - Erro Quadrático Médio
+  - Melhores Estimadores Não Viesados
+  - Suficiência e Não-viesamento
+  - Otimalidade da Função de Perda
+

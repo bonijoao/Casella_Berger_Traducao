@@ -1,0 +1,20 @@
+---
+title: "Análise de Variância e Regressão"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Análise de Variância (ANOVA) de Um Fator
+- Regressão Linear Simples
+

@@ -1,0 +1,27 @@
+---
+title: "Teste de Hipóteses"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Métodos para Encontrar Testes
+  - Testes de Razão de Verossimilhança
+  - Testes Bayesianos
+  - Testes de União-Interseção e Interseção-União
+- Métodos de Avaliação de Testes
+  - Probabilidades de Erro e Função Poder
+  - Testes Mais Poderosos
+  - Tamanhos de Testes de União-Interseção
+  - P-valores
+

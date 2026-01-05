@@ -1,0 +1,22 @@
+---
+title: "Modelos de Regressão"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Introdução aos Modelos de Regressão
+- Estimação e Teste com Erros Normais
+- Estimação e Predição em um Dado $x = x_0$
+- Inferência Simultânea
+

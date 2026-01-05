@@ -1,0 +1,28 @@
+---
+title: "Estimação por Intervalo"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Métodos para Encontrar Estimadores de Intervalo
+  - Invertendo uma Estatística de Teste
+  - Quantidades Pivotais
+  - Pivotando a FDA
+  - Intervalos Bayesianos
+- Métodos de Avaliação de Estimadores de Intervalo
+  - Tamanho e Probabilidade de Cobertura
+  - Otimalidade Relacionada a Testes
+  - Otimalidade Bayesiana
+  - Otimalidade da Função de Perda
+

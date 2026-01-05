@@ -1,0 +1,32 @@
+---
+title: "Avaliações Assintóticas"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Estimação Pontual
+  - Consistência
+  - Eficiência
+  - Cálculos e Comparações
+  - Bootstrap
+- Robustez
+  - A Média e a Mediana
+  - M-Estimadores
+- Teste de Hipóteses
+  - Distribuição Assintótica de TRVs
+  - Outros Testes com Grandes Amostras
+- Estimação por Intervalo
+  - Intervalos de Verossimilhança Aproximada
+  - Outros Intervalos Aproximados (e Robustos)
+

@@ -1,0 +1,53 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Inferência Estatística"
+  subtitle: "Tradução para o Português"
+  author: 
+    - name: "George Casella"
+      affiliation: "Universidade da Flórida"
+    - name: "Roger L. Berger"
+      affiliation: "Universidade Estadual da Carolina do Norte"
+  date: "2025"
+  language: pt-BR
+  
+  chapters:
+    - index.qmd
+    - cap-1.qmd
+    - cap-2.qmd
+    - cap-3.qmd
+    - cap-4.qmd
+    - cap-5.qmd
+    - cap-6.qmd
+    - cap-7.qmd
+    - cap-8.qmd
+    - cap-9.qmd
+    - cap-10.qmd
+    - cap-11.qmd
+    - cap-12.qmd
+
+  sidebar:
+    style: docked
+    background: "#f8f6f3"
+    
+  search: true
+  
+  page-navigation: true
+  
+  repo-url: "#"
+  
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.css
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    lang: pt-BR
+    embed-resources: false
+
+execute:
+  freeze: auto

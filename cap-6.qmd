@@ -1,0 +1,27 @@
+---
+title: "Princípios de Redução de Dados"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- O Princípio da Suficiência
+  - Estatísticas Suficientes
+  - Estatísticas Suficientes Mínimas
+  - Estatísticas Ancilares
+  - Estatísticas Suficientes, Completas e Ancilares
+- O Princípio da Verossimilhança
+  - A Função de Verossimilhança
+  - O Princípio da Verossimilhança Formal
+- O Princípio da Equivariância
+

@@ -1,0 +1,28 @@
+---
+title: "Propriedades de uma Amostra Aleatória"
+---
+
+:::{.chapter-intro}
+"Capítulo em construção."
+
+:::{.chapter-intro-quote}
+**Em breve**
+:::
+
+:::
+
+## Conteúdo Previsto
+
+Este capítulo abordará:
+
+- Conceitos Básicos de Amostras Aleatórias
+- Somas de Variáveis Aleatórias de uma Amostra Aleatória
+- Amostragem da Distribuição Normal
+- Estatísticas de Ordem
+- Conceitos de Convergência
+  - Convergência em Probabilidade
+  - Convergência Quase Certa
+  - Convergência em Distribuição
+  - O Método Delta
+- Gerando uma Amostra Aleatória
+
