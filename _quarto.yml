@@ -36,7 +36,7 @@ book:
   
   page-navigation: true
   
-  repo-url: "#"
+  repo-url: "https://github.com/bonijoao/Casella_Berger_Traducao"
   
 format:
   html:
