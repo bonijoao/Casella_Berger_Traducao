@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cap-2.html">Parte II: Transformações e Distribuições</a></li><li class="breadcrumb-item"><a href="./cap-2.html"><span class="chapter-title">Transformações e Esperanças</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cap-2.html"><span class="chapter-title">Transformações e Esperanças</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -98,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Inferência Estatística</a> 
         <div class="sidebar-tools-main">
-    <a href="./#" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-git"></i></a>
+    <a href="https://github.com/bonijoao/Casella_Berger_Traducao" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -114,121 +143,66 @@ ul.task-list li input[type="checkbox"] {
   <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Inferência Estatística</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte I: Probabilidade</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teoria da Probabilidade</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte II: Transformações e Distribuições</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-2.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Transformações e Esperanças</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Famílias Comuns de Distribuições</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Múltiplas Variáveis Aleatórias</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte III: Amostras e Redução de Dados</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Propriedades de uma Amostra Aleatória</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Princípios de Redução de Dados</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte IV: Inferência</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Estimação Pontual</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teste de Hipóteses</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Estimação por Intervalo</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Avaliações Assintóticas</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Parte V: Modelos Lineares</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Análise de Variância e Regressão</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cap-12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Modelos de Regressão</span></a>
   </div>
 </li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
@@ -238,15 +212,20 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Índice</h2>
    
-  <ul>
-  <li><a href="#conteúdo-previsto" id="toc-conteúdo-previsto" class="nav-link active" data-scroll-target="#conteúdo-previsto">Conteúdo Previsto</a></li>
+  <ul class="collapse">
+  <li><a href="#distribuições-de-funções-de-uma-variável-aleatória" id="toc-distribuições-de-funções-de-uma-variável-aleatória" class="nav-link active" data-scroll-target="#distribuições-de-funções-de-uma-variável-aleatória">2.1 Distribuições de Funções de uma Variável Aleatória</a></li>
+  <li><a href="#valores-esperados" id="toc-valores-esperados" class="nav-link" data-scroll-target="#valores-esperados">2.2 Valores Esperados</a></li>
+  <li><a href="#momentos-e-funções-geradoras-de-momentos" id="toc-momentos-e-funções-geradoras-de-momentos" class="nav-link" data-scroll-target="#momentos-e-funções-geradoras-de-momentos">2.3 Momentos e Funções Geradoras de Momentos</a></li>
+  <li><a href="#diferenciando-sob-o-sinal-de-integral" id="toc-diferenciando-sob-o-sinal-de-integral" class="nav-link" data-scroll-target="#diferenciando-sob-o-sinal-de-integral">2.4 Diferenciando sob o Sinal de Integral</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios">2.5 Exercícios</a></li>
+  <li><a href="#assuntos-diversos" id="toc-assuntos-diversos" class="nav-link" data-scroll-target="#assuntos-diversos">2.6 Assuntos Diversos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cap-2.html">Parte II: Transformações e Distribuições</a></li><li class="breadcrumb-item"><a href="./cap-2.html"><span class="chapter-title">Transformações e Esperanças</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">Transformações e Esperanças</span></h1>
 </div>
@@ -266,20 +245,1175 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="chapter-intro">
-<p>“Capítulo em construção.”</p>
+<p>“Nós queremos algo mais do que mera teoria e pregação agora, no entanto.”</p>
 <div class="chapter-intro-quote">
-<p><strong>Em breve</strong></p>
+<p><strong>Sherlock Holmes</strong> <em>Um Estudo em Vermelho</em></p>
 </div>
 </div>
-<section id="conteúdo-previsto" class="level2">
-<h2 class="anchored" data-anchor-id="conteúdo-previsto">Conteúdo Previsto</h2>
-<p>Este capítulo abordará:</p>
-<ul>
-<li>Distribuições de Funções de uma Variável Aleatória</li>
-<li>Valores Esperados (Esperança)</li>
-<li>Momentos e Funções Geradoras de Momentos</li>
-<li>Diferenciação sob o Sinal de Integral</li>
-</ul>
+<p>Frequentemente, se somos capazes de modelar um fenômeno em termos de uma variável aleatória <span class="math inline">\(X\)</span> com fda <span class="math inline">\(F_X(x)\)</span>, também estaremos interessados no comportamento de funções de <span class="math inline">\(X\)</span>. Neste capítulo, estudamos técnicas que nos permitem obter informações sobre funções de <span class="math inline">\(X\)</span> que podem ser de interesse, informações que podem variar desde muito completas (as distribuições dessas funções) até mais vagas (o comportamento médio).</p>
+<section id="distribuições-de-funções-de-uma-variável-aleatória" class="level2">
+<h2 class="anchored" data-anchor-id="distribuições-de-funções-de-uma-variável-aleatória">2.1 Distribuições de Funções de uma Variável Aleatória</h2>
+<p>Se <span class="math inline">\(X\)</span> é uma variável aleatória com fda <span class="math inline">\(F_X(x)\)</span>, então qualquer função de <span class="math inline">\(X\)</span>, digamos <span class="math inline">\(g(X)\)</span>, também é uma variável aleatória. Frequentemente, <span class="math inline">\(g(X)\)</span> é de interesse por si só e escrevemos <span class="math inline">\(Y = g(X)\)</span> para denotar a nova variável aleatória <span class="math inline">\(g(X)\)</span>. Como <span class="math inline">\(Y\)</span> é uma função de <span class="math inline">\(X\)</span>, podemos descrever o comportamento probabilístico de <span class="math inline">\(Y\)</span> em termos do comportamento de <span class="math inline">\(X\)</span>. Isto é, para qualquer conjunto <span class="math inline">\(A\)</span>,</p>
+<p><span class="math display">\[
+P(Y \in A) = P(g(X) \in A),
+\]</span></p>
+<p>mostrando que a distribuição de <span class="math inline">\(Y\)</span> depende das funções <span class="math inline">\(F_X\)</span> e <span class="math inline">\(g\)</span>. Dependendo da escolha de <span class="math inline">\(g\)</span>, às vezes é possível obter uma expressão tratável para essa probabilidade.</p>
+<p>Formalmente, se escrevermos <span class="math inline">\(y = g(x)\)</span>, a função <span class="math inline">\(g(x)\)</span> define um mapeamento do espaço amostral original de <span class="math inline">\(X\)</span>, <span class="math inline">\(\mathcal{X}\)</span>, para um novo espaço amostral, <span class="math inline">\(\mathcal{Y}\)</span>, o espaço amostral da variável aleatória <span class="math inline">\(Y\)</span>. Isto é,</p>
+<p><span class="math display">\[
+g(x): \mathcal{X} \to \mathcal{Y}.
+\]</span></p>
+<p>Associamos a <span class="math inline">\(g\)</span> um mapeamento inverso, denotado por <span class="math inline">\(g^{-1}\)</span>, que é um mapeamento de subconjuntos de <span class="math inline">\(\mathcal{Y}\)</span> para subconjuntos de <span class="math inline">\(\mathcal{X}\)</span>, e é definido por</p>
+<p><span id="eq-2.1.1"><span class="math display">\[
+g^{-1}(A) = \{x \in \mathcal{X} : g(x) \in A\}.
+\tag{3.1}\]</span></span></p>
+<p>Note que o mapeamento <span class="math inline">\(g^{-1}\)</span> leva conjuntos em conjuntos, ou seja, <span class="math inline">\(g^{-1}(A)\)</span> é o conjunto de pontos em <span class="math inline">\(\mathcal{X}\)</span> que <span class="math inline">\(g(x)\)</span> leva para o conjunto <span class="math inline">\(A\)</span>. É possível que <span class="math inline">\(A\)</span> seja um conjunto de um único ponto, digamos <span class="math inline">\(A = \{y\}\)</span>. Então</p>
+<p><span class="math display">\[
+g^{-1}(\{y\}) = \{x \in \mathcal{X} : g(x) = y\}.
+\]</span></p>
+<p>Neste caso, frequentemente escrevemos <span class="math inline">\(g^{-1}(y)\)</span> em vez de <span class="math inline">\(g^{-1}(\{y\})\)</span>. A quantidade <span class="math inline">\(g^{-1}(y)\)</span> ainda pode ser um conjunto, no entanto, se houver mais de um <span class="math inline">\(x\)</span> para o qual <span class="math inline">\(g(x) = y\)</span>. Se houver apenas um <span class="math inline">\(x\)</span> para o qual <span class="math inline">\(g(x) = y\)</span>, então <span class="math inline">\(g^{-1}(y)\)</span> é o conjunto de ponto <span class="math inline">\(\{x\}\)</span>, e escreveremos <span class="math inline">\(g^{-1}(y) = x\)</span>. Se a variável aleatória <span class="math inline">\(Y\)</span> for agora definida por <span class="math inline">\(Y = g(X)\)</span>, podemos escrever para qualquer conjunto <span class="math inline">\(A \subset \mathcal{Y}\)</span>,</p>
+<p><span id="eq-2.1.2"><span class="math display">\[
+\begin{aligned}
+P(Y \in A) &amp;= P(g(X) \in A) \\
+&amp;= P(\{x \in \mathcal{X} : g(x) \in A\}) \\
+&amp;= P(X \in g^{-1}(A)).
+\end{aligned}
+\tag{3.2}\]</span></span></p>
+<p>Isto define a distribuição de probabilidade de <span class="math inline">\(Y\)</span>. É imediato mostrar que esta distribuição de probabilidade satisfaz os Axiomas de Kolmogorov.</p>
+<p>Se <span class="math inline">\(X\)</span> é uma variável aleatória discreta, então <span class="math inline">\(\mathcal{X}\)</span> é enumerável. O espaço amostral para <span class="math inline">\(Y = g(X)\)</span> é <span class="math inline">\(\mathcal{Y} = \{y : y = g(x), x \in \mathcal{X}\}\)</span>, que também é um conjunto enumerável. Assim, <span class="math inline">\(Y\)</span> também é uma variável aleatória discreta. Usando <a href="#eq-2.1.2" class="quarto-xref">Equação&nbsp;<span>3.2</span></a>, a fmp para <span class="math inline">\(Y\)</span> é</p>
+<p><span class="math display">\[
+f_Y(y) = P(Y = y) = \sum_{x \in g^{-1}(y)} P(X = x) = \sum_{x \in g^{-1}(y)} f_X(x), \text{ para } y \in \mathcal{Y},
+\]</span></p>
+<p>e <span class="math inline">\(f_Y(y) = 0\)</span> para <span class="math inline">\(y \notin \mathcal{Y}\)</span>. Neste caso, encontrar a fmp de <span class="math inline">\(Y\)</span> envolve simplesmente identificar <span class="math inline">\(g^{-1}(y)\)</span>, para cada <span class="math inline">\(y \in \mathcal{Y}\)</span>, e somar as probabilidades apropriadas.</p>
+<section id="exemplo-2.1.1-transformação-binomial" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.1.1-transformação-binomial">Exemplo 2.1.1 (Transformação binomial)</h3>
+<p>Uma variável aleatória discreta <span class="math inline">\(X\)</span> tem uma <em>distribuição binomial</em> se sua fmp for da forma</p>
+<p><span id="eq-2.1.3"><span class="math display">\[
+f_X(x) = P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x = 0, 1, \dots, n,
+\tag{3.3}\]</span></span></p>
+<p>onde <span class="math inline">\(n\)</span> é um inteiro positivo e <span class="math inline">\(0 \leq p \leq 1\)</span>. Valores como <span class="math inline">\(n\)</span> e <span class="math inline">\(p\)</span> que podem ser ajustados para diferentes valores, produzindo diferentes distribuições de probabilidade, são chamados de <em>parâmetros</em>. Considere a variável aleatória <span class="math inline">\(Y = g(X)\)</span>, onde <span class="math inline">\(g(x) = n - x\)</span>. Isto é, <span class="math inline">\(Y = n - X\)</span>. Aqui <span class="math inline">\(\mathcal{X} = \{0, 1, \dots, n\}\)</span> e <span class="math inline">\(\mathcal{Y} = \{y : y = g(x), x \in \mathcal{X}\} = \{0, 1, \dots, n\}\)</span>. Para qualquer <span class="math inline">\(y \in \mathcal{Y}\)</span>, <span class="math inline">\(n - x = g(x) = y\)</span> se, e somente se, <span class="math inline">\(x = n - y\)</span>. Assim, <span class="math inline">\(g^{-1}(y)\)</span> é o ponto único <span class="math inline">\(x = n - y\)</span>, e</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_Y(y) &amp;= \sum_{x \in g^{-1}(y)} f_X(x) \\
+&amp;= f_X(n-y) \\
+&amp;= \binom{n}{n-y} p^{n-y} (1-p)^{n-(n-y)} \\
+&amp;= \binom{n}{y} (1-p)^y p^{n-y}.
+\end{aligned}
+\]</span></p>
+<p>(A Definição 1.2.17 implica que <span class="math inline">\(\binom{n}{y} = \binom{n}{n-y}\)</span>). Assim, vemos que <span class="math inline">\(Y\)</span> também tem uma distribuição binomial, mas com parâmetros <span class="math inline">\(n\)</span> e <span class="math inline">\(1-p\)</span>. ||</p>
+</section>
+<p>Se <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> são variáveis aleatórias contínuas, então em alguns casos é possível encontrar fórmulas simples para a fda e fdp de <span class="math inline">\(Y\)</span> em termos da fda e fdp de <span class="math inline">\(X\)</span> e da função <span class="math inline">\(g\)</span>. No restante desta seção, consideramos alguns desses casos.</p>
+<p>A fda de <span class="math inline">\(Y = g(X)\)</span> é</p>
+<p><span id="eq-2.1.4"><span class="math display">\[
+\begin{aligned}
+F_Y(y) &amp;= P(Y \leq y) \\
+&amp;= P(g(X) \leq y) \\
+&amp;= P(\{x \in \mathcal{X} : g(x) \leq y\}) \\
+&amp;= \int_{\{x \in \mathcal{X} : g(x) \leq y\}} f_X(x) dx.
+\end{aligned}
+\tag{3.4}\]</span></span></p>
+<p>Às vezes, pode haver dificuldade em identificar <span class="math inline">\(\{x \in \mathcal{X} : g(x) \leq y\}\)</span> e realizar a integração de <span class="math inline">\(f_X(x)\)</span> sobre esta região, como mostra o próximo exemplo.</p>
+<section id="exemplo-2.1.2-transformação-uniforme" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.1.2-transformação-uniforme">Exemplo 2.1.2 (Transformação uniforme)</h3>
+<p>Suponha que <span class="math inline">\(X\)</span> tenha uma distribuição uniforme no intervalo <span class="math inline">\((0, 2\pi)\)</span>, isto é,</p>
+<p><span class="math display">\[
+f_X(x) =
+\begin{cases}
+1/(2\pi) &amp; 0 &lt; x &lt; 2\pi \\
+0 &amp; \text{caso contrário}.
+\end{cases}
+\]</span></p>
+<p>Considere <span class="math inline">\(Y = \sin^2(X)\)</span>. Então (veja a <a href="#fig-2.1.1" class="quarto-xref">Figura&nbsp;<span>3.1</span></a>)</p>
+<p><span id="eq-2.1.5"><span class="math display">\[
+P(Y \leq y) = P(X \leq x_1) + P(x_2 \leq X \leq x_3) + P(X \geq x_4).
+\tag{3.5}\]</span></span></p>
+<div id="fig-2.1.1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2.1.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig-2_1_1.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2.1.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.1: Figura 2.1.1 - Gráfico da transformação <span class="math inline">\(y = \sin^2(x)\)</span> do Exemplo 2.1.2
+</figcaption>
+</figure>
+</div>
+<p>Pela simetria da função <span class="math inline">\(\sin^2(x)\)</span>, e pelo fato de <span class="math inline">\(X\)</span> ter uma distribuição uniforme, temos</p>
+<p><span class="math display">\[
+P(X \leq x_1) = P(X \geq x_4) \quad \text{e} \quad P(x_2 \leq X \leq x_3) = 2P(x_2 \leq X \leq \pi),
+\]</span></p>
+<p>então</p>
+<p><span id="eq-2.1.6"><span class="math display">\[
+P(Y \leq y) = 2P(X \leq x_1) + 2P(x_2 \leq X \leq \pi)
+\tag{3.6}\]</span></span></p>
+<p>onde <span class="math inline">\(x_1\)</span> e <span class="math inline">\(x_2\)</span> são as duas soluções para</p>
+<p><span class="math display">\[
+\sin^2(x) = y, \quad 0 &lt; x &lt; \pi.
+\]</span></p>
+<p>Assim, embora este exemplo tenha tratado de uma situação aparentemente simples, a expressão resultante para a fda de <span class="math inline">\(Y\)</span> não foi simples. ||</p>
+</section>
+<p>Ao realizar transformações, é importante manter o controle sobre os espaços amostrais das variáveis aleatórias; caso contrário, muita confusão pode surgir. Ao fazer uma transformação de <span class="math inline">\(X\)</span> para <span class="math inline">\(Y = g(X)\)</span>, é mais conveniente usar</p>
+<p><span id="eq-2.1.7"><span class="math display">\[
+\mathcal{X} = \{x : f_X(x) &gt; 0\} \quad \text{e} \quad \mathcal{Y} = \{y : y = g(x) \text{ para algum } x \in \mathcal{X}\}.
+\tag{3.7}\]</span></span></p>
+<p>A fdp da variável aleatória <span class="math inline">\(X\)</span> é positiva apenas no conjunto <span class="math inline">\(\mathcal{X}\)</span> e é zero em outros lugares. Tal conjunto é chamado de <em>conjunto suporte</em> de uma distribuição ou, mais informalmente, o <em>suporte</em> de uma distribuição. Esta terminologia também pode ser aplicada a uma fmp ou, em geral, a qualquer função não negativa.</p>
+<p>É mais fácil lidar com funções <span class="math inline">\(g(x)\)</span> que são <em>monotônicas</em>, isto é, aquelas que satisfazem ou</p>
+<p><span class="math display">\[
+u &gt; v \implies g(u) &gt; g(v) \quad \text{(crescente)} \quad \text{ou} \quad u &lt; v \implies g(u) &gt; g(v) \quad \text{(decrescente)}.
+\]</span></p>
+<p>Se a transformação <span class="math inline">\(x \to g(x)\)</span> é monotônica, então ela é um-para-um (injetora) e sobre <span class="math inline">\(\mathcal{X} \to \mathcal{Y}\)</span> (sobrejetora). Isto é, cada <span class="math inline">\(x\)</span> vai para apenas um <span class="math inline">\(y\)</span> e cada <span class="math inline">\(y\)</span> vem de no máximo um <span class="math inline">\(x\)</span> (um-para-um). Além disso, para <span class="math inline">\(\mathcal{Y}\)</span> definido como em <a href="#eq-2.1.7" class="quarto-xref">Equação&nbsp;<span>3.7</span></a>, para cada <span class="math inline">\(y \in \mathcal{Y}\)</span> existe um <span class="math inline">\(x \in \mathcal{X}\)</span> tal que <span class="math inline">\(g(x) = y\)</span> (sobre). Assim, a transformação <span class="math inline">\(g\)</span> associa exclusivamente <span class="math inline">\(xs\)</span> e <span class="math inline">\(ys\)</span>. Se <span class="math inline">\(g\)</span> for monotônica, então <span class="math inline">\(g^{-1}\)</span> terá um único valor, isto é, <span class="math inline">\(g^{-1}(y) = x\)</span> se, e somente se, <span class="math inline">\(y = g(x)\)</span>. Se <span class="math inline">\(g\)</span> for crescente, isso implica que</p>
+<p><span id="eq-2.1.8"><span class="math display">\[
+\{x \in \mathcal{X} : g(x) \leq y\} = \{x \in \mathcal{X} : g^{-1}(g(x)) \leq g^{-1}(y)\} = \{x \in \mathcal{X} : x \leq g^{-1}(y)\}.
+\tag{3.8}\]</span></span></p>
+<p>Se <span class="math inline">\(g\)</span> for decrescente, isso implica que</p>
+<p><span id="eq-2.1.9"><span class="math display">\[
+\{x \in \mathcal{X} : g(x) \leq y\} = \{x \in \mathcal{X} : g^{-1}(g(x)) \geq g^{-1}(y)\} = \{x \in \mathcal{X} : x \geq g^{-1}(y)\}.
+\tag{3.9}\]</span></span></p>
+<p>(Um gráfico ilustrará por que a desigualdade se inverte no caso decrescente.) Se <span class="math inline">\(g(x)\)</span> for uma função crescente, então usando <a href="#eq-2.1.4" class="quarto-xref">Equação&nbsp;<span>3.4</span></a>, podemos escrever</p>
+<p><span class="math display">\[
+F_Y(y) = \int_{\{x \in \mathcal{X} : x \leq g^{-1}(y)\}} f_X(x) dx = \int_{-\infty}^{g^{-1}(y)} f_X(x) dx = F_X(g^{-1}(y)).
+\]</span></p>
+<p>Se <span class="math inline">\(g(x)\)</span> for decrescente, temos</p>
+<p><span class="math display">\[
+F_Y(y) = \int_{g^{-1}(y)}^{\infty} f_X(x) dx = 1 - F_X(g^{-1}(y)).
+\]</span></p>
+<p>A continuidade de <span class="math inline">\(X\)</span> é usada para obter a segunda igualdade. Resumimos esses resultados no seguinte teorema.</p>
+<section id="teorema-2.1.3" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.1.3">Teorema 2.1.3</h3>
+<p>Seja <span class="math inline">\(X\)</span> com fda <span class="math inline">\(F_X(x)\)</span>, seja <span class="math inline">\(Y = g(X)\)</span>, e sejam <span class="math inline">\(\mathcal{X}\)</span> e <span class="math inline">\(\mathcal{Y}\)</span> definidos como em <a href="#eq-2.1.7" class="quarto-xref">Equação&nbsp;<span>3.7</span></a>.</p>
+<ol type="a">
+<li>Se <span class="math inline">\(g\)</span> é uma função crescente em <span class="math inline">\(\mathcal{X}\)</span>, <span class="math inline">\(F_Y(y) = F_X(g^{-1}(y))\)</span> para <span class="math inline">\(y \in \mathcal{Y}\)</span>.</li>
+<li>Se <span class="math inline">\(g\)</span> é uma função decrescente em <span class="math inline">\(\mathcal{X}\)</span> e <span class="math inline">\(X\)</span> é uma variável aleatória contínua, <span class="math inline">\(F_Y(y) = 1 - F_X(g^{-1}(y))\)</span> para <span class="math inline">\(y \in \mathcal{Y}\)</span>.</li>
+</ol>
+</section>
+<section id="exemplo-2.1.4-relação-uniforme-exponenciali" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.1.4-relação-uniforme-exponenciali">Exemplo 2.1.4 (Relação uniforme-exponencial—I)</h3>
+<p>Suponha que <span class="math inline">\(X \sim f_X(x) = 1\)</span> se <span class="math inline">\(0 &lt; x &lt; 1\)</span> e <span class="math inline">\(0\)</span> caso contrário, a distribuição uniforme(0,1). É imediato verificar que <span class="math inline">\(F_X(x) = x, 0 &lt; x &lt; 1\)</span>. Fazemos agora a transformação <span class="math inline">\(Y = g(X) = -\log X\)</span>. Como</p>
+<p><span class="math display">\[
+\frac{d}{dx}g(x) = \frac{d}{dx}(-\log x) = -\frac{1}{x} &lt; 0, \quad \text{para } 0 &lt; x &lt; 1,
+\]</span></p>
+<p><span class="math inline">\(g(x)\)</span> é uma função decrescente. Conforme <span class="math inline">\(X\)</span> varia entre 0 e 1, <span class="math inline">\(-\log x\)</span> varia entre 0 e <span class="math inline">\(\infty\)</span>, isto é, <span class="math inline">\(\mathcal{Y} = (0, \infty)\)</span>. Para <span class="math inline">\(y &gt; 0\)</span>, <span class="math inline">\(y = -\log x\)</span> implica <span class="math inline">\(x = e^{-y}\)</span>, logo <span class="math inline">\(g^{-1}(y) = e^{-y}\)</span>. Portanto, para <span class="math inline">\(y &gt; 0\)</span>,</p>
+<p><span class="math display">\[
+F_Y(y) = 1 - F_X(g^{-1}(y)) = 1 - F_X(e^{-y}) = 1 - e^{-y}. \quad (F_X(x) = x)
+\]</span></p>
+<p>Naturalmente, <span class="math inline">\(F_Y(y) = 0\)</span> para <span class="math inline">\(y \leq 0\)</span>. Note que foi necessário apenas verificar que <span class="math inline">\(g(x) = -\log x\)</span> é monotônica em (0,1), o suporte de <span class="math inline">\(X\)</span>. ||</p>
+</section>
+<p>Se a fdp de <span class="math inline">\(Y\)</span> for contínua, ela pode ser obtida diferenciando a fda. O resultado da expressão é dado no seguinte teorema.</p>
+<section id="teorema-2.1.5" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.1.5">Teorema 2.1.5</h3>
+<p>Seja <span class="math inline">\(X\)</span> com fdp <span class="math inline">\(f_X(x)\)</span> e seja <span class="math inline">\(Y = g(X)\)</span>, onde <span class="math inline">\(g\)</span> é uma função monotônica. Sejam <span class="math inline">\(\mathcal{X}\)</span> e <span class="math inline">\(\mathcal{Y}\)</span> definidos por <a href="#eq-2.1.7" class="quarto-xref">Equação&nbsp;<span>3.7</span></a>. Suponha que <span class="math inline">\(f_X(x)\)</span> seja contínua em <span class="math inline">\(\mathcal{X}\)</span> e que <span class="math inline">\(g^{-1}(y)\)</span> tenha uma derivada contínua em <span class="math inline">\(\mathcal{Y}\)</span>. Então a fdp de <span class="math inline">\(Y\)</span> é dada por</p>
+<p><span id="eq-2.1.10"><span class="math display">\[
+f_Y(y) =
+\begin{cases}
+f_X(g^{-1}(y)) \left| \frac{d}{dy} g^{-1}(y) \right| &amp; y \in \mathcal{Y} \\
+0 &amp; \text{caso contrário}.
+\end{cases}
+\tag{3.10}\]</span></span></p>
+</section>
+<div class="proof">
+<p><span class="proof-title"><em>Comprovação</em>. </span>Pelo Teorema 2.1.3 temos, pela regra da cadeia,</p>
+<p><span class="math display">\[
+f_Y(y) = \frac{d}{dy} F_Y(y) =
+\begin{cases}
+f_X(g^{-1}(y)) \frac{d}{dy} g^{-1}(y) &amp; \text{se } g \text{ é crescente}, \\
+-f_X(g^{-1}(y)) \frac{d}{dy} g^{-1}(y) &amp; \text{se } g \text{ é decrescente},
+\end{cases}
+\]</span></p>
+<p>que pode ser expresso concisamente como <a href="#eq-2.1.10" class="quarto-xref">Equação&nbsp;<span>3.10</span></a>. <span class="math inline">\(\square\)</span></p>
+</div>
+<section id="exemplo-2.1.6-fdp-gama-invertida" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.1.6-fdp-gama-invertida">Exemplo 2.1.6 (fdp gama invertida)</h3>
+<p>Seja <span class="math inline">\(f_X(x)\)</span> a fdp <em>gama</em> <span class="math display">\[
+f(x) = \frac{1}{(n-1)!\beta^n} x^{n-1} e^{-x/\beta}, \quad 0 &lt; x &lt; \infty,
+\]</span></p>
+<p>onde <span class="math inline">\(\beta\)</span> é uma constante positiva e <span class="math inline">\(n\)</span> é um inteiro positivo. Suponha que queiramos encontrar a fdp de <span class="math inline">\(g(X) = 1/X\)</span>. Note que aqui os conjuntos suporte <span class="math inline">\(\mathcal{X}\)</span> e <span class="math inline">\(\mathcal{Y}\)</span> são ambos o intervalo <span class="math inline">\((0, \infty)\)</span>. Se fizermos <span class="math inline">\(y = g(x)\)</span>, então <span class="math inline">\(g^{-1}(y) = 1/y\)</span> e <span class="math inline">\(\frac{d}{dy} g^{-1}(y) = -1/y^2\)</span>. Aplicando o teorema acima, para <span class="math inline">\(y \in (0, \infty)\)</span>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_Y(y) &amp;= f_X(g^{-1}(y)) \left| \frac{d}{dy} g^{-1}(y) \right| \\
+&amp;= \frac{1}{(n-1)!\beta^n} \left(\frac{1}{y}\right)^{n-1} e^{-1/(\beta y)} \frac{1}{y^2} \\
+&amp;= \frac{1}{(n-1)!\beta^n} \left(\frac{1}{y}\right)^{n+1} e^{-1/(\beta y)},
+\end{aligned}
+\]</span></p>
+<p>um caso especial de uma fdp conhecida como a <em>fdp gama invertida</em>. ||</p>
+</section>
+<p>Em muitas aplicações, a função <span class="math inline">\(g\)</span> pode não ser nem crescente nem decrescente, portanto os resultados acima não se aplicarão. No entanto, é frequente o caso em que <span class="math inline">\(g\)</span> será monotônica em certos intervalos, e isso nos permite obter uma expressão para <span class="math inline">\(Y = g(X)\)</span>.</p>
+<section id="exemplo-2.1.7-transformação-quadrática" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.1.7-transformação-quadrática">Exemplo 2.1.7 (Transformação quadrática)</h3>
+<p>Suponha que <span class="math inline">\(X\)</span> seja uma variável aleatória contínua. Para <span class="math inline">\(y &gt; 0\)</span>, a fda de <span class="math inline">\(Y = X^2\)</span> é</p>
+<p><span class="math display">\[
+F_Y(y) = P(Y \leq y) = P(X^2 \leq y) = P(-\sqrt{y} \leq X \leq \sqrt{y}).
+\]</span></p>
+<p>Como <span class="math inline">\(x\)</span> é contínuo, podemos descartar a igualdade do endpoint esquerdo e obter</p>
+<p><span class="math display">\[
+F_Y(y) = P(-\sqrt{y} &lt; X \leq \sqrt{y}) = P(X \leq \sqrt{y}) - P(X \leq -\sqrt{y}) = F_X(\sqrt{y}) - F_X(-\sqrt{y}).
+\]</span></p>
+<p>A fdp de <span class="math inline">\(Y\)</span> agora pode ser obtida da fda por diferenciação:</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_Y(y) &amp;= \frac{d}{dy} F_Y(y) \\
+&amp;= \frac{d}{dy} [F_X(\sqrt{y}) - F_X(-\sqrt{y})] \\
+&amp;= \frac{1}{2\sqrt{y}} f_X(\sqrt{y}) + \frac{1}{2\sqrt{y}} f_X(-\sqrt{y}),
+\end{aligned}
+\]</span></p>
+<p>onde usamos a regra da cadeia para diferenciar <span class="math inline">\(F_X(\sqrt{y})\)</span> e <span class="math inline">\(F_X(-\sqrt{y})\)</span>. Portanto, a fdp é</p>
+<p><span id="eq-2.1.11"><span class="math display">\[
+f_Y(y) = \frac{1}{2\sqrt{y}} (f_X(\sqrt{y}) + f_X(-\sqrt{y})).
+\tag{3.11}\]</span></span></p>
+</section>
+<p>Note que a fdp de <span class="math inline">\(Y\)</span> em <a href="#eq-2.1.11" class="quarto-xref">Equação&nbsp;<span>3.11</span></a> é expressa como a soma de duas partes, partes que representam os intervalos onde <span class="math inline">\(g(x) = x^2\)</span> é monotônica. Em geral, este será o caso. ||</p>
+<section id="teorema-2.1.8" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.1.8">Teorema 2.1.8</h3>
+<p>Seja <span class="math inline">\(X\)</span> com fdp <span class="math inline">\(f_X(x)\)</span>, seja <span class="math inline">\(Y = g(X)\)</span>, e defina o espaço amostral <span class="math inline">\(\mathcal{X}\)</span> como em <a href="#eq-2.1.7" class="quarto-xref">Equação&nbsp;<span>3.7</span></a>. Suponha que exista uma partição, <span class="math inline">\(A_0, A_1, \dots, A_k\)</span>, de <span class="math inline">\(\mathcal{X}\)</span> tal que <span class="math inline">\(P(X \in A_0) = 0\)</span> e <span class="math inline">\(f_X(x)\)</span> seja contínua em cada <span class="math inline">\(A_i\)</span>. Além disso, suponha que existam funções <span class="math inline">\(g_1(x), \dots, g_k(x)\)</span>, definidas em <span class="math inline">\(A_1, \dots, A_k\)</span>, respectivamente, satisfazendo:</p>
+<ol type="i">
+<li><span class="math inline">\(g(x) = g_i(x)\)</span>, para <span class="math inline">\(x \in A_i\)</span>,</li>
+<li><span class="math inline">\(g_i(x)\)</span> é monotônica em <span class="math inline">\(A_i\)</span>,</li>
+<li>o conjunto <span class="math inline">\(\mathcal{Y} = \{y : y = g_i(x) \text{ para algum } x \in A_i\}\)</span> é o mesmo para cada <span class="math inline">\(i = 1, \dots, k\)</span>, e</li>
+<li><span class="math inline">\(g_i^{-1}(y)\)</span> tem uma derivada contínua em <span class="math inline">\(\mathcal{Y}\)</span>, para cada <span class="math inline">\(i = 1, \dots, k\)</span>.</li>
+</ol>
+<p>Então <span class="math display">\[
+f_Y(y) =
+\begin{cases}
+\sum_{i=1}^{k} f_X(g_i^{-1}(y)) \left| \frac{d}{dy} g_i^{-1}(y) \right| &amp; y \in \mathcal{Y} \\
+0 &amp; \text{caso contrário}.
+\end{cases}
+\]</span></p>
+</section>
+<p>O ponto importante no Teorema 2.1.8 é que <span class="math inline">\(\mathcal{X}\)</span> pode ser dividido em conjuntos <span class="math inline">\(A_1, \dots, A_k\)</span> tais que <span class="math inline">\(g(x)\)</span> é monotônica em cada <span class="math inline">\(A_i\)</span>. Podemos ignorar o “conjunto excepcional” <span class="math inline">\(A_0\)</span> já que <span class="math inline">\(P(X \in A_0) = 0\)</span>.</p>
+<section id="exemplo-2.1.9-relação-normal-qui-quadrado" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.1.9-relação-normal-qui-quadrado">Exemplo 2.1.9 (Relação Normal-qui quadrado)</h3>
+<p>Seja <span class="math inline">\(X\)</span> com distribuição normal padrão,</p>
+<p><span class="math display">\[
+f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}, \quad -\infty &lt; x &lt; \infty.
+\]</span></p>
+<p>Considere <span class="math inline">\(Y = X^2\)</span>. A função <span class="math inline">\(g(x) = x^2\)</span> é monotônica em <span class="math inline">\((-\infty, 0)\)</span> e em <span class="math inline">\((0, \infty)\)</span>. O conjunto <span class="math inline">\(\mathcal{Y} = (0, \infty)\)</span>. Aplicando o Teorema 2.1.8, tomamos</p>
+<p><span class="math display">\[
+\begin{aligned}
+A_0 &amp;= \{0\}; \\
+A_1 &amp;= (-\infty, 0), \quad g_1(x) = x^2, \quad g_1^{-1}(y) = -\sqrt{y}; \\
+A_2 &amp;= (0, \infty), \quad g_2(x) = x^2, \quad g_2^{-1}(y) = \sqrt{y}.
+\end{aligned}
+\]</span></p>
+<p>A fdp de <span class="math inline">\(Y\)</span> é</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_Y(y) &amp;= \frac{1}{\sqrt{2\pi}} e^{-(-\sqrt{y})^2/2} \left| -\frac{1}{2\sqrt{y}} \right| + \frac{1}{\sqrt{2\pi}} e^{-(\sqrt{y})^2/2} \left| \frac{1}{2\sqrt{y}} \right| \\
+&amp;= \frac{1}{\sqrt{2\pi}} \frac{1}{\sqrt{y}} e^{-y/2}, \quad 0 &lt; y &lt; \infty.
+\end{aligned}
+\]</span></p>
+<p>A fdp de <span class="math inline">\(Y\)</span> é uma que encontraremos frequentemente, a de uma variável aleatória <strong>qui-quadrado</strong> com 1 grau de liberdade. ||</p>
+</section>
+<p>Encerramos esta seção com uma transformação especial e muito útil.</p>
+<section id="teorema-2.1.10-transformação-integral-de-probabilidade" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.1.10-transformação-integral-de-probabilidade">Teorema 2.1.10 (Transformação integral de probabilidade)</h3>
+<p>Seja <span class="math inline">\(X\)</span> com fda contínua <span class="math inline">\(F_X(x)\)</span> e defina a variável aleatória <span class="math inline">\(Y\)</span> como <span class="math inline">\(Y = F_X(X)\)</span>. Então <span class="math inline">\(Y\)</span> é uniformemente distribuída em <span class="math inline">\((0, 1)\)</span>, isto é, <span class="math inline">\(P(Y \leq y) = y, 0 &lt; y &lt; 1\)</span>.</p>
+</section>
+<p>Antes de provarmos este teorema, faremos uma breve digressão para analisar <span class="math inline">\(F_X^{-1}\)</span>, o inverso da fda <span class="math inline">\(F_X\)</span>, em mais detalhes. Se <span class="math inline">\(F_X\)</span> for estritamente crescente, então <span class="math inline">\(F_X^{-1}\)</span> é bem definida por</p>
+<p><span id="eq-2.1.12"><span class="math display">\[
+F_X^{-1}(y) = x \iff F_X(x) = y.
+\tag{3.12}\]</span></span></p>
+<p>No entanto, se <span class="math inline">\(F_X\)</span> for constante em algum intervalo, então <span class="math inline">\(F_X^{-1}\)</span> não é bem definida por <a href="#eq-2.1.12" class="quarto-xref">Equação&nbsp;<span>3.12</span></a>, como ilustra a <a href="#fig-2.1.2" class="quarto-xref">Figura&nbsp;<span>3.2</span></a>. Esse problema é evitado definindo <span class="math inline">\(F_X^{-1}(y)\)</span> para <span class="math inline">\(0 &lt; y &lt; 1\)</span> por</p>
+<p><span id="eq-2.1.13"><span class="math display">\[
+F_X^{-1}(y) = \inf\{x : F_X(x) \geq y\}.
+\tag{3.13}\]</span></span></p>
+<div id="fig-2.1.2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2.1.2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig-2_1_2.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2.1.2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.2: Figura 2.1.2 - (a) <span class="math inline">\(F(x)\)</span> estritamente crescente; (b) <span class="math inline">\(F(x)\)</span> não decrescente
+</figcaption>
+</figure>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Comprovação</em>. </span>Para <span class="math inline">\(Y = F_X(X)\)</span> temos, para <span class="math inline">\(0 &lt; y &lt; 1\)</span>,</p>
+<p><span class="math display">\[
+\begin{aligned}
+P(Y \leq y) &amp;= P(F_X(X) \leq y) \\
+&amp;= P(F_X^{-1}[F_X(X)] \leq F_X^{-1}(y)) &amp;&amp; (F_X^{-1} \text{ é crescente}) \\
+&amp;= P(X \leq F_X^{-1}(y)) &amp;&amp; (\text{veja o texto abaixo}) \\
+&amp;= F_X(F_X^{-1}(y)) &amp;&amp; (\text{definição de } F_X) \\
+&amp;= y. &amp;&amp; (\text{continuidade de } F_X)
+\end{aligned}
+\]</span></p>
+<p>Nos pontos extremos temos <span class="math inline">\(P(Y \leq y) = 1\)</span> para <span class="math inline">\(y \geq 1\)</span> e <span class="math inline">\(P(Y \leq y) = 0\)</span> para <span class="math inline">\(y \leq 0\)</span>, mostrando que <span class="math inline">\(Y\)</span> tem uma distribuição uniforme. <span class="math inline">\(\square\)</span></p>
+</div>
+<p>Nos pontos extremos, temos <span class="math inline">\(P(Y \leq y) = 1\)</span> para <span class="math inline">\(y \geq 1\)</span> e <span class="math inline">\(P(Y \leq y) = 0\)</span> para <span class="math inline">\(y \leq 0\)</span>, mostrando que <span class="math inline">\(Y\)</span> possui uma distribuição uniforme.</p>
+<p>O raciocínio por trás da igualdade</p>
+<p><span class="math display">\[P(F_X^{-1}(F_X(X)) \leq F_X^{-1}(y)) = P(X \leq F_X^{-1}(y))\]</span></p>
+<p>é um tanto sutil e merece atenção adicional. Se <span class="math inline">\(F_X\)</span> for estritamente crescente, então é verdade que <span class="math inline">\(F_X^{-1}(F_X(x)) = x\)</span> (consulte a <a href="#fig-2.1.2" class="quarto-xref">Figura&nbsp;<span>3.2</span></a>(a)). No entanto, se <span class="math inline">\(F_X\)</span> for constante (plana), pode ser que <span class="math inline">\(F_X^{-1}(F_X(x)) \neq x\)</span>. Suponha que <span class="math inline">\(F_X\)</span> seja como na <a href="#fig-2.1.2" class="quarto-xref">Figura&nbsp;<span>3.2</span></a>(b) e considere <span class="math inline">\(x \in [x_1, x_2]\)</span>. Então <span class="math inline">\(F_X^{-1}(F_X(x)) = x_1\)</span> para qualquer <span class="math inline">\(x\)</span> neste intervalo. Mesmo neste caso, a igualdade de probabilidade se mantém, visto que <span class="math inline">\(P(X \leq x) = P(X \leq x_1)\)</span> para qualquer <span class="math inline">\(x \in [x_1, x_2]\)</span>. A função de distribuição acumulada (cdf) plana denota uma região de probabilidade zero (<span class="math inline">\(P(x_1 &lt; X \leq x) = F_X(x) - F_X(x_1) = 0\)</span>).</p>
+<p>Uma aplicação do Teorema 2.1.10 está na geração de amostras aleatórias de uma distribuição específica. Se for necessário gerar uma observação <span class="math inline">\(X\)</span> de uma população com cdf <span class="math inline">\(F_X\)</span>, precisamos apenas gerar um número aleatório uniforme <span class="math inline">\(U\)</span>, entre 0 e 1, e resolver para <span class="math inline">\(x\)</span> na equação <span class="math inline">\(F_X(x) = u\)</span>. (Para muitas distribuições, existem outros métodos de geração de observações que consomem menos tempo computacional, mas este método ainda é útil devido à sua aplicabilidade geral.)</p>
+</section>
+<section id="valores-esperados" class="level2">
+<h2 class="anchored" data-anchor-id="valores-esperados">2.2 Valores Esperados</h2>
+<p>O valor esperado, ou esperança, de uma variável aleatória é meramente seu valor médio, onde falamos de valor “médio” como aquele que é ponderado de acordo com a distribuição de probabilidade. O valor esperado de uma distribuição pode ser pensado como uma medida de centro, pois pensamos em médias como sendo valores centrais. Ao ponderar os valores da variável aleatória de acordo com a distribuição de probabilidade, esperamos obter um número que resuma um valor típico ou esperado de uma observação da variável aleatória.</p>
+<section id="definição-2.2.1" class="level3 definition">
+<h3 class="anchored" data-anchor-id="definição-2.2.1">Definição 2.2.1</h3>
+<p>O <em>valor esperado</em> ou <em>média</em> de uma variável aleatória <span class="math inline">\(g(X)\)</span>, denotado por <span class="math inline">\(Eg(X)\)</span>, é</p>
+<p><span class="math display">\[
+Eg(X) =
+\begin{cases}
+\int_{-\infty}^{\infty} g(x) f_X(x) dx &amp; \text{se } X \text{ é contínua} \\
+\sum_{x \in \mathcal{X}} g(x) f_X(x) = \sum_{x \in \mathcal{X}} g(x) P(X = x) &amp; \text{se } X \text{ é discreta},
+\end{cases}
+\]</span></p>
+<p>desde que a integral ou a soma exista. Se <span class="math inline">\(E|g(X)| = \infty\)</span>, dizemos que <span class="math inline">\(Eg(X)\)</span> não existe. (Ross (1988) refere-se a isso como a “lei do estatístico inconsciente”. Não achamos isso divertido.)</p>
+</section>
+<section id="exemplo-2.2.2-média-exponencial" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.2.2-média-exponencial">Exemplo 2.2.2 (Média exponencial)</h3>
+<p>Suponha que <span class="math inline">\(X\)</span> tenha uma distribuição exponencial(<span class="math inline">\(\lambda\)</span>), ou seja, ela tem fdp dada por</p>
+<p><span class="math display">\[
+f_X(x) = \frac{1}{\lambda} e^{-x/\lambda}, \quad 0 \leq x &lt; \infty, \quad \lambda &gt; 0.
+\]</span></p>
+<p>Então <span class="math inline">\(EX\)</span> é dado por</p>
+<p><span class="math display">\[
+\begin{aligned}
+EX &amp;= \int_{0}^{\infty} \frac{1}{\lambda} x e^{-x/\lambda} dx \\
+&amp;= -xe^{-x/\lambda} \Big|_0^\infty + \int_{0}^{\infty} e^{-x/\lambda} dx &amp;&amp; \text{(integração por partes)} \\
+&amp;= \int_{0}^{\infty} e^{-x/\lambda} dx = \lambda.
+\end{aligned}
+\]</span> ||</p>
+</section>
+<section id="exemplo-2.2.3-média-binomial" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.2.3-média-binomial">Exemplo 2.2.3 (Média binomial)</h3>
+<p>Se <span class="math inline">\(X\)</span> tem uma distribuição binomial, sua fmp é dada por</p>
+<p><span class="math display">\[
+P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x = 0, 1, \dots, n
+\]</span></p>
+<p>onde <span class="math inline">\(n\)</span> é um inteiro positivo, <span class="math inline">\(0 \leq p \leq 1\)</span>, e para cada par fixo <span class="math inline">\(n\)</span> e <span class="math inline">\(p\)</span> a fmp soma 1. O valor esperado de uma variável aleatória binomial é dado por</p>
+<p><span class="math display">\[
+EX = \sum_{x=0}^{n} x \binom{n}{x} p^x (1-p)^{n-x} = \sum_{x=1}^{n} x \binom{n}{x} p^x (1-p)^{n-x}
+\]</span></p>
+<p>(o termo <span class="math inline">\(x = 0\)</span> é 0). Usando a identidade <span class="math inline">\(x \binom{n}{x} = n \binom{n-1}{x-1}\)</span>, temos</p>
+<p><span class="math display">\[
+\begin{aligned}
+EX &amp;= \sum_{x=1}^{n} n \binom{n-1}{x-1} p^x (1-p)^{n-x} \\
+&amp;= \sum_{y=0}^{n-1} n \binom{n-1}{y} p^{y+1} (1-p)^{n-(y+1)} &amp;&amp; \text{(substitua } y = x-1\text{)} \\
+&amp;= np \sum_{y=0}^{n-1} \binom{n-1}{y} p^y (1-p)^{n-1-y} \\
+&amp;= np,
+\end{aligned}
+\]</span></p>
+<p>visto que a última soma deve ser 1, sendo a soma de todos os valores possíveis de uma fmp binomial(<span class="math inline">\(n-1, p\)</span>). ||</p>
+</section>
+<section id="exemplo-2.2.4-média-de-cauchy" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.2.4-média-de-cauchy">Exemplo 2.2.4 (Média de Cauchy)</h3>
+<p>Um exemplo clássico de uma variável aleatória cujo valor esperado não existe é a variável aleatória de Cauchy, ou seja, aquela com fdp</p>
+<p><span class="math display">\[
+f_X(x) = \frac{1}{\pi} \frac{1}{1+x^2}, \quad -\infty &lt; x &lt; \infty.
+\]</span></p>
+<p>É imediato verificar que <span class="math inline">\(\int_{-\infty}^{\infty} f_X(x) dx = 1\)</span>, mas <span class="math inline">\(E|X| = \infty\)</span>. Escreva</p>
+<p><span class="math display">\[
+E|X| = \int_{-\infty}^{\infty} \frac{|x|}{\pi} \frac{1}{1+x^2} dx = \frac{2}{\pi} \int_{0}^{\infty} \frac{x}{1+x^2} dx.
+\]</span></p>
+<p>Para qualquer número positivo <span class="math inline">\(M\)</span>,</p>
+<p><span class="math display">\[
+\int_{0}^{M} \frac{x}{1+x^2} dx = \frac{\log(1+x^2)}{2} \Big|_0^M = \frac{\log(1+M^2)}{2}.
+\]</span></p>
+<p>Assim,</p>
+<p><span class="math display">\[
+E|X| = \lim_{M \to \infty} \frac{2}{\pi} \int_{0}^{M} \frac{x}{1+x^2} dx = \frac{1}{\pi} \lim_{M \to \infty} \log(1+M^2) = \infty
+\]</span></p>
+<p>e <span class="math inline">\(EX\)</span> não existe. ||</p>
+</section>
+<p>O processo de tomar expectativas é uma operação linear, o que significa que a expectativa de uma função linear de <span class="math inline">\(X\)</span> pode ser facilmente avaliada notando que para quaisquer constantes <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span>,</p>
+<p><span id="eq-2.2.1"><span class="math display">\[
+E(aX + b) = aEX + b.
+\tag{3.14}\]</span></span></p>
+<p>Por exemplo, se <span class="math inline">\(X\)</span> é binomial(<span class="math inline">\(n, p\)</span>), então <span class="math inline">\(EX = np\)</span>, logo</p>
+<p><span class="math display">\[
+E(X - np) = EX - np = np - np = 0.
+\]</span></p>
+<p>O operador esperança, de fato, possui muitas propriedades que podem ajudar a facilitar o esforço de cálculo. A maioria dessas propriedades decorre das propriedades da integral ou da soma e está resumida no teorema a seguir.</p>
+<section id="teorema-2.2.5" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.2.5">Teorema 2.2.5</h3>
+<p>Seja <span class="math inline">\(X\)</span> uma variável aleatória e sejam <span class="math inline">\(a, b\)</span> e <span class="math inline">\(c\)</span> constantes. Então, para quaisquer funções <span class="math inline">\(g_1(x)\)</span> e <span class="math inline">\(g_2(x)\)</span> cujas expectativas existam,</p>
+<ol type="a">
+<li><span class="math inline">\(E(ag_1(X) + bg_2(X) + c) = aEg_1(X) + bEg_2(X) + c\)</span>.</li>
+<li>Se <span class="math inline">\(g_1(x) \geq 0\)</span> para todo <span class="math inline">\(x\)</span>, então <span class="math inline">\(Eg_1(X) \geq 0\)</span>.</li>
+<li>Se <span class="math inline">\(g_1(x) \geq g_2(x)\)</span> para todo <span class="math inline">\(x\)</span>, então <span class="math inline">\(Eg_1(X) \geq Eg_2(X)\)</span>.</li>
+<li>Se <span class="math inline">\(a \leq g_1(x) \leq b\)</span> para todo <span class="math inline">\(x\)</span>, então <span class="math inline">\(a \leq Eg_1(X) \leq b\)</span>.</li>
+</ol>
+</section>
+<div class="proof">
+<p><span class="proof-title"><em>Comprovação</em>. </span>Forneceremos detalhes apenas para o caso contínuo, sendo o caso discreto similar. Por definição,</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(ag_1(X) + bg_2(X) + c) &amp;= \int_{-\infty}^{\infty} (ag_1(x) + bg_2(x) + c)f_X(x) dx \\
+&amp;= \int_{-\infty}^{\infty} ag_1(x)f_X(x) dx + \int_{-\infty}^{\infty} bg_2(x)f_X(x) dx + \int_{-\infty}^{\infty} c f_X(x) dx
+\end{aligned}
+\]</span></p>
+<p>pela aditividade da integral. Como <span class="math inline">\(a, b\)</span> e <span class="math inline">\(c\)</span> são constantes, eles saem de suas respectivas integrais e temos</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(ag_1(X) + bg_2(X) + c) &amp;= a \int_{-\infty}^{\infty} g_1(x)f_X(x) dx + b \int_{-\infty}^{\infty} g_2(x)f_X(x) dx + c \int_{-\infty}^{\infty} f_X(x) dx \\
+&amp;= aEg_1(X) + bEg_2(x) + c,
+\end{aligned}
+\]</span></p>
+<p>estabelecendo (a). As outras três propriedades são provadas de maneira semelhante. <span class="math inline">\(\square\)</span></p>
+</div>
+<section id="exemplo-2.2.6-minimizando-a-distância" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.2.6-minimizando-a-distância">Exemplo 2.2.6 (Minimizando a distância)</h3>
+<p>O valor esperado de uma variável aleatória tem outra propriedade, que podemos pensar como relacionada à interpretação de <span class="math inline">\(EX\)</span> como um bom palpite para um valor de <span class="math inline">\(X\)</span>.</p>
+<p>Suponha que meçamos a distância entre uma variável aleatória <span class="math inline">\(X\)</span> e uma constante <span class="math inline">\(b\)</span> por <span class="math inline">\((X - b)^2\)</span>. Quanto mais próximo <span class="math inline">\(b\)</span> estiver de <span class="math inline">\(X\)</span>, menor será essa quantidade. Podemos agora determinar o valor de <span class="math inline">\(b\)</span> que minimiza <span class="math inline">\(E(X - b)^2\)</span> e, portanto, nos fornecerá um bom preditor de <span class="math inline">\(X\)</span>. (Note que não adianta procurar um valor de <span class="math inline">\(b\)</span> que minimize <span class="math inline">\((X - b)^2\)</span>, pois a resposta dependeria de <span class="math inline">\(X\)</span>, tornando-o um preditor inútil de <span class="math inline">\(X\)</span>.)</p>
+<p>Poderíamos prosseguir com a minimização de <span class="math inline">\(E(X - b)^2\)</span> usando cálculo, mas há um método mais simples. (Veja o Exercício 2.19 para uma prova baseada em cálculo.) Usando a crença de que há algo especial sobre <span class="math inline">\(EX\)</span>, escreva</p>
+<p><span class="math display">\[
+\begin{aligned}
+E(X - b)^2 &amp;= E(X - EX + EX - b)^2 &amp;&amp; \text{(adicione } \pm EX \\
+&amp;= E((X - EX) + (EX - b))^2 &amp;&amp; \text{(agrupe os termos)} \\
+&amp;= E(X - EX)^2 + (EX - b)^2 + 2E((X - EX)(EX - b)),
+\end{aligned}
+\]</span></p>
+<p>onde expandimos o quadrado. Agora, note que</p>
+<p><span class="math display">\[
+E((X - EX)(EX - b)) = (EX - b)E(X - EX) = 0,
+\]</span></p>
+<p>visto que <span class="math inline">\((EX - b)\)</span> é constante e sai da expectativa, e <span class="math inline">\(E(X - EX) = EX - EX = 0\)</span>. Isso significa que</p>
+<p><span id="eq-2.2.2"><span class="math display">\[
+E(X - b)^2 = E(X - EX)^2 + (EX - b)^2.
+\tag{3.15}\]</span></span></p>
+<p>Não temos controle sobre o primeiro termo no lado direito de <a href="#eq-2.2.2" class="quarto-xref">Equação&nbsp;<span>3.15</span></a> e o segundo termo, que é sempre maior ou igual a 0, pode ser feito igual a 0 escolhendo <span class="math inline">\(b = EX\)</span>. Logo,</p>
+<p><span id="eq-2.2.3"><span class="math display">\[
+\min_b E(X - b)^2 = E(X - EX)^2.
+\tag{3.16}\]</span></span></p>
+<p>Veja o Exercício 2.18 para um resultado semelhante sobre a mediana. ||</p>
+</section>
+<p>Ao avaliar expectativas de funções não lineares de <span class="math inline">\(X\)</span>, podemos proceder de uma de duas maneiras. Pela definição de <span class="math inline">\(Eg(X)\)</span>, poderíamos calcular diretamente</p>
+<p><span id="eq-2.2.4"><span class="math display">\[
+Eg(X) = \int_{-\infty}^{\infty} g(x)f_X(x) dx.
+\tag{3.17}\]</span></span></p>
+<p>Mas também poderíamos encontrar a fdp <span class="math inline">\(f_Y(y)\)</span> de <span class="math inline">\(Y = g(X)\)</span> e teríamos</p>
+<p><span id="eq-2.2.5"><span class="math display">\[
+Eg(X) = EY = \int_{-\infty}^{\infty} y f_Y(y) dy.
+\tag{3.18}\]</span></span></p>
+<section id="exemplo-2.2.7-relação-uniforme-exponencialii" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.2.7-relação-uniforme-exponencialii">Exemplo 2.2.7 (Relação uniforme-exponencial—II)</h3>
+<p>Seja <span class="math inline">\(X\)</span> com uma distribuição uniforme(0,1), ou seja, a fdp de <span class="math inline">\(X\)</span> é dada por</p>
+<p><span class="math display">\[
+f_X(x) =
+\begin{cases}
+1 &amp; \text{se } 0 \leq x \leq 1 \\
+0 &amp; \text{caso contrário},
+\end{cases}
+\]</span></p>
+<p>e defina uma nova variável aleatória <span class="math inline">\(g(X) = -\log X\)</span>. Então</p>
+<p><span class="math display">\[
+Eg(X) = E(-\log X) = \int_{0}^{1} -\log x dx = x - x \log x \Big|_0^1 = 1.
+\]</span></p>
+<p>Mas também vimos no Exemplo 2.1.4 que <span class="math inline">\(Y = -\log X\)</span> tem fda <span class="math inline">\(1 - e^{-y}\)</span> e, portanto, fdp <span class="math inline">\(f_Y(y) = \frac{d}{dy}(1 - e^{-y}) = e^{-y}, 0 &lt; y &lt; \infty\)</span>, que é um caso especial da fdp exponencial com <span class="math inline">\(\lambda = 1\)</span>. Assim, pelo Exemplo 2.2.2, <span class="math inline">\(EY = 1\)</span>. ||</p>
+</section>
+</section>
+<section id="momentos-e-funções-geradoras-de-momentos" class="level2">
+<h2 class="anchored" data-anchor-id="momentos-e-funções-geradoras-de-momentos">2.3 Momentos e Funções Geradoras de Momentos</h2>
+<p>Os vários momentos de uma distribuição são uma classe importante de expectativas.</p>
+<section id="definição-2.3.1" class="level3 definition">
+<h3 class="anchored" data-anchor-id="definição-2.3.1">Definição 2.3.1</h3>
+<p>Para cada inteiro <span class="math inline">\(n\)</span>, o <em><span class="math inline">\(n\)</span>-ésimo momento</em> de <span class="math inline">\(X\)</span> (ou <span class="math inline">\(F_X(x)\)</span>), <span class="math inline">\(\mu'_n\)</span>, é</p>
+<p><span class="math display">\[
+\mu'_n = EX^n.
+\]</span></p>
+<p>O <em><span class="math inline">\(n\)</span>-ésimo momento central</em> de <span class="math inline">\(X\)</span>, <span class="math inline">\(\mu_n\)</span>, é</p>
+<p><span class="math display">\[
+\mu_n = E(X - \mu)^n,
+\]</span></p>
+<p>onde <span class="math inline">\(\mu = \mu'_1 = EX\)</span>.</p>
+</section>
+<p>Além da média, <span class="math inline">\(EX\)</span>, de uma variável aleatória, talvez o momento mais importante seja o segundo momento central, mais comumente conhecido como a variância.</p>
+<section id="definição-2.3.2" class="level3 definition">
+<h3 class="anchored" data-anchor-id="definição-2.3.2">Definição 2.3.2</h3>
+<p>A <em>variância</em> de uma variável aleatória <span class="math inline">\(X\)</span> é seu segundo momento central, <span class="math inline">\(Var X = E(X - EX)^2\)</span>. A raiz quadrada positiva de <span class="math inline">\(Var X\)</span> é o <em>desvio padrão</em> de <span class="math inline">\(X\)</span>.</p>
+</section>
+<p>A variância fornece uma medida do grau de dispersão de uma distribuição em torno de sua média. Vimos anteriormente no Exemplo 2.2.6 que a quantidade <span class="math inline">\(E(X - b)^2\)</span> é minimizada escolhendo <span class="math inline">\(b = EX\)</span>. Agora consideramos o tamanho absoluto desse mínimo. A interpretação atribuída à variância é que valores maiores significam que <span class="math inline">\(X\)</span> é mais variável. No extremo, se <span class="math inline">\(Var X = E(X - EX)^2 = 0\)</span>, então <span class="math inline">\(X\)</span> é igual a <span class="math inline">\(EX\)</span> com probabilidade 1, e não há variação em <span class="math inline">\(X\)</span>. O desvio padrão tem a mesma interpretação qualitativa: valores pequenos significam que é muito provável que <span class="math inline">\(X\)</span> esteja próximo de <span class="math inline">\(EX\)</span>, e valores grandes significam que <span class="math inline">\(X\)</span> é muito variável. O desvio padrão é mais fácil de interpretar no sentido de que a unidade de medida no desvio padrão é a mesma da variável original <span class="math inline">\(X\)</span>. A unidade de medida na variância é o quadrado da unidade original.</p>
+<div id="fig-2.3.1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2.3.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig-2_3_1.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2.3.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.3: Densidades exponenciais para <span class="math inline">\(\lambda = 1, \frac{1}{3}, \frac{1}{5}\)</span>
+</figcaption>
+</figure>
+</div>
+<section id="exemplo-2.3.3-variância-exponencial" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.3.3-variância-exponencial">Exemplo 2.3.3 (Variância exponencial)</h3>
+<p>Seja <span class="math inline">\(X\)</span> com a distribuição exponencial(<span class="math inline">\(\lambda\)</span>), definida no Exemplo 2.2.2. Calculamos <span class="math inline">\(EX = \lambda\)</span>, e agora podemos calcular a variância por</p>
+<p><span class="math display">\[
+\begin{aligned}
+Var X = E(X - \lambda)^2 &amp;= \int_{0}^{\infty} (x - \lambda)^2 \frac{1}{\lambda} e^{-x/\lambda} dx \\
+&amp;= \int_{0}^{\infty} (x^2 - 2x\lambda + \lambda^2) \frac{1}{\lambda} e^{-x/\lambda} dx.
+\end{aligned}
+\]</span></p>
+<p>Para completar a integração, podemos integrar cada um dos termos separadamente, usando integração por partes nos termos que envolvem <span class="math inline">\(x\)</span> e <span class="math inline">\(x^2\)</span>. Ao fazer isso, descobrimos que <span class="math inline">\(Var X = \lambda^2\)</span>. ||</p>
+</section>
+<p>Vemos que a variância de uma distribuição exponencial está diretamente relacionada ao parâmetro <span class="math inline">\(\lambda\)</span>. A <a href="#fig-2.3.1" class="quarto-xref">Figura&nbsp;<span>3.3</span></a> mostra várias distribuições exponenciais correspondentes a diferentes valores de <span class="math inline">\(\lambda\)</span>. Note como a distribuição é mais concentrada em torno de sua média para valores menores de <span class="math inline">\(\lambda\)</span>. O comportamento da variância de uma exponencial, como função de <span class="math inline">\(\lambda\)</span>, é um caso especial do comportamento da variância resumido no teorema a seguir.</p>
+<section id="teorema-2.3.4" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.3.4">Teorema 2.3.4</h3>
+<p>Se <span class="math inline">\(X\)</span> é uma variável aleatória com variância finita, então para quaisquer constantes <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span>,</p>
+<p><span class="math display">\[
+Var(aX + b) = a^2 Var X.
+\]</span></p>
+</section>
+<div class="proof">
+<p><span class="proof-title"><em>Comprovação</em>. </span>Da definição, temos</p>
+<p><span class="math display">\[
+\begin{aligned}
+Var(aX + b) &amp;= E((aX + b) - E(aX + b))^2 \\
+&amp;= E(aX - aEX)^2 &amp;&amp; (E(aX + b) = aEX + b) \\
+&amp;= a^2 E(X - EX)^2 \\
+&amp;= a^2 Var X.
+\end{aligned}
+\]</span> <span class="math inline">\(\square\)</span></p>
+</div>
+<p>Às vezes é mais fácil usar uma fórmula alternativa para a variância, dada por</p>
+<p><span id="eq-2.3.1"><span class="math display">\[
+Var X = EX^2 - (EX)^2,
+\tag{3.19}\]</span></span></p>
+<p>que é facilmente estabelecida notando que</p>
+<p><span class="math display">\[
+\begin{aligned}
+Var X &amp;= E(X - EX)^2 = E[X^2 - 2XEX + (EX)^2] \\
+&amp;= EX^2 - 2(EX)^2 + (EX)^2 \\
+&amp;= EX^2 - (EX)^2,
+\end{aligned}
+\]</span></p>
+<p>onde usamos o fato de que <span class="math inline">\(E(X EX) = (EX)(EX) = (EX)^2\)</span>, visto que <span class="math inline">\(EX\)</span> é uma constante. Ilustramos agora alguns cálculos de momentos com uma distribuição discreta.</p>
+<section id="exemplo-2.3.5-variância-binomial" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.3.5-variância-binomial">Exemplo 2.3.5 (Variância binomial)</h3>
+<p>Seja <span class="math inline">\(X \sim\)</span> binomial(<span class="math inline">\(n, p\)</span>), ou seja,</p>
+<p><span class="math display">\[
+P(X = x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x = 0, 1, \dots, n.
+\]</span></p>
+<p>Vimos anteriormente que <span class="math inline">\(EX = np\)</span>. Para calcular <span class="math inline">\(Var X\)</span>, primeiro calculamos <span class="math inline">\(EX^2\)</span>. Temos</p>
+<p><span id="eq-2.3.2"><span class="math display">\[
+EX^2 = \sum_{x=0}^{n} x^2 \binom{n}{x} p^x (1-p)^{n-x}.
+\tag{3.20}\]</span></span></p>
+<p>Para somar esta série, devemos primeiro manipular o coeficiente binomial de maneira semelhante à usada para <span class="math inline">\(EX\)</span> (Exemplo 2.2.3). Escrevemos</p>
+<p><span id="eq-2.3.3"><span class="math display">\[
+x^2 \binom{n}{x} = x \frac{n!}{(x-1)!(n-x)!} = xn \binom{n-1}{x-1}.
+\tag{3.21}\]</span></span></p>
+<p>O termo no somatório em <a href="#eq-2.3.2" class="quarto-xref">Equação&nbsp;<span>3.20</span></a> correspondente a <span class="math inline">\(x = 0\)</span> é zero e, usando <a href="#eq-2.3.3" class="quarto-xref">Equação&nbsp;<span>3.21</span></a>, temos</p>
+<p><span class="math display">\[
+\begin{aligned}
+EX^2 &amp;= n \sum_{x=1}^{n} x \binom{n-1}{x-1} p^x (1-p)^{n-x} \\
+&amp;= n \sum_{y=0}^{n-1} (y+1) \binom{n-1}{y} p^{y+1} (1-p)^{n-1-y} &amp;&amp; \text{(ajustando } y = x-1\text{)} \\
+&amp;= np \sum_{y=0}^{n-1} y \binom{n-1}{y} p^y (1-p)^{n-1-y} + np \sum_{y=0}^{n-1} \binom{n-1}{y} p^y (1-p)^{n-1-y}.
+\end{aligned}
+\]</span></p>
+<p>Agora é fácil ver que a primeira soma é igual a <span class="math inline">\((n-1)p\)</span> (já que é a média de uma binomial(<span class="math inline">\(n-1, p\)</span>)), enquanto a segunda soma é igual a 1. Logo,</p>
+<p><span id="eq-2.3.4"><span class="math display">\[
+EX^2 = n(n-1)p^2 + np.
+\tag{3.22}\]</span></span></p>
+<p>Usando <a href="#eq-2.3.1" class="quarto-xref">Equação&nbsp;<span>3.19</span></a>, temos</p>
+<p><span class="math display">\[
+Var X = n(n-1)p^2 + np - (np)^2 = -np^2 + np = np(1-p).
+\]</span> ||</p>
+</section>
+<p>O cálculo de momentos de ordem superior prossegue de maneira análoga, mas geralmente as manipulações matemáticas tornam-se bastante complexas. Em aplicações, momentos de ordem 3 ou 4 são às vezes de interesse, mas geralmente há pouca razão estatística para examinar momentos superiores a estes.</p>
+<p>Introduzimos agora uma nova função que está associada a uma distribuição de probabilidade, a <em>função geradora de momentos</em> (fgm). Como o próprio nome sugere, a fgm pode ser usada para gerar momentos. Na prática, é mais fácil em muitos casos calcular momentos diretamente do que usar a fgm. No entanto, o principal uso da fgm não é gerar momentos, mas ajudar a caracterizar uma distribuição. Essa propriedade pode levar a resultados extremamente poderosos quando usada adequadamente.</p>
+<section id="definição-2.3.6" class="level3 definition">
+<h3 class="anchored" data-anchor-id="definição-2.3.6">Definição 2.3.6</h3>
+<p>Seja <span class="math inline">\(X\)</span> uma variável aleatória com fda <span class="math inline">\(F_X\)</span>. A <em>função geradora de momentos</em> (fgm) de <span class="math inline">\(X\)</span> (ou <span class="math inline">\(F_X\)</span>), denotada por <span class="math inline">\(M_X(t)\)</span>, é</p>
+<p><span class="math display">\[
+M_X(t) = Ee^{tX},
+\]</span></p>
+<p>desde que a esperança exista para <span class="math inline">\(t\)</span> em alguma vizinhança de 0. Ou seja, existe um <span class="math inline">\(h &gt; 0\)</span> tal que, para todo <span class="math inline">\(t\)</span> em <span class="math inline">\(-h &lt; t &lt; h\)</span>, <span class="math inline">\(Ee^{tX}\)</span> existe. Se a esperança não existir em uma vizinhança de 0, dizemos que a função geradora de momentos não existe.</p>
+</section>
+<p>Mais explicitamente, podemos escrever a fgm de <span class="math inline">\(X\)</span> como</p>
+<p><span class="math display">\[
+M_X(t) = \int_{-\infty}^{\infty} e^{tx} f_X(x) dx \quad \text{se } X \text{ é contínua}.
+\]</span></p>
+<p>ou</p>
+<p><span class="math display">\[
+M_X(t) = \sum_{x} e^{tx} P(X = x) \quad \text{se } X \text{ é discreta}.
+\]</span></p>
+<p>É muito fácil ver como a fgm gera momentos. Resumimos o resultado no seguinte teorema.</p>
+<section id="teorema-2.3.7" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.3.7">Teorema 2.3.7</h3>
+<p>Se <span class="math inline">\(X\)</span> tem fgm <span class="math inline">\(M_X(t)\)</span>, então</p>
+<p><span class="math display">\[
+EX^n = M_X^{(n)}(0),
+\]</span></p>
+<p>onde definimos <span class="math display">\[
+M_X^{(n)}(0) = \frac{d^n}{dt^n} M_X(t) \Big|_{t=0}.
+\]</span></p>
+<p>Ou seja, o <span class="math inline">\(n\)</span>-ésimo momento é igual à <span class="math inline">\(n\)</span>-ésima derivada de <span class="math inline">\(M_X(t)\)</span> avaliada em <span class="math inline">\(t = 0\)</span>.</p>
+</section>
+<div class="proof">
+<p><span class="proof-title"><em>Comprovação</em>. </span>Assumindo que podemos diferenciar sob o sinal da integral (veja a próxima seção), temos</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{d}{dt} M_X(t) &amp;= \frac{d}{dt} \int_{-\infty}^{\infty} e^{tx} f_X(x) dx \\
+&amp;= \int_{-\infty}^{\infty} \left( \frac{d}{dt} e^{tx} \right) f_X(x) dx \\
+&amp;= \int_{-\infty}^{\infty} (xe^{tx}) f_X(x) dx \\
+&amp;= E X e^{tX}.
+\end{aligned}
+\]</span></p>
+<p>Assim, <span class="math display">\[
+\frac{d}{dt} M_X(t) \Big|_{t=0} = E X e^{tX} \Big|_{t=0} = EX.
+\]</span></p>
+<p>Procedendo de maneira análoga, podemos estabelecer que <span class="math display">\[
+\frac{d^n}{dt^n} M_X(t) \Big|_{t=0} = E X^n e^{tX} \Big|_{t=0} = EX^n.
+\]</span> <span class="math inline">\(\square\)</span></p>
+</div>
+<section id="exemplo-2.3.8-fgm-gama" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.3.8-fgm-gama">Exemplo 2.3.8 (fgm Gama)</h3>
+<p>No Exemplo 2.1.6 encontramos um caso especial da fdp gama</p>
+<p><span class="math display">\[
+f(x) = \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\alpha-1} e^{-x/\beta}, \quad 0 &lt; x &lt; \infty, \quad \alpha &gt; 0, \quad \beta &gt; 0,
+\]</span></p>
+<p>onde <span class="math inline">\(\Gamma(\alpha)\)</span> denota a função gama. A fgm é dada por</p>
+<p><span id="eq-2.3.5"><span class="math display">\[
+\begin{aligned}
+M_X(t) &amp;= \frac{1}{\Gamma(\alpha)\beta^\alpha} \int_{0}^{\infty} e^{tx} x^{\alpha-1} e^{-x/\beta} dx \\
+&amp;= \frac{1}{\Gamma(\alpha)\beta^\alpha} \int_{0}^{\infty} x^{\alpha-1} e^{-(1/\beta - t)x} dx \\
+&amp;= \frac{1}{\Gamma(\alpha)\beta^\alpha} \int_{0}^{\infty} x^{\alpha-1} e^{-x/(\frac{\beta}{1-\beta t})} dx.
+\end{aligned}
+\tag{3.23}\]</span></span></p>
+<p>Reconhecemos agora o integrando em <a href="#eq-2.3.5" class="quarto-xref">Equação&nbsp;<span>3.23</span></a> como o <em>núcleo</em> de outra fdp gama. (O núcleo de uma função é a parte principal da função, a parte que permanece quando as constantes são desconsideradas.) Usando o fato de que, para quaisquer constantes positivas <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span>,</p>
+<p><span class="math display">\[
+f(x) = \frac{1}{\Gamma(a)b^a} x^{a-1} e^{-x/b}
+\]</span></p>
+<p>é uma fdp, temos que</p>
+<p><span class="math display">\[
+\int_{0}^{\infty} \frac{1}{\Gamma(a)b^a} x^{a-1} e^{-x/b} dx = 1
+\]</span></p>
+<p>e, portanto, <span id="eq-2.3.6"><span class="math display">\[
+\int_{0}^{\infty} x^{a-1} e^{-x/b} dx = \Gamma(a)b^a.
+\tag{3.24}\]</span></span></p>
+<p>Aplicando <a href="#eq-2.3.6" class="quarto-xref">Equação&nbsp;<span>3.24</span></a> a <a href="#eq-2.3.5" class="quarto-xref">Equação&nbsp;<span>3.23</span></a>, temos</p>
+<p><span class="math display">\[
+M_X(t) = \frac{1}{\Gamma(\alpha)\beta^\alpha} \Gamma(\alpha) \left( \frac{\beta}{1-\beta t} \right)^\alpha = \left( \frac{1}{1-\beta t} \right)^\alpha \quad \text{se } t &lt; \frac{1}{\beta}.
+\]</span></p>
+<p>Se <span class="math inline">\(t \geq 1/\beta\)</span>, então a quantidade <span class="math inline">\((1/\beta) - t\)</span>, no integrando de <a href="#eq-2.3.5" class="quarto-xref">Equação&nbsp;<span>3.23</span></a>, é não positiva e a integral em <a href="#eq-2.3.6" class="quarto-xref">Equação&nbsp;<span>3.24</span></a> é infinita. Assim, a fgm da distribuição gama existe apenas se <span class="math inline">\(t &lt; 1/\beta\)</span>.</p>
+<p>A média da distribuição gama é dada por <span class="math display">\[
+EX = \frac{d}{dt} M_X(t) \Big|_{t=0} = \frac{\alpha\beta}{(1-\beta t)^{\alpha+1}} \Big|_{t=0} = \alpha\beta.
+\]</span></p>
+<p>Outros momentos podem ser calculados de maneira semelhante. ||</p>
+</section>
+<section id="exemplo-2.3.9-fgm-binomial" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.3.9-fgm-binomial">Exemplo 2.3.9 (fgm Binomial)</h3>
+<p>Para uma segunda ilustração do cálculo de uma função geradora de momentos, consideramos uma distribuição discreta, a distribuição binomial. A fmp binomial(<span class="math inline">\(n, p\)</span>) é dada em <a href="#eq-2.1.3" class="quarto-xref">Equação&nbsp;<span>3.3</span></a>. Então</p>
+<p><span class="math display">\[
+M_X(t) = \sum_{x=0}^{n} e^{tx} \binom{n}{x} p^x (1-p)^{n-x} = \sum_{x=0}^{n} \binom{n}{x} (pe^t)^x (1-p)^{n-x}.
+\]</span></p>
+<p>A fórmula binomial dá</p>
+<p><span id="eq-2.3.7"><span class="math display">\[
+\sum_{x=0}^{n} \binom{n}{x} u^x v^{n-x} = (u+v)^n.
+\tag{3.25}\]</span></span></p>
+<p>Logo, fazendo <span class="math inline">\(u = pe^t\)</span> e <span class="math inline">\(v = 1-p\)</span>, temos <span class="math display">\[
+M_X(t) = [pe^t + (1-p)]^n.
+\]</span> ||</p>
+</section>
+<p>Como mencionado anteriormente, a utilidade principal da função geradora de momentos não está em sua capacidade de gerar momentos. Em vez disso, sua utilidade decorre do fato de que, em muitos casos, a função geradora de momentos pode caracterizar uma distribuição. Existem, no entanto, algumas dificuldades técnicas associadas ao uso de momentos para caracterizar uma distribuição, que investigaremos agora.</p>
+<p>Se a fgm existe, ela caracteriza um conjunto infinito de momentos. A questão natural é se a caracterização do conjunto infinito de momentos determina exclusivamente uma função de distribuição. A resposta a essa pergunta, infelizmente, é não. Caracterizar o conjunto de momentos não é suficiente para determinar uma distribuição de forma única porque pode haver duas variáveis aleatórias distintas tendo os mesmos momentos.</p>
+<section id="exemplo-2.3.10-momentos-não-únicos" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.3.10-momentos-não-únicos">Exemplo 2.3.10 (Momentos não únicos)</h3>
+<p>Considere as duas fdps dadas por</p>
+<p><span class="math display">\[
+f_1(x) = \frac{1}{\sqrt{2\pi}x} e^{-(\log x)^2/2}, \quad 0 \leq x &lt; \infty,
+\]</span></p>
+<p><span class="math display">\[
+f_2(x) = f_1(x)[1 + \sin(2\pi \log x)], \quad 0 \leq x &lt; \infty.
+\]</span></p>
+<p>(A fdp <span class="math inline">\(f_1\)</span> é um caso especial de uma fdp lognormal.) Pode-se mostrar que se <span class="math inline">\(X_1 \sim f_1(x)\)</span>, então <span class="math display">\[
+EX_1^r = e^{r^2/2}, \quad r = 0, 1, \dots,
+\]</span></p>
+<p>logo <span class="math inline">\(X_1\)</span> possui todos os seus momentos. Agora suponha que <span class="math inline">\(X_2 \sim f_2(x)\)</span>. Temos <span class="math display">\[
+EX_2^r = \int_{0}^{\infty} x^r f_1(x)[1 + \sin(2\pi \log x)] dx = EX_1^r + \int_{0}^{\infty} x^r f_1(x) \sin(2\pi \log x) dx.
+\]</span></p>
+<p>No entanto, a transformação <span class="math inline">\(y = \log x - r\)</span> mostra que esta última integral é a de uma função ímpar sobre <span class="math inline">\((-\infty, \infty)\)</span> e, portanto, é igual a 0 para <span class="math inline">\(r = 0, 1, \dots\)</span>. Assim, embora <span class="math inline">\(X_1\)</span> e <span class="math inline">\(X_2\)</span> tenham fdps distintas, elas têm os mesmos momentos para todo <span class="math inline">\(r\)</span>. As duas fdps estão ilustradas na <a href="#fig-2.3.2" class="quarto-xref">Figura&nbsp;<span>3.4</span></a>. ||</p>
+<div id="fig-2.3.2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2.3.2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig-2_3_2.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2.3.2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.4: Duas fdps com os mesmos momentos: <span class="math inline">\(f_1(x) = \frac{1}{\sqrt{2\pi}x} e^{-(\log x)^2/2}\)</span> e <span class="math inline">\(f_2(x) = f_1(x)[1+\sin(2\pi \log x)]\)</span>
+</figcaption>
+</figure>
+</div>
+</section>
+<p>O problema da não unicidade dos momentos não ocorre se as variáveis aleatórias tiverem suporte limitado. Se esse for o caso, então a sequência infinita de momentos determina unicamente a distribuição. Além disso, se a fgm existe em uma vizinhança de zero, então a distribuição é unicamente determinada, não importa qual seja o seu suporte. Assim, a existência de todos os momentos não é equivalente à existência da função geradora de momentos. O teorema a seguir mostra como uma distribuição pode ser caracterizada.</p>
+<section id="teorema-2.3.11" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.3.11">Teorema 2.3.11</h3>
+<p>Sejam <span class="math inline">\(F_X(x)\)</span> e <span class="math inline">\(F_Y(y)\)</span> duas fdas cujos momentos todos existem.</p>
+<ol type="a">
+<li>Se <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> têm suporte limitado, então <span class="math inline">\(F_X(u) = F_Y(u)\)</span> para todo <span class="math inline">\(u\)</span> se, e somente se, <span class="math inline">\(EX^r = EY^r\)</span> para todos os inteiros <span class="math inline">\(r = 0, 1, 2, \dots\)</span>.</li>
+<li>Se as funções geradoras de momentos existem e <span class="math inline">\(M_X(t) = M_Y(t)\)</span> para todo <span class="math inline">\(t\)</span> em alguma vizinhança de 0, então <span class="math inline">\(F_X(u) = F_Y(u)\)</span> para todo <span class="math inline">\(u\)</span>.</li>
+</ol>
+</section>
+<p>No próximo teorema, que trata de uma sequência de fgms que converge, não tratamos o caso de suporte limitado separadamente. Note que a suposição de unicidade é automaticamente satisfeita se a fgm limite existir em uma vizinhança de 0 (Assuntos Diversos 2.6.1).</p>
+<section id="teorema-2.3.12-convergência-de-fgms" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.3.12-convergência-de-fgms">Teorema 2.3.12 (Convergência de fgms)</h3>
+<p>Suponha que <span class="math inline">\(\{X_i, i = 1, 2, \dots\}\)</span> seja uma sequência de variáveis aleatórias, cada uma com fgm <span class="math inline">\(M_{X_i}(t)\)</span>. Além disso, suponha que <span class="math display">\[
+\lim_{i \to \infty} M_{X_i}(t) = M_X(t), \quad \text{para todo } t \text{ em uma vizinhança de 0},
+\]</span></p>
+<p>e <span class="math inline">\(M_X(t)\)</span> seja uma fgm. Então existe uma única fda <span class="math inline">\(F_X\)</span> cujos momentos são determinados por <span class="math inline">\(M_X(t)\)</span> e, para todo <span class="math inline">\(x\)</span> onde <span class="math inline">\(F_X(x)\)</span> é contínua, temos <span class="math display">\[
+\lim_{i \to \infty} F_{X_i}(x) = F_X(x).
+\]</span></p>
+</section>
+<p>Ou seja, a convergência das fgms para uma fgm em <span class="math inline">\(|t| &lt; h\)</span> implica a convergência das fdas.</p>
+<p>As provas dos Teoremas 2.3.11 e 2.3.12 baseiam-se na teoria das <em>transformadas de Laplace</em>. A equação definidora para <span class="math inline">\(M_X(t)\)</span>, ou seja, <span id="eq-2.3.8"><span class="math display">\[
+M_X(t) = \int_{-\infty}^{\infty} e^{tx} f_X(x) dx,
+\tag{3.26}\]</span></span></p>
+<p>define uma transformada de Laplace (<span class="math inline">\(M_X(t)\)</span> é a transformada de Laplace de <span class="math inline">\(f_X(x)\)</span>). Um fato fundamental sobre as transformadas de Laplace é a sua unicidade. Se <a href="#eq-2.3.8" class="quarto-xref">Equação&nbsp;<span>3.26</span></a> for válida para todo <span class="math inline">\(t\)</span> tal que <span class="math inline">\(|t| &lt; h\)</span>, onde <span class="math inline">\(h\)</span> é algum número positivo, então dada <span class="math inline">\(M_X(t)\)</span> existe apenas uma função <span class="math inline">\(f_X(x)\)</span> que satisfaz <a href="#eq-2.3.8" class="quarto-xref">Equação&nbsp;<span>3.26</span></a>.</p>
+<div class="example">
+<section id="exemplo-2.3.13-aproximação-de-poisson" class="level3">
+<h3 class="anchored" data-anchor-id="exemplo-2.3.13-aproximação-de-poisson">Exemplo 2.3.13 (Aproximação de Poisson)</h3>
+<p>Uma aproximação que geralmente é ensinada em cursos elementares de estatística é que as probabilidades binomiais (veja o Exemplo 2.3.5) podem ser aproximadas por probabilidades de <em>Poisson</em>, que são geralmente mais fáceis de calcular. A distribuição binomial é caracterizada por duas quantidades, denotadas por <span class="math inline">\(n\)</span> e <span class="math inline">\(p\)</span>. Ensina-se que a aproximação de Poisson é válida “quando <span class="math inline">\(n\)</span> é grande e <span class="math inline">\(np\)</span> é pequeno” e regras práticas às vezes são fornecidas.</p>
+<p>A fmp Poisson(<span class="math inline">\(\lambda\)</span>) é dada por <span class="math display">\[
+P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}, \quad x = 0, 1, 2, \dots,
+\]</span></p>
+<p>onde <span class="math inline">\(\lambda\)</span> é uma constante positiva. A aproximação afirma que se <span class="math inline">\(X \sim\)</span> binomial(<span class="math inline">\(n, p\)</span>) e <span class="math inline">\(Y \sim\)</span> Poisson(<span class="math inline">\(\lambda\)</span>), com <span class="math inline">\(\lambda = np\)</span>, então <span id="eq-2.3.9"><span class="math display">\[
+P(X = x) \approx P(Y = x)
+\tag{3.27}\]</span></span></p>
+<p>para <span class="math inline">\(n\)</span> grande e <span class="math inline">\(np\)</span> pequeno. Mostramos agora que as fgms convergem, dando crédito a essa aproximação. Lembre-se que <span class="math inline">\(M_X(t) = [pe^t + (1-p)]^n\)</span>. Para a distribuição Poisson(<span class="math inline">\(\lambda\)</span>), podemos calcular <span class="math inline">\(M_Y(t) = e^{\lambda(e^t - 1)}\)</span>, e se definirmos <span class="math inline">\(p = \lambda/n\)</span>, então <span class="math inline">\(M_X(t) \to M_Y(t)\)</span> quando <span class="math inline">\(n \to \infty\)</span>. A validade da aproximação em <a href="#eq-2.3.9" class="quarto-xref">Equação&nbsp;<span>3.27</span></a> seguirá então do Teorema 2.3.12.</p>
+<p>Primeiro devemos abrir um parêntese e mencionar um resultado de limite importante, um que tem ampla aplicabilidade em estatística.</p>
+</section>
+<section id="lema-2.3.14" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="lema-2.3.14">Lema 2.3.14</h3>
+<p>Seja <span class="math inline">\(a_1, a_2, \dots\)</span> uma sequência de números convergindo para <span class="math inline">\(a\)</span>, ou seja, <span class="math inline">\(\lim_{n \to \infty} a_n = a\)</span>. Então <span class="math display">\[
+\lim_{n \to \infty} \left( 1 + \frac{a_n}{n} \right)^n = e^a.
+\]</span></p>
+</section>
+<p>Retornando ao exemplo, temos <span class="math display">\[
+M_X(t) = [pe^t + (1-p)]^n = \left[ 1 + \frac{1}{n}(e^t - 1)(np) \right]^n = \left[ 1 + \frac{1}{n}(e^t - 1)\lambda \right]^n,
+\]</span></p>
+<p>porque <span class="math inline">\(\lambda = np\)</span>. Agora defina <span class="math inline">\(a_n = a = (e^t - 1)\lambda\)</span>, e aplique o Lema 2.3.14 para obter <span class="math display">\[
+\lim_{n \to \infty} M_X(t) = e^{\lambda(e^t - 1)} = M_Y(t),
+\]</span></p>
+<p>a função geradora de momentos da Poisson. A aproximação de Poisson pode ser bastante boa mesmo para valores moderados de <span class="math inline">\(p\)</span> e <span class="math inline">\(n\)</span>. Na <a href="#fig-2.3.3" class="quarto-xref">Figura&nbsp;<span>3.5</span></a> mostramos uma função de massa de probabilidade binomial junto com sua aproximação de Poisson, com <span class="math inline">\(\lambda = np\)</span>. A aproximação parece ser satisfatória.</p>
+<div id="fig-2.3.3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2.3.3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig-2_3_3.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2.3.3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.5: Figura 2.3.3 - Aproximação de Poisson (linha pontilhada) para a binomial (linha sólida), n = 15, p = .3
+</figcaption>
+</figure>
+</div>
+<p>||</p>
+</div>
+<p>Encerramos esta seção com um resultado útil relativo às fgms.</p>
+<section id="teorema-2.3.15" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.3.15">Teorema 2.3.15</h3>
+<p>Para quaisquer constantes <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span>, a fgm da variável aleatória <span class="math inline">\(aX + b\)</span> é dada por <span class="math display">\[
+M_{aX+b}(t) = e^{bt} M_X(at).
+\]</span></p>
+</section>
+<div class="proof">
+<p><span class="proof-title"><em>Comprovação</em>. </span>Por definição, <span class="math display">\[
+\begin{aligned}
+M_{aX+b}(t) &amp;= E(e^{(aX+b)t}) \\
+&amp;= E(e^{aXt} e^{bt}) &amp;&amp; \text{(propriedades de exponenciais)} \\
+&amp;= e^{bt} E(e^{(at)X}) &amp;&amp; (e^{bt} \text{ é constante}) \\
+&amp;= e^{bt} M_X(at), &amp;&amp; \text{(definição de fgm)}
+\end{aligned}
+\]</span> provando o teorema. <span class="math inline">\(\square\)</span></p>
+</div>
+</section>
+<section id="diferenciando-sob-o-sinal-de-integral" class="level2">
+<h2 class="anchored" data-anchor-id="diferenciando-sob-o-sinal-de-integral">2.4 Diferenciando sob o Sinal de Integral</h2>
+<p>Na seção anterior, encontramos uma instância em que desejamos permutar a ordem de integração e diferenciação. Esta situação é encontrada frequentemente em estatística teórica. O propósito desta seção é caracterizar as condições sob as quais esta operação é legítima. Também discutiremos a permuta da ordem de diferenciação e somatório.</p>
+<p>Muitas dessas condições podem ser estabelecidas usando teoremas padrão do cálculo e provas detalhadas podem ser encontradas na maioria dos livros de cálculo. Portanto, provas detalhadas não serão apresentadas aqui. Primeiro, queremos estabelecer o método de cálculo de</p>
+<p><span id="eq-2.4.1"><span class="math display">\[
+\frac{d}{d\theta} \int_{a(\theta)}^{b(\theta)} f(x, \theta) dx
+\tag{3.28}\]</span></span></p>
+<p>onde <span class="math inline">\(-\infty &lt; a(\theta), b(\theta) &lt; \infty\)</span> para todo <span class="math inline">\(\theta\)</span>. A regra para diferenciar <a href="#eq-2.4.1" class="quarto-xref">Equação&nbsp;<span>3.28</span></a> é chamada de <em>Regra de Leibnitz</em> e é uma aplicação do Teorema Fundamental do Cálculo e da regra da cadeia.</p>
+<section id="teorema-2.4.1-regra-de-leibnitz" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.4.1-regra-de-leibnitz">Teorema 2.4.1 (Regra de Leibnitz)</h3>
+<p>Se <span class="math inline">\(f(x, \theta)\)</span>, <span class="math inline">\(a(\theta)\)</span> e <span class="math inline">\(b(\theta)\)</span> são diferenciáveis em relação a <span class="math inline">\(\theta\)</span>, então <span class="math display">\[
+\frac{d}{d\theta} \int_{a(\theta)}^{b(\theta)} f(x, \theta) dx = f(b(\theta), \theta) \frac{d}{d\theta} b(\theta) - f(a(\theta), \theta) \frac{d}{d\theta} a(\theta) + \int_{a(\theta)}^{b(\theta)} \frac{\partial}{\partial \theta} f(x, \theta) dx.
+\]</span></p>
+</section>
+<p>Observe que se <span class="math inline">\(a(\theta)\)</span> e <span class="math inline">\(b(\theta)\)</span> são constantes, temos um caso especial da Regra de Leibnitz:</p>
+<p><span class="math display">\[
+\frac{d}{d\theta} \int_{a}^{b} f(x, \theta) dx = \int_{a}^{b} \frac{\partial}{\partial \theta} f(x, \theta) dx.
+\]</span></p>
+<p>Assim, em geral, se tivermos a integral de uma função diferenciável sobre um intervalo finito, a diferenciação da integral não representa problemas. Se o intervalo de integração for infinito, no entanto, podem surgir problemas. Note que a permuta de derivada e integral na equação acima iguala uma derivada parcial com uma derivada ordinária. Formalmente, este deve ser o caso, pois o lado esquerdo é uma função apenas de <span class="math inline">\(\theta\)</span>, enquanto o integrando no lado direito é uma função de ambos <span class="math inline">\(\theta\)</span> e <span class="math inline">\(x\)</span>.</p>
+<p>A questão de saber se a permuta da ordem de diferenciação e integração é justificada é, na verdade, uma questão de saber se limites e integração podem ser permutados, já que uma derivada é um tipo especial de limite. Lembre-se que se <span class="math inline">\(f(x, \theta)\)</span> é diferenciável, então</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial \theta} f(x, \theta) = \lim_{\delta \to 0} \frac{f(x, \theta + \delta) - f(x, \theta)}{\delta},
+\]</span></p>
+<p>então temos</p>
+<p><span class="math display">\[
+\int_{-\infty}^{\infty} \frac{\partial}{\partial \theta} f(x, \theta) dx = \int_{-\infty}^{\infty} \lim_{\delta \to 0} \left[ \frac{f(x, \theta + \delta) - f(x, \theta)}{\delta} \right] dx,
+\]</span></p>
+<p>enquanto</p>
+<p><span class="math display">\[
+\frac{d}{d\theta} \int_{-\infty}^{\infty} f(x, \theta) dx = \lim_{\delta \to 0} \int_{-\infty}^{\infty} \left[ \frac{f(x, \theta + \delta) - f(x, \theta)}{\delta} \right] dx.
+\]</span></p>
+<p>Portanto, se pudermos justificar a permuta da ordem de limites e integração, a diferenciação sob o sinal da integral será justificada. O tratamento deste problema em total generalidade exigirá, infelizmente, o uso da teoria da medida, um tópico que não será abordado neste livro. No entanto, as declarações e conclusões de alguns resultados importantes podem ser dadas. Os seguintes teoremas são todos corolários do Teorema da Convergência Dominada de Lebesgue (veja, por exemplo, Rudin (1976)).</p>
+<section id="teorema-2.4.2" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.4.2">Teorema 2.4.2</h3>
+<p>Suponha que a função <span class="math inline">\(h(x, y)\)</span> seja contínua em <span class="math inline">\(y_0\)</span> para cada <span class="math inline">\(x\)</span>, e exista uma função <span class="math inline">\(g(x)\)</span> satisfazendo i. <span class="math inline">\(|h(x, y)| \leq g(x)\)</span> para todos <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> ii. <span class="math inline">\(\int_{-\infty}^{\infty} g(x) dx &lt; \infty\)</span>. Então <span class="math display">\[
+\lim_{y \to y_0} \int_{-\infty}^{\infty} h(x, y) dx = \int_{-\infty}^{\infty} \lim_{y \to y_0} h(x, y) dx.
+\]</span></p>
+</section>
+<p>A condição chave neste teorema é a existência de uma função dominante <span class="math inline">\(g(x)\)</span>, com uma integral finita, que garanta que as integrais não se comportem muito mal. Podemos agora aplicar este teorema ao caso que estamos considerando, identificando <span class="math inline">\(h(x, y)\)</span> com a diferença <span class="math inline">\((f(x, \theta + \delta) - f(x, \theta))/\delta\)</span>.</p>
+<section id="teorema-2.4.3" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.4.3">Teorema 2.4.3</h3>
+<p>Suponha que <span class="math inline">\(f(x, \theta)\)</span> seja diferenciável em <span class="math inline">\(\theta = \theta_0\)</span>, isto é, <span class="math display">\[
+\lim_{\delta \to 0} \frac{f(x, \theta_0 + \delta) - f(x, \theta_0)}{\delta} = \frac{\partial}{\partial \theta} f(x, \theta) \Big|_{\theta = \theta_0}
+\]</span> exista para cada <span class="math inline">\(x\)</span>, e exista uma função <span class="math inline">\(g(x, \theta_0)\)</span> e uma constante <span class="math inline">\(\delta_0 &gt; 0\)</span> tal que i. <span class="math inline">\(\left| \frac{f(x, \theta_0 + \delta) - f(x, \theta_0)}{\delta} \right| \leq g(x, \theta_0)\)</span>, para todos <span class="math inline">\(x\)</span> e <span class="math inline">\(|\delta| \leq \delta_0\)</span>, ii. <span class="math inline">\(\int_{-\infty}^{\infty} g(x, \theta_0) dx &lt; \infty\)</span>. Então <span id="eq-2.4.2"><span class="math display">\[
+\frac{d}{d\theta} \int_{-\infty}^{\infty} f(x, \theta) dx \Big|_{\theta = \theta_0} = \int_{-\infty}^{\infty} \left[ \frac{\partial}{\partial \theta} f(x, \theta) \Big|_{\theta = \theta_0} \right] dx.
+\tag{3.29}\]</span></span></p>
+</section>
+<p>A condição (i) é semelhante ao que é conhecido como uma <em>condição de Lipschitz</em>, uma condição que impõe suavidade a uma função. Aqui, a condição (i) está efetivamente limitando a variabilidade na primeira derivada; outras restrições de suavidade podem limitar essa variabilidade por uma constante (em vez de uma função <span class="math inline">\(g\)</span>), ou colocar um limite na variabilidade da segunda derivada de <span class="math inline">\(f\)</span>.</p>
+<p>A conclusão do Teorema 2.4.3 é um pouco pesada, mas é importante perceber que, embora pareçamos estar tratando <span class="math inline">\(\theta\)</span> como uma variável, a declaração do teorema é para um valor de <span class="math inline">\(\theta\)</span>. Isto é, para cada valor <span class="math inline">\(\theta_0\)</span> para o qual <span class="math inline">\(f(x, \theta)\)</span> é diferenciável em <span class="math inline">\(\theta_0\)</span> e satisfaz as condições (i) e (ii), a ordem de integração e diferenciação pode ser permutada. Frequentemente, a distinção entre <span class="math inline">\(\theta\)</span> e <span class="math inline">\(\theta_0\)</span> não é enfatizada e <a href="#eq-2.4.2" class="quarto-xref">Equação&nbsp;<span>3.29</span></a> é escrita como</p>
+<p><span id="eq-2.4.3"><span class="math display">\[
+\frac{d}{d\theta} \int_{-\infty}^{\infty} f(x, \theta) dx = \int_{-\infty}^{\infty} \frac{\partial}{\partial \theta} f(x, \theta) dx.
+\tag{3.30}\]</span></span></p>
+<p>Tipicamente, <span class="math inline">\(f(x, \theta)\)</span> é diferenciável em todos os <span class="math inline">\(\theta\)</span>, não apenas em um valor <span class="math inline">\(\theta_0\)</span>. Neste caso, a condição (i) do Teorema 2.4.3 pode ser substituída por outra condição que muitas vezes se mostra mais fácil de verificar. Por uma aplicação do teorema do valor médio, segue que, para <span class="math inline">\(x\)</span> e <span class="math inline">\(\theta_0\)</span> fixos, e <span class="math inline">\(|\delta| \leq \delta_0\)</span>,</p>
+<p><span class="math display">\[
+\frac{f(x, \theta_0 + \delta) - f(x, \theta_0)}{\delta} = \frac{\partial}{\partial \theta} f(x, \theta) \Big|_{\theta = \theta_0 + \delta^*(x)}
+\]</span></p>
+<p>para algum número <span class="math inline">\(\delta^*(x), |\delta^*(x)| \leq \delta_0\)</span>. Portanto, a condição (i) será satisfeita se encontrarmos uma <span class="math inline">\(g(x, \theta)\)</span> que satisfaça a condição (ii) e</p>
+<p><span id="eq-2.4.4"><span class="math display">\[
+\left| \frac{\partial}{\partial \theta} f(x, \theta) \Big|_{\theta = \theta'} \right| \leq g(x, \theta) \quad \text{para todos } \theta' \text{ tais que } |\theta' - \theta| \leq \delta_0.
+\tag{3.31}\]</span></span></p>
+<p>Note que em <a href="#eq-2.4.4" class="quarto-xref">Equação&nbsp;<span>3.31</span></a> <span class="math inline">\(\delta_0\)</span> é implicitamente uma função de <span class="math inline">\(\theta\)</span>, como é o caso no Teorema 2.4.3. Isto é permitido, já que o teorema é aplicado a cada valor de <span class="math inline">\(\theta\)</span> individualmente. De <a href="#eq-2.4.4" class="quarto-xref">Equação&nbsp;<span>3.31</span></a> obtemos o seguinte corolário.</p>
+<section id="corolário-2.4.4" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="corolário-2.4.4">Corolário 2.4.4</h3>
+<p>Suponha que <span class="math inline">\(f(x, \theta)\)</span> seja diferenciável em <span class="math inline">\(\theta\)</span> e exista uma função <span class="math inline">\(g(x, \theta)\)</span> tal que <a href="#eq-2.4.4" class="quarto-xref">Equação&nbsp;<span>3.31</span></a> seja satisfeita e <span class="math inline">\(\int_{-\infty}^{\infty} g(x, \theta) dx &lt; \infty\)</span>. Então <a href="#eq-2.4.3" class="quarto-xref">Equação&nbsp;<span>3.30</span></a> se mantém.</p>
+</section>
+<p>Observe que tanto a condição (i) do Teorema 2.4.3 quanto <a href="#eq-2.4.4" class="quarto-xref">Equação&nbsp;<span>3.31</span></a> impõem um requisito de uniformidade nas funções a serem limitadas; algum tipo de uniformidade é geralmente necessário antes que derivadas e integrais possam ser permutadas.</p>
+<section id="exemplo-2.4.5-intercambiando-integração-e-diferenciaçãoi" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.4.5-intercambiando-integração-e-diferenciaçãoi">Exemplo 2.4.5 (Intercambiando integração e diferenciação—I)</h3>
+<p>Seja <span class="math inline">\(X\)</span> com a fdp exponencial(<span class="math inline">\(\lambda\)</span>) dada por <span class="math inline">\(f(x) = (1/\lambda)e^{-x/\lambda}, 0 &lt; x &lt; \infty\)</span>, e suponha que queiramos calcular</p>
+<p><span id="eq-2.4.5"><span class="math display">\[
+\frac{d}{d\lambda} EX^n = \frac{d}{d\lambda} \int_{0}^{\infty} x^n \left( \frac{1}{\lambda} \right) e^{-x/\lambda} dx,
+\tag{3.32}\]</span></span></p>
+<p>para um inteiro <span class="math inline">\(n &gt; 0\)</span>. Se pudéssemos mover a diferenciação para dentro da integral, teríamos</p>
+<p><span id="eq-2.4.6"><span class="math display">\[
+\begin{aligned}
+\frac{d}{d\lambda} EX^n &amp;= \int_{0}^{\infty} \frac{\partial}{\partial \lambda} x^n \left( \frac{1}{\lambda} \right) e^{-x/\lambda} dx \\
+&amp;= \int_{0}^{\infty} \frac{x^n}{\lambda^2} \left( \frac{x}{\lambda} - 1 \right) e^{-x/\lambda} dx \\
+&amp;= \frac{1}{\lambda^2} EX^{n+1} - \frac{1}{\lambda} EX^n.
+\end{aligned}
+\tag{3.33}\]</span></span></p>
+<p>Para justificar a permuta de integração e diferenciação, limitamos a derivada de <span class="math inline">\(x^n(1/\lambda)e^{-x/\lambda}\)</span>. Agora</p>
+<p><span class="math display">\[
+\left| \frac{\partial}{\partial \lambda} \frac{x^n e^{-x/\lambda}}{\lambda} \right| = \frac{x^n e^{-x/\lambda}}{\lambda^2} \left| \frac{x}{\lambda} - 1 \right| \leq \frac{x^n e^{-x/\lambda}}{\lambda^2} \left( \frac{x}{\lambda} + 1 \right). \quad (\text{visto que } \frac{x}{\lambda} &gt; 0)
+\]</span></p>
+<p>Para alguma constante <span class="math inline">\(\delta_0\)</span> satisfazendo <span class="math inline">\(0 &lt; \delta_0 &lt; \lambda\)</span>, tome</p>
+<p><span class="math display">\[
+g(x, \lambda) = \frac{x^n e^{-x/(\lambda + \delta_0)}}{(\lambda - \delta_0)^2} \left( \frac{x}{\lambda - \delta_0} + 1 \right).
+\]</span></p>
+<p>Temos então</p>
+<p><span class="math display">\[
+\left| \frac{\partial}{\partial \lambda} \left( \frac{x^n e^{-x/\lambda}}{\lambda} \right) \Big|_{\lambda = \lambda'} \right| \leq g(x, \lambda) \quad \text{para todos } \lambda' \text{ tais que } |\lambda' - \lambda| \leq \delta_0.
+\]</span></p>
+<p>Como a distribuição exponencial possui todos os seus momentos, <span class="math inline">\(\int_{-\infty}^{\infty} g(x, \lambda) dx &lt; \infty\)</span> contanto que <span class="math inline">\(\lambda - \delta_0 &gt; 0\)</span>, então a permuta de integração e diferenciação é justificada. ||</p>
+</section>
+<p>A propriedade ilustrada para a distribuição exponencial vale para uma grande classe de densidades, que serão abordadas na Seção 3.4. Observe que <a href="#eq-2.4.6" class="quarto-xref">Equação&nbsp;<span>3.33</span></a> nos dá uma relação de recorrência para os momentos da distribuição exponencial,</p>
+<p><span id="eq-2.4.7"><span class="math display">\[
+EX^{n+1} = \lambda EX^n + \lambda^2 \frac{d}{d\lambda} EX^n,
+\tag{3.34}\]</span></span></p>
+<p>tornando o cálculo do <span class="math inline">\((n+1)\)</span>-ésimo momento relativamente fácil. Este tipo de relacionamento existe para outras distribuições. Em particular, se <span class="math inline">\(X\)</span> tem uma distribuição normal com média <span class="math inline">\(\mu\)</span> e variância 1, então ela tem fdp <span class="math inline">\(f(x) = (1/\sqrt{2\pi})e^{-(x-\mu)^2/2}\)</span>, então</p>
+<p><span class="math display">\[
+EX^{n+1} = \mu EX^n + \frac{d}{d\mu} EX^n.
+\]</span></p>
+<p>Ilustramos mais uma permuta de diferenciação e integração, uma envolvendo a função geradora de momentos.</p>
+<section id="exemplo-2.4.6-intercambiando-integração-e-diferenciaçãoii" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.4.6-intercambiando-integração-e-diferenciaçãoii">Exemplo 2.4.6 (Intercambiando integração e diferenciação—II)</h3>
+<p>Novamente, seja <span class="math inline">\(X\)</span> com uma distribuição normal com média <span class="math inline">\(\mu\)</span> e variância 1, e considere a fgm de <span class="math inline">\(X\)</span>,</p>
+<p><span class="math display">\[
+M_X(t) = Ee^{tX} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{tx} e^{-(x-\mu)^2/2} dx.
+\]</span></p>
+<p>Na Seção 2.3 foi afirmado que podemos calcular momentos por diferenciação de <span class="math inline">\(M_X(t)\)</span>, e a diferenciação sob o sinal da integral foi justificada:</p>
+<p><span id="eq-2.4.8"><span class="math display">\[
+\frac{d}{dt} M_X(t) = \frac{d}{dt} Ee^{tX} = E \frac{\partial}{\partial t} e^{tX} = E(X e^{tX}).
+\tag{3.35}\]</span></span></p>
+<p>Podemos aplicar os resultados desta seção para justificar as operações em <a href="#eq-2.4.8" class="quarto-xref">Equação&nbsp;<span>3.35</span></a>. Observe que ao aplicar o Teorema 2.4.3 ou o Corolário 2.4.4 aqui, identificamos <span class="math inline">\(t\)</span> com a variável <span class="math inline">\(\theta\)</span> no Teorema 2.4.3. O parâmetro <span class="math inline">\(\mu\)</span> é tratado como uma constante. Pelo Corolário 2.4.4, devemos encontrar uma função <span class="math inline">\(g(x, t)\)</span>, com integral finita, que satisfaça</p>
+<p><span id="eq-2.4.9"><span class="math display">\[
+\left| \frac{\partial}{\partial t} e^{tx} e^{-(x-\mu)^2/2} \Big|_{t=t'} \right| \leq g(x, t) \quad \text{para todos } t' \text{ tais que } |t' - t| \leq \delta_0.
+\tag{3.36}\]</span></span></p>
+<p>Fazendo o óbvio, temos</p>
+<p><span class="math display">\[
+\left| \frac{\partial}{\partial t} e^{tx} e^{-(x-\mu)^2/2} \right| = |x e^{tx} e^{-(x-\mu)^2/2}| \leq |x| e^{tx} e^{-(x-\mu)^2/2}.
+\]</span></p>
+<p>É mais fácil definir nossa função <span class="math inline">\(g(x, t)\)</span> separadamente para <span class="math inline">\(x \geq 0\)</span> e <span class="math inline">\(x &lt; 0\)</span>. Tomamos</p>
+<p><span class="math display">\[
+g(x, t) =
+\begin{cases}
+|x| e^{(t-\delta_0)x} e^{-(x-\mu)^2/2} &amp; \text{se } x &lt; 0 \\
+|x| e^{(t+\delta_0)x} e^{-(x-\mu)^2/2} &amp; \text{se } x \geq 0.
+\end{cases}
+\]</span></p>
+<p>É claro que esta função satisfaz <a href="#eq-2.4.9" class="quarto-xref">Equação&nbsp;<span>3.36</span></a>; resta verificar que sua integral é finita. Para <span class="math inline">\(x \geq 0\)</span> temos</p>
+<p><span class="math display">\[
+g(x, t) = x e^{-(x^2 - 2x(\mu+t+\delta_0) + \mu^2)/2}.
+\]</span></p>
+<p>Agora completamos o quadrado no expoente, ou seja, escrevemos</p>
+<p><span class="math display">\[
+\begin{aligned}
+x^2 - 2x(\mu + t + \delta_0) + \mu^2 &amp;= x^2 - 2x(\mu + t + \delta_0) + (\mu + t + \delta_0)^2 - (\mu + t + \delta_0)^2 + \mu^2 \\
+&amp;= (x - (\mu + t + \delta_0))^2 + \mu^2 - (\mu + t + \delta_0)^2,
+\end{aligned}
+\]</span></p>
+<p>e assim, para <span class="math inline">\(x \geq 0\)</span>,</p>
+<p><span class="math display">\[
+g(x, t) = x e^{-[x - (\mu + t + \delta_0)]^2/2} e^{-[\mu^2 - (\mu + t + \delta_0)^2]/2}.
+\]</span></p>
+<p>Como o último fator exponencial nesta expressão não depende de <span class="math inline">\(x\)</span>, <span class="math inline">\(\int_{0}^{\infty} g(x, t) dx\)</span> é essencialmente o cálculo da média de uma distribuição normal com média <span class="math inline">\(\mu + t + \delta_0\)</span>, exceto que a integração é apenas sobre <span class="math inline">\([0, \infty)\)</span>. No entanto, segue que a integral é finita porque a distribuição normal tem uma média finita (a ser mostrada no Capítulo 3). Um desenvolvimento semelhante para <span class="math inline">\(x &lt; 0\)</span> mostra que <span class="math inline">\(\int_{-\infty}^{0} g(x, t) dx &lt; \infty\)</span>. Portanto, encontramos uma função integrável satisfazendo <a href="#eq-2.4.9" class="quarto-xref">Equação&nbsp;<span>3.36</span></a> e a operação em <a href="#eq-2.4.8" class="quarto-xref">Equação&nbsp;<span>3.35</span></a> é justificada. ||</p>
+</section>
+<p>Voltamo-nos agora para a questão de quando é possível permutar diferenciação e somatório, uma operação que desempenha um papel importante em distribuições discretas. É claro que estamos preocupados apenas com somas infinitas, já que uma derivada sempre pode ser levada para dentro de uma soma finita.</p>
+<section id="exemplo-2.4.7-intercambiando-somatório-e-diferenciação" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.4.7-intercambiando-somatório-e-diferenciação">Exemplo 2.4.7 (Intercambiando somatório e diferenciação)</h3>
+<p>Seja <span class="math inline">\(X\)</span> uma variável aleatória discreta com a distribuição geométrica</p>
+<p><span class="math display">\[
+P(X = x) = \theta(1-\theta)^x, \quad x = 0, 1, \dots, \quad 0 &lt; \theta &lt; 1.
+\]</span></p>
+<p>Temos que <span class="math inline">\(\sum_{x=0}^{\infty} \theta(1-\theta)^x = 1\)</span> e, desde que as operações sejam justificadas,</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{d}{d\theta} \sum_{x=0}^{\infty} \theta(1-\theta)^x &amp;= \sum_{x=0}^{\infty} \frac{d}{d\theta} \theta(1-\theta)^x \\
+&amp;= \sum_{x=0}^{\infty} [(1-\theta)^x - \theta x(1-\theta)^{x-1}] \\
+&amp;= \frac{1}{\theta} \sum_{x=0}^{\infty} \theta(1-\theta)^x - \frac{1}{1-\theta} \sum_{x=0}^{\infty} x\theta(1-\theta)^x.
+\end{aligned}
+\]</span></p>
+<p>Como <span class="math inline">\(\sum_{x=0}^{\infty} \theta(1-\theta)^x = 1\)</span> para todo <span class="math inline">\(0 &lt; \theta &lt; 1\)</span>, sua derivada é zero. Então temos</p>
+<p><span id="eq-2.4.10"><span class="math display">\[
+\frac{1}{\theta} \sum_{x=0}^{\infty} \theta(1-\theta)^x - \frac{1}{1-\theta} \sum_{x=0}^{\infty} x\theta(1-\theta)^x = 0.
+\tag{3.37}\]</span></span></p>
+<p>Agora a primeira soma em <a href="#eq-2.4.10" class="quarto-xref">Equação&nbsp;<span>3.37</span></a> é igual a 1 e a segunda soma é <span class="math inline">\(EX\)</span>, logo <a href="#eq-2.4.10" class="quarto-xref">Equação&nbsp;<span>3.37</span></a> torna-se</p>
+<p><span class="math display">\[
+\frac{1}{\theta} - \frac{1}{1-\theta} EX = 0,
+\]</span></p>
+<p>ou</p>
+<p><span class="math display">\[
+EX = \frac{1-\theta}{\theta}.
+\]</span></p>
+<p>Nós, em essência, somamos a série <span class="math inline">\(\sum_{x=0}^{\infty} x\theta(1-\theta)^x\)</span> por diferenciação. ||</p>
+</section>
+<p>A justificativa de levar a derivada para dentro do somatório é mais direta do que o caso da integração. O teorema a seguir fornece os detalhes.</p>
+<section id="teorema-2.4.8" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.4.8">Teorema 2.4.8</h3>
+<p>Suponha que a série <span class="math inline">\(\sum_{x=0}^{\infty} h(\theta, x)\)</span> convirja para todos os <span class="math inline">\(\theta\)</span> em um intervalo <span class="math inline">\((a, b)\)</span> de números reais e i. <span class="math inline">\(\frac{\partial}{\partial \theta} h(\theta, x)\)</span> seja contínua em <span class="math inline">\(\theta\)</span> para cada <span class="math inline">\(x\)</span>, ii. <span class="math inline">\(\sum_{x=0}^{\infty} \frac{\partial}{\partial \theta} h(\theta, x)\)</span> convirja uniformemente em cada subintervalo fechado e limitado de <span class="math inline">\((a, b)\)</span>. Então <span id="eq-2.4.11"><span class="math display">\[
+\frac{d}{d\theta} \sum_{x=0}^{\infty} h(\theta, x) = \sum_{x=0}^{\infty} \frac{\partial}{\partial \theta} h(\theta, x).
+\tag{3.38}\]</span></span></p>
+</section>
+<p>A condição de convergência uniforme é a chave a ser verificada para estabelecer que a diferenciação pode ser levada para dentro do somatório. Lembre-se que uma série converge uniformemente se sua sequência de somas parciais convergir uniformemente, um fato que usamos no exemplo a seguir.</p>
+<section id="exemplo-2.4.9-continuação-do-exercício-2.4.7" class="level3 example">
+<h3 class="anchored" data-anchor-id="exemplo-2.4.9-continuação-do-exercício-2.4.7">Exemplo 2.4.9 (Continuação do Exercício 2.4.7)</h3>
+<p>Para aplicar o Teorema 2.4.8 identificamos</p>
+<p><span class="math display">\[
+h(\theta, x) = \theta(1-\theta)^x,
+\]</span></p>
+<p>e</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial \theta} h(\theta, x) = (1-\theta)^x - \theta x(1-\theta)^{x-1},
+\]</span></p>
+<p>e verificamos que <span class="math inline">\(\sum_{x=0}^{\infty} \frac{\partial}{\partial \theta} h(\theta, x)\)</span> converge uniformemente. Defina <span class="math inline">\(S_n(\theta)\)</span> por</p>
+<p><span class="math display">\[
+S_n(\theta) = \sum_{x=0}^{n} [(1-\theta)^x - \theta x(1-\theta)^{x-1}].
+\]</span></p>
+<p>A convergência será uniforme em <span class="math inline">\([c, d] \subset (0, 1)\)</span> se, dado <span class="math inline">\(\varepsilon &gt; 0\)</span>, pudermos encontrar um <span class="math inline">\(N\)</span> tal que</p>
+<p><span class="math display">\[
+n &gt; N \implies |S_n(\theta) - S_{\infty}(\theta)| &lt; \varepsilon \quad \text{para todos } \theta \in [c, d].
+\]</span></p>
+<p>Lembre-se da soma parcial da série geométrica (1.5.3). Se <span class="math inline">\(y \neq 1\)</span>, então podemos escrever</p>
+<p><span class="math display">\[
+\sum_{k=0}^{n} y^k = \frac{1 - y^{n+1}}{1 - y}.
+\]</span></p>
+<p>Aplicando isto, temos</p>
+<p><span class="math display">\[
+\sum_{x=0}^{n} (1-\theta)^x = \frac{1 - (1-\theta)^{n+1}}{\theta}
+\]</span></p>
+<p><span class="math display">\[
+\sum_{x=0}^{n} \theta x(1-\theta)^{x-1} = \theta \sum_{x=0}^{n} - \frac{\partial}{\partial \theta} (1-\theta)^x = -\theta \frac{d}{d\theta} \sum_{x=0}^{n} (1-\theta)^x = -\theta \frac{d}{d\theta} \left[ \frac{1 - (1-\theta)^{n+1}}{\theta} \right].
+\]</span></p>
+<p>Aqui nós (justificadamente) puxamos a derivada através da soma finita. Calcular esta derivada resulta em</p>
+<p><span class="math display">\[
+\sum_{x=0}^{n} \theta x(1-\theta)^{x-1} = \frac{(1 - (1-\theta)^{n+1}) - (n+1)\theta(1-\theta)^n}{\theta},
+\]</span></p>
+<p>e, consequentemente,</p>
+<p><span class="math display">\[
+\begin{aligned}
+S_n(\theta) &amp;= \frac{1 - (1-\theta)^{n+1}}{\theta} - \frac{(1 - (1-\theta)^{n+1}) - (n+1)\theta(1-\theta)^n}{\theta} \\
+&amp;= (n+1)(1-\theta)^n.
+\end{aligned}
+\]</span></p>
+<p>É claro que, para <span class="math inline">\(0 &lt; \theta &lt; 1\)</span>, <span class="math inline">\(S_{\infty} = \lim_{n \to \infty} S_n(\theta) = 0\)</span>. Como <span class="math inline">\(S_n(\theta)\)</span> é contínua, a convergência é uniforme em qualquer intervalo limitado e fechado. Portanto, a série de derivadas converge uniformemente e a permuta de diferenciação e somatório é justificada. ||</p>
+</section>
+<p>Encerramos esta seção com um teorema que é semelhante ao Teorema 2.4.8, mas trata do caso de permutar a ordem de somatório e integração.</p>
+<section id="teorema-2.4.10" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.4.10">Teorema 2.4.10</h3>
+<p>Suponha que a série <span class="math inline">\(\sum_{x=0}^{\infty} h(\theta, x)\)</span> convirja uniformemente em <span class="math inline">\([a, b]\)</span> e que, para cada <span class="math inline">\(x\)</span>, <span class="math inline">\(h(\theta, x)\)</span> seja uma função contínua de <span class="math inline">\(\theta\)</span>. Então <span class="math display">\[
+\int_{a}^{b} \sum_{x=0}^{\infty} h(\theta, x) d\theta = \sum_{x=0}^{\infty} \int_{a}^{b} h(\theta, x) d\theta.
+\]</span></p>
+</section>
+</section>
+<section id="exercícios" class="level2">
+<h2 class="anchored" data-anchor-id="exercícios">2.5 Exercícios</h2>
+<p><strong>2.1</strong> Em cada um dos seguintes itens, encontre a fdp de <span class="math inline">\(Y\)</span>. Mostre que a fdp integra 1. (a) <span class="math inline">\(Y = X^3\)</span> e <span class="math inline">\(f_X(x) = 42x^5(1-x), 0 &lt; x &lt; 1\)</span>. (b) <span class="math inline">\(Y = 4X + 3\)</span> e <span class="math inline">\(f_X(x) = 7e^{-7x}, 0 &lt; x &lt; \infty\)</span>. (c) <span class="math inline">\(Y = X^2\)</span> e <span class="math inline">\(f_X(x) = 30x^2(1-x)^2, 0 &lt; x &lt; 1\)</span>. (Veja o Exemplo 12.6.2 no apêndice de Álgebra Computacional.)</p>
+<p><strong>2.2</strong> Em cada um dos seguintes itens, encontre a fdp de <span class="math inline">\(Y\)</span>. (a) <span class="math inline">\(Y = X^2\)</span> e <span class="math inline">\(f_X(x) = 1, 0 &lt; x &lt; 1\)</span>. (b) <span class="math inline">\(Y = -\log X\)</span> e <span class="math inline">\(X\)</span> tem fdp <span class="math display">\[
+f_X(x) = \frac{(n+m+1)!}{n!m!} x^n (1-x)^m, \quad 0 &lt; x &lt; 1, \quad m, n \text{ inteiros positivos}.
+\]</span> (c) <span class="math inline">\(Y = e^X\)</span> e <span class="math inline">\(X\)</span> tem fdp <span class="math display">\[
+f_X(x) = \frac{1}{\sigma^2} x e^{-(x/\sigma)^2/2}, \quad 0 &lt; x &lt; \infty, \quad \sigma^2 \text{ uma constante positiva}.
+\]</span></p>
+<p><strong>2.3</strong> Suponha que <span class="math inline">\(X\)</span> tenha a fmp geométrica, <span class="math inline">\(f_X(x) = \frac{1}{3} \left(\frac{2}{3}\right)^x, x = 0, 1, 2, \dots\)</span>. Determine a distribuição de probabilidade de <span class="math inline">\(Y = X/(X+1)\)</span>. Note que aqui tanto <span class="math inline">\(X\)</span> quanto <span class="math inline">\(Y\)</span> são variáveis aleatórias discretas. Para especificar a distribuição de probabilidade de <span class="math inline">\(Y\)</span>, especifique sua fmp.</p>
+<p><strong>2.4</strong> Seja <span class="math inline">\(\lambda\)</span> uma constante positiva fixa, e defina a função <span class="math inline">\(f(x)\)</span> por <span class="math inline">\(f(x) = \frac{1}{2}\lambda e^{-\lambda x}\)</span> se <span class="math inline">\(x \geq 0\)</span> e <span class="math inline">\(f(x) = \frac{1}{2}\lambda e^{\lambda x}\)</span> se <span class="math inline">\(x &lt; 0\)</span>. (a) Verifique que <span class="math inline">\(f(x)\)</span> é uma fdp. (b) Se <span class="math inline">\(X\)</span> é uma variável aleatória com fdp dada por <span class="math inline">\(f(x)\)</span>, encontre <span class="math inline">\(P(X &lt; t)\)</span> para todo <span class="math inline">\(t\)</span>. Avalie todas as integrais. (c) Encontre <span class="math inline">\(P(|X| &lt; t)\)</span> para todo <span class="math inline">\(t\)</span>. Avalie todas as integrais.</p>
+<p><strong>2.5</strong> Use o Teorema 2.1.8 para encontrar a fdp de <span class="math inline">\(Y\)</span> no Exemplo 2.1.2. Mostre que a mesma resposta é obtida diferenciando a fda dada em (2.1.6).</p>
+<p><strong>2.6</strong> Em cada um dos seguintes itens, encontre a fdp de <span class="math inline">\(Y\)</span> e mostre que a fdp integra 1. (a) <span class="math inline">\(f_X(x) = \frac{1}{2} e^{-|x|}, -\infty &lt; x &lt; \infty; Y = |X|^3\)</span>. (b) <span class="math inline">\(f_X(x) = \frac{3}{8}(x+1)^2, -1 &lt; x &lt; 1; Y = 1 - X^2\)</span>. (c) <span class="math inline">\(f_X(x) = \frac{3}{8}(x+1)^2, -1 &lt; x &lt; 1; Y = 1 - X^2\)</span> se <span class="math inline">\(X \leq 0\)</span> e <span class="math inline">\(Y = 1 - X\)</span> se <span class="math inline">\(X &gt; 0\)</span>.</p>
+<p><strong>2.7</strong> Seja <span class="math inline">\(X\)</span> com fdp <span class="math inline">\(f_X(x) = \frac{2}{9}(x+1), -1 \leq x \leq 2\)</span>. (a) Encontre a fdp de <span class="math inline">\(Y = X^2\)</span>. Note que o Teorema 2.1.8 não é diretamente aplicável neste problema. (b) Mostre que o Teorema 2.1.8 permanece válido se os conjuntos <span class="math inline">\(A_0, A_1, \dots, A_k\)</span> contiverem <span class="math inline">\(\mathcal{X}\)</span>, e aplique a extensão para resolver a parte (a) usando <span class="math inline">\(A_0 = \emptyset, A_1 = (-2, 0)\)</span> e <span class="math inline">\(A_2 = (0, 2)\)</span>.</p>
+<p><strong>2.8</strong> Em cada um dos seguintes itens, mostre que a função dada é uma fda e encontre <span class="math inline">\(F_X^{-1}(y)\)</span>. (a) <span class="math inline">\(F_X(x) = \begin{cases} 0 &amp; \text{se } x &lt; 0 \\ 1 - e^{-x} &amp; \text{se } x \geq 0. \end{cases}\)</span> (b) <span class="math inline">\(F_X(x) = \begin{cases} e^x/2 &amp; \text{se } x &lt; 0 \\ 1/2 &amp; \text{se } 0 \leq x &lt; 1 \\ 1 - (e^{1-x}/2) &amp; \text{se } 1 \leq x. \end{cases}\)</span> (c) <span class="math inline">\(F_X(x) = \begin{cases} e^x/4 &amp; \text{se } x &lt; 0 \\ 1 - (e^{-x}/4) &amp; \text{se } x \geq 0. \end{cases}\)</span> Note que, na parte (c), <span class="math inline">\(F_X(x)\)</span> é descontínua, mas (2.1.13) ainda é a definição apropriada de <span class="math inline">\(F_X^{-1}(y)\)</span>.</p>
+<p><strong>2.9</strong> Se a variável aleatória <span class="math inline">\(X\)</span> tem fdp <span class="math display">\[
+f(x) = \begin{cases} \frac{x-1}{2} &amp; 1 &lt; x &lt; 3 \\ 0 &amp; \text{caso contrário}, \end{cases}
+\]</span> encontre uma função monotônica <span class="math inline">\(u(x)\)</span> tal que a variável aleatória <span class="math inline">\(Y = u(X)\)</span> tenha uma distribuição uniforme(0,1).</p>
+<p><strong>2.10</strong> No Teorema 2.1.10, a transformação integral de probabilidade foi provada, relacionando a fda uniforme a qualquer fda contínua. Neste exercício, investigamos a relação entre variáveis aleatórias discretas e variáveis aleatórias uniformes. Seja <span class="math inline">\(X\)</span> uma variável aleatória discreta com fda <span class="math inline">\(F_X(x)\)</span> e defina a variável aleatória <span class="math inline">\(Y\)</span> como <span class="math inline">\(Y = F_X(X)\)</span>. (a) Prove que <span class="math inline">\(Y\)</span> é estocasticamente maior que uma uniforme(0,1); isto é, se <span class="math inline">\(U \sim \text{uniforme}(0,1)\)</span>, então <span class="math display">\[
+P(Y &gt; y) \geq P(U &gt; y) = 1 - y, \quad \text{para todo } y, 0 &lt; y &lt; 1,
+\]</span> <span class="math display">\[
+P(Y &gt; y) &gt; P(U &gt; y) = 1 - y, \quad \text{para algum } y, 0 &lt; y &lt; 1.
+\]</span> (Lembre-se que <em>estocasticamente maior</em> foi definido no Exercício 1.49.) (b) Equivalentemente, mostre que a fda de <span class="math inline">\(Y\)</span> satisfaz <span class="math inline">\(F_Y(y) \leq y\)</span> para todo <span class="math inline">\(0 &lt; y &lt; 1\)</span> e <span class="math inline">\(F_Y(y) &lt; y\)</span> para algum <span class="math inline">\(0 &lt; y &lt; 1\)</span>. (<em>Dica</em>: Seja <span class="math inline">\(x_0\)</span> um ponto de salto de <span class="math inline">\(F_X\)</span>, e defina <span class="math inline">\(y_0 = F_X(x_0)\)</span>. Mostre que <span class="math inline">\(P(Y \leq y_0) = y_0\)</span>. Agora estabeleça a desigualdade considerando <span class="math inline">\(y = y_0 + \varepsilon\)</span>. Imagens das fdas ajudarão.)</p>
+<p><strong>2.11</strong> Seja <span class="math inline">\(X\)</span> com a fdp normal padrão, <span class="math inline">\(f_X(x) = (1/\sqrt{2\pi})e^{-x^2/2}\)</span>. (a) Encontre <span class="math inline">\(EX^2\)</span> diretamente, e então usando a fdp de <span class="math inline">\(Y = X^2\)</span> do Exemplo 2.1.7 e calculando <span class="math inline">\(EY\)</span>. (b) Encontre a fdp de <span class="math inline">\(Y = |X|\)</span>, e encontre sua média e variância.</p>
+<p><strong>2.12</strong> Um triângulo retângulo aleatório pode ser construído da seguinte maneira. Seja <span class="math inline">\(X\)</span> um ângulo aleatório cuja distribuição é uniforme em <span class="math inline">\((0, \pi/2)\)</span>. Para cada <span class="math inline">\(X\)</span>, construa um triângulo como ilustrado abaixo. Aqui, <span class="math inline">\(Y = \text{altura do triângulo retângulo}\)</span>. Para uma constante fixa <span class="math inline">\(d\)</span>, encontre a distribuição de <span class="math inline">\(Y\)</span> e <span class="math inline">\(EY\)</span>.</p>
+<div id="fig-2.5.1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2.5.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig-2_12.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2.5.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3.6: Figura 2.5.1 - Triângulo retângulo aleatório
+</figcaption>
+</figure>
+</div>
+<p><strong>2.13</strong> Considere uma sequência de lançamentos de moedas independentes, cada um com probabilidade <span class="math inline">\(p\)</span> de ser Cara. Defina uma variável aleatória <span class="math inline">\(X\)</span> como o comprimento da sequência (de Caras ou Coras) iniciada pela primeira tentativa. (Por exemplo, <span class="math inline">\(X = 3\)</span> se TTTC ou CCCK for observado.) Encontre a distribuição de <span class="math inline">\(X\)</span> e encontre <span class="math inline">\(EX\)</span>.</p>
+<p><strong>2.14</strong> (a) Seja <span class="math inline">\(X\)</span> uma variável aleatória contínua e não negativa [<span class="math inline">\(f(x) = 0\)</span> para <span class="math inline">\(x &lt; 0\)</span>]. Mostre que <span class="math display">\[
+EX = \int_0^\infty [1 - F_X(x)] dx,
+\]</span> onde <span class="math inline">\(F_X(x)\)</span> é a fda de <span class="math inline">\(X\)</span>. (b) Seja <span class="math inline">\(X\)</span> uma variável aleatória discreta cujo intervalo são os inteiros não negativos. Mostre que <span class="math display">\[
+EX = \sum_{k=0}^\infty (1 - F_X(k)),
+\]</span> onde <span class="math inline">\(F_X(k) = P(X \leq k)\)</span>. Compare isso com a parte (a).</p>
+<p><strong>2.15</strong> Betteley (1977) fornece uma lei de adição interessante para expectativas. Sejam <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> duas variáveis aleatórias quaisquer e defina <span class="math display">\[
+X \land Y = \min(X, Y) \quad \text{e} \quad X \lor Y = \max(X, Y).
+\]</span> De forma análoga à lei de probabilidade <span class="math inline">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span>, mostre que <span class="math display">\[
+E(X \lor Y) = EX + EY - E(X \land Y).
+\]</span> (<em>Dica</em>: Estabeleça que <span class="math inline">\(X + Y = (X \lor Y) + (X \land Y)\)</span>.)</p>
+<p><strong>2.16</strong> Use o resultado do Exercício 2.14 para encontrar a duração média de certas chamadas telefônicas, onde assumimos que a duração, <span class="math inline">\(T\)</span>, de uma chamada particular pode ser descrita probabilisticamente por <span class="math inline">\(P(T &gt; t) = ae^{-\lambda t} + (1-a)e^{-\mu t}\)</span>, onde <span class="math inline">\(a, \lambda\)</span> e <span class="math inline">\(\mu\)</span> são constantes, <span class="math inline">\(0 &lt; a &lt; 1, \lambda &gt; 0, \mu &gt; 0\)</span>.</p>
+<p><strong>2.17</strong> Uma <em>mediana</em> de uma distribuição é um valor <span class="math inline">\(m\)</span> tal que <span class="math inline">\(P(X \leq m) \geq 1/2\)</span> e <span class="math inline">\(P(X \geq m) \geq 1/2\)</span>. (Se <span class="math inline">\(X\)</span> é contínua, <span class="math inline">\(m\)</span> satisfaz <span class="math inline">\(\int_{-\infty}^m f(x) dx = \int_m^\infty f(x) dx = 1/2\)</span>.) Encontre a mediana das seguintes distribuições. (a) <span class="math inline">\(f(x) = 3x^2, 0 &lt; x &lt; 1\)</span> (b) <span class="math inline">\(f(x) = \frac{1}{\pi(1+x^2)}, -\infty &lt; x &lt; \infty\)</span></p>
+<p><strong>2.18</strong> Mostre que se <span class="math inline">\(X\)</span> é uma variável aleatória contínua, então <span class="math display">\[
+\min_a E|X - a| = E|X - m|,
+\]</span> onde <span class="math inline">\(m\)</span> é a mediana de <span class="math inline">\(X\)</span> (veja o Exercício 2.17).</p>
+<p><strong>2.19</strong> Prove que <span class="math display">\[
+\frac{d}{da} E(X - a)^2 = 0 \iff EX = a,
+\]</span> diferenciando a integral. Verifique, usando cálculo, que <span class="math inline">\(a = EX\)</span> é de fato um mínimo. Liste as suposições sobre <span class="math inline">\(F_X\)</span> e <span class="math inline">\(f_X\)</span> que são necessárias.</p>
+<p><strong>2.20</strong> Um casal decide continuar a ter filhos até que uma filha nasça. Qual é o número esperado de filhos deste casal? (<em>Dica</em>: Veja o Exemplo 1.5.4.)</p>
+<p><strong>2.21</strong> Prove a regra de “duas vias” para expectativas, equação (2.2.5), que diz <span class="math inline">\(Eg(X) = EY\)</span>, onde <span class="math inline">\(Y = g(X)\)</span>. Assuma que <span class="math inline">\(g(x)\)</span> é uma função monotônica.</p>
+<p><strong>2.22</strong> Seja <span class="math inline">\(X\)</span> com a fdp <span class="math display">\[
+f(x) = \frac{4}{\beta^3\sqrt{\pi}} x^2 e^{-x^2/\beta^2}, \quad 0 &lt; x &lt; \infty, \quad \beta &gt; 0.
+\]</span> (a) Verifique que <span class="math inline">\(f(x)\)</span> é uma fdp. (b) Encontre <span class="math inline">\(EX\)</span> e <span class="math inline">\(Var X\)</span>.</p>
+<p><strong>2.23</strong> Seja <span class="math inline">\(X\)</span> com a fdp <span class="math display">\[
+f(x) = \frac{1}{2}(1+x), \quad -1 &lt; x &lt; 1.
+\]</span> (a) Encontre a fdp de <span class="math inline">\(Y = X^2\)</span>. (b) Encontre <span class="math inline">\(EY\)</span> e <span class="math inline">\(Var Y\)</span>.</p>
+<p><strong>2.24</strong> Calcule <span class="math inline">\(EX\)</span> e <span class="math inline">\(Var X\)</span> para cada uma das seguintes distribuições de probabilidade. (a) <span class="math inline">\(f_X(x) = ax^{a-1}, 0 &lt; x &lt; 1, a &gt; 0\)</span> (b) <span class="math inline">\(f_X(x) = 1/n, x = 1, 2, \dots, n, n &gt; 0\)</span> um inteiro (c) <span class="math inline">\(f_X(x) = \frac{3}{2}(x-1)^2, 0 &lt; x &lt; 2\)</span></p>
+<p><strong>2.25</strong> Suponha que a fdp <span class="math inline">\(f_X(x)\)</span> de uma variável aleatória <span class="math inline">\(X\)</span> seja uma <em>função par</em>. (<span class="math inline">\(f_X(x)\)</span> é uma função par se <span class="math inline">\(f_X(x) = f_X(-x)\)</span> para todo <span class="math inline">\(x\)</span>.) Mostre que (a) <span class="math inline">\(X\)</span> e <span class="math inline">\(-X\)</span> são identicamente distribuídas. (b) <span class="math inline">\(M_X(t)\)</span> é simétrica em torno de zero.</p>
+<p><strong>2.26</strong> Seja <span class="math inline">\(f(x)\)</span> uma fdp e seja <span class="math inline">\(a\)</span> um número tal que, para todo <span class="math inline">\(\varepsilon &gt; 0, f(a+\varepsilon) = f(a-\varepsilon)\)</span>. Tal fdp é dita ser <em>simétrica em torno do ponto a</em>. (a) Dê três exemplos de fdps simétricas. (b) Mostre que se <span class="math inline">\(X \sim f(x)\)</span>, simétrica, então a mediana de <span class="math inline">\(X\)</span> (veja o Exercício 2.17) é o número <span class="math inline">\(a\)</span>. (c) Mostre que se <span class="math inline">\(X \sim f(x)\)</span>, simétrica, e <span class="math inline">\(EX\)</span> existe, então <span class="math inline">\(EX = a\)</span>. (d) Mostre que <span class="math inline">\(f(x) = e^{-x}, x \geq 0\)</span>, não é uma fdp simétrica. (e) Mostre que para a fdp na parte (d), a mediana é menor que a média.</p>
+<p><strong>2.27</strong> Seja <span class="math inline">\(f(x)\)</span> uma fdp e seja <span class="math inline">\(a\)</span> um número tal que, se <span class="math inline">\(a \geq x \geq y\)</span> então <span class="math inline">\(f(a) \geq f(x) \geq f(y)\)</span> e, se <span class="math inline">\(a \leq x \leq y\)</span> então <span class="math inline">\(f(a) \geq f(x) \geq f(y)\)</span>. Tal fdp é chamada de <em>unimodal</em> com um <em>moda</em> igual a <span class="math inline">\(a\)</span>. (a) Dê um exemplo de uma fdp unimodal para a qual a moda é única. (b) Dê um exemplo de uma fdp unimodal para a qual a moda não é única. (c) Mostre que se <span class="math inline">\(f(x)\)</span> é tanto simétrica (veja o Exercício 2.26) quanto unimodal, então o ponto de simetria é uma moda. (d) Considere a fdp <span class="math inline">\(f(x) = e^{-x}, x \geq 0\)</span>. Mostre que esta fdp é unimodal. Qual é sua moda?</p>
+<p><strong>2.28</strong> Seja <span class="math inline">\(\mu_n\)</span> o <span class="math inline">\(n\)</span>-ésimo momento central de uma variável aleatória <span class="math inline">\(X\)</span>. Duas quantidades de interesse, além da média e variância, são <span class="math display">\[
+\alpha_3 = \frac{\mu_3}{(\mu_2)^{3/2}} \quad \text{e} \quad \alpha_4 = \frac{\mu_4}{\mu_2^2}.
+\]</span> O valor <span class="math inline">\(\alpha_3\)</span> é chamado de <em>assimetria</em> e <span class="math inline">\(\alpha_4\)</span> é chamado de <em>curtose</em>. A assimetria mede a falta de simetria na fdp (veja o Exercício 2.26). A curtose, embora mais difícil de interpretar, mede o pico ou achatamento da fdp. (a) Mostre que se uma fdp é simétrica em torno de um ponto <span class="math inline">\(a\)</span>, então <span class="math inline">\(\alpha_3 = 0\)</span>. (b) Calcule <span class="math inline">\(\alpha_3\)</span> para <span class="math inline">\(f(x) = e^{-x}, x \geq 0\)</span>, uma fdp que é <em>assimétrica à direita</em>. (c) Calcule <span class="math inline">\(\alpha_4\)</span> para cada uma das seguintes fdps e comente sobre o pico de cada uma. <span class="math display">\[
+f(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}, \quad -\infty &lt; x &lt; \infty
+\]</span> <span class="math display">\[
+f(x) = \frac{1}{2}, \quad -1 &lt; x &lt; 1
+\]</span> <span class="math display">\[
+f(x) = \frac{1}{2} e^{-|x|}, \quad -\infty &lt; x &lt; \infty
+\]</span> Ruppert (1987) usa <em>funções de influência</em> (Seção 10.6.4) para explorar ainda mais o significado de curtose e Groeneveld (1991) as usa para explorar a assimetria; veja também Balanda e MacGillivray (1988) para mais sobre a interpretação de <span class="math inline">\(\alpha_4\)</span>.</p>
+<p><strong>2.29</strong> Ao calcular momentos de distribuições discretas, muitas vezes é mais fácil trabalhar com os <em>momentos fatoriais</em> (veja Assuntos Diversos 2.6.2). (a) Calcule o momento fatorial <span class="math inline">\(E[X(X-1)]\)</span> para as distribuições binomial e Poisson. (b) Use os resultados da parte (a) para calcular as variâncias da distribuição binomial e Poisson. (c) Uma distribuição discreta particularmente desagradável é a beta-binomial, com fmp <span class="math display">\[
+P(Y = y) = \binom{n}{y} \frac{\Gamma(y+a)\Gamma(n-y+b)\Gamma(a+b)}{\Gamma(a)\Gamma(b)\Gamma(n+a+b)}, \quad y = 0, 1, \dots, n.
+\]</span> onde <span class="math inline">\(n, a\)</span> e <span class="math inline">\(b\)</span> são inteiros positivos. Use momentos fatoriais para calcular a variância da beta binomial. (Veja o Exercício 4.34 para outra abordagem deste cálculo.)</p>
+<p><strong>2.30</strong> Encontre a função geradora de momentos correspondente a (a) <span class="math inline">\(f(x) = \frac{1}{c}, 0 &lt; x &lt; c\)</span> (b) <span class="math inline">\(f(x) = \frac{2x}{c^2}, 0 &lt; x &lt; c\)</span> (c) <span class="math inline">\(f(x) = \frac{1}{2\beta} e^{-|x-\alpha|/\beta}, -\infty &lt; x &lt; \infty, -\infty &lt; \alpha &lt; \infty, \beta &gt; 0\)</span> (d) <span class="math inline">\(P(X = x) = \binom{r+x-1}{x} p^r(1-p)^x, x = 0, 1, \dots, 0 &lt; p &lt; 1, r &gt; 0\)</span> um inteiro</p>
+<p><strong>2.31</strong> Existe uma distribuição para a qual <span class="math inline">\(M_X(t) = t/(1-t), |t| &lt; 1\)</span>? Se sim, encontre-a. Se não, prove.</p>
+<p><strong>2.32</strong> Seja <span class="math inline">\(M_X(t)\)</span> a função geradora de momentos de <span class="math inline">\(X\)</span>, e defina <span class="math inline">\(S(t) = \log(M_X(t))\)</span>. Mostre que <span class="math display">\[
+\frac{d}{dt} S(t) \Big|_{t=0} = EX \quad \text{e} \quad \frac{d^2}{dt^2} S(t) \Big|_{t=0} = Var X.
+\]</span></p>
+<p><strong>2.33</strong> Em cada um dos seguintes casos, verifique a expressão dada para a função geradora de momentos e, em cada caso, use a fgm para calcular <span class="math inline">\(EX\)</span> e <span class="math inline">\(Var X\)</span>. (a) <span class="math inline">\(P(X = x) = \frac{e^{-\lambda} \lambda^x}{x!}, M_X(t) = e^{\lambda(e^t-1)}, x = 0, 1, \dots; \lambda &gt; 0\)</span> (b) <span class="math inline">\(P(X = x) = p(1-p)^x, M_X(t) = \frac{p}{1-(1-p)e^t}, x = 0, 1, \dots; 0 &lt; p &lt; 1\)</span> (c) <span class="math inline">\(f_X(x) = \frac{e^{-(x-\mu)^2/(2\sigma^2)}}{\sqrt{2\pi}\sigma}, M_X(t) = e^{\mu t + \sigma^2t^2/2}, -\infty &lt; x &lt; \infty; -\infty &lt; \mu &lt; \infty, \sigma &gt; 0\)</span></p>
+<p><strong>2.34</strong> Uma distribuição não pode ser unicamente determinada por uma coleção finita de momentos, como mostra este exemplo de Romano e Siegel (1986). Seja <span class="math inline">\(X\)</span> com distribuição normal, ou seja, <span class="math inline">\(X\)</span> tem fdp <span class="math display">\[
+f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}, \quad -\infty &lt; x &lt; \infty.
+\]</span> Defina uma variável aleatória discreta <span class="math inline">\(Y\)</span> por <span class="math display">\[
+P(Y = \sqrt{3}) = P(Y = -\sqrt{3}) = 1/6, \quad P(Y = 0) = 2/3.
+\]</span> Mostre que <span class="math display">\[
+EX^r = EY^r \quad \text{para } r = 1, 2, 3, 4, 5.
+\]</span> (Romano e Siegel (1986) apontam que para qualquer <span class="math inline">\(n\)</span> finito existe uma variável aleatória discreta, e portanto não normal, cujos primeiros <span class="math inline">\(n\)</span> momentos são iguais aos de <span class="math inline">\(X\)</span>.)</p>
+<p><strong>2.35</strong> Preencha as lacunas no Exemplo 2.3.10. (a) Mostre que se <span class="math inline">\(X_1 \sim f_1(x)\)</span>, então <span class="math display">\[
+EX_1^r = e^{r^2/2}, \quad r = 0, 1, \dots.
+\]</span> Logo <span class="math inline">\(f_1(x)\)</span> possui todos os seus momentos, e todos os momentos são finitos. (b) Agora mostre que <span class="math display">\[
+\int_0^\infty x^r f_1(x) \sin(2\pi \log x) dx = 0,
+\]</span> para todos os inteiros positivos <span class="math inline">\(r\)</span>, logo <span class="math inline">\(EX_1^r = EX_2^r\)</span> para todo <span class="math inline">\(r\)</span>. (Romano e Siegel (1986) discutem uma versão extrema deste exemplo, onde uma classe inteira de fdps distintas tem os mesmos momentos. Além disso, Berg (1988) mostrou que este comportamento de momentos pode surgir com transformadas mais simples da distribuição normal, como <span class="math inline">\(X^3\)</span>.)</p>
+<p><strong>2.36</strong> A <em>distribuição lognormal</em>, na qual o Exemplo 2.3.10 se baseia, tem uma propriedade interessante. Se tivermos a fdp <span class="math display">\[
+f(x) = \frac{1}{\sqrt{2\pi}x} e^{-(\log x)^2/2}, \quad 0 \leq x &lt; \infty,
+\]</span> então o Exercício 2.35 mostra que todos os momentos existem e são finitos. No entanto, esta distribuição não possui uma função geradora de momentos, isto é, <span class="math display">\[
+M_X(t) = \int_0^\infty \frac{e^{tx}}{\sqrt{2\pi}x} e^{-(\log x)^2/2} dx
+\]</span> não existe. Prove isso.</p>
+<p><strong>2.37</strong> Referindo-se à situação descrita em Assuntos Diversos 2.6.3: (a) Trace as fdps <span class="math inline">\(f_1\)</span> e <span class="math inline">\(f_2\)</span> para ilustrar sua diferença. (b) Trace as funções geradoras de cumulantes <span class="math inline">\(K_1\)</span> e <span class="math inline">\(K_2\)</span> para ilustrar sua semelhança. (c) Calcule as funções geradoras de momentos das fdps <span class="math inline">\(f_1\)</span> e <span class="math inline">\(f_2\)</span>. Elas são semelhantes ou diferentes? (d) Como as fdps <span class="math inline">\(f_1\)</span> e <span class="math inline">\(f_2\)</span> se relacionam com as fdps descritas no Exemplo 2.3.10?</p>
+<p><strong>2.38</strong> Seja <span class="math inline">\(X\)</span> com a distribuição binomial negativa com fmp <span class="math display">\[
+f(x) = \binom{r+x-1}{x} p^r(1-p)^x, \quad x = 0, 1, 2, \dots
+\]</span> onde <span class="math inline">\(0 &lt; p &lt; 1\)</span> e <span class="math inline">\(r &gt; 0\)</span> é um inteiro. (a) Calcule a fgm de <span class="math inline">\(X\)</span>. (b) Defina uma nova variável aleatória por <span class="math inline">\(Y = 2pX\)</span>. Mostre que, conforme <span class="math inline">\(p \downarrow 0\)</span>, a fgm de <span class="math inline">\(Y\)</span> converge para a de uma variável aleatória qui-quadrado com <span class="math inline">\(2r\)</span> graus de liberdade, mostrando que <span class="math display">\[
+\lim_{p \to 0} M_Y(t) = \left( \frac{1}{1-2t} \right)^r, \quad |t| &lt; 1/2.
+\]</span></p>
+<p><strong>2.39</strong> Em cada um dos seguintes casos, calcule as derivadas indicadas, justificando todas as operações. (a) <span class="math inline">\(\frac{d}{dx} \int_0^x e^{-\lambda t} dt\)</span> (b) <span class="math inline">\(\frac{d}{d\lambda} \int_0^\infty e^{-\lambda t} dt\)</span> (c) <span class="math inline">\(\frac{d}{dt} \int_t^1 \frac{1}{x^2} dx\)</span> (d) <span class="math inline">\(\frac{d}{dt} \int_1^\infty \frac{1}{(x-t)^2} dx\)</span></p>
+<p><strong>2.40</strong> Prove <span class="math display">\[
+\sum_{k=0}^x \binom{n}{k} p^k(1-p)^{n-k} = (n-x) \binom{n}{x} \int_0^{1-p} t^{n-x-1}(1-t)^x dt.
+\]</span> (<em>Dica</em>: Integre por partes ou diferencie ambos os lados em relação a <span class="math inline">\(p\)</span>.)</p>
+</section>
+<section id="assuntos-diversos" class="level2">
+<h2 class="anchored" data-anchor-id="assuntos-diversos">2.6 Assuntos Diversos</h2>
+<section id="unicidade-de-sequências-de-momentos" class="level3">
+<h3 class="anchored" data-anchor-id="unicidade-de-sequências-de-momentos">2.6.1 Unicidade de Sequências de Momentos</h3>
+<p>Uma distribuição não é necessariamente determinada por seus momentos. Mas se <span class="math inline">\(\sum_{r=1}^{\infty} \mu'_r t^r/r!\)</span> possui um raio de convergência positivo, onde <span class="math inline">\(X \sim F_X\)</span> e <span class="math inline">\(EX^r = \mu'_r\)</span>, então a sequência de momentos é única e, portanto, a distribuição é unicamente determinada (Billingsley 1995, Seção 30). A convergência desta soma também implica que a função geradora de momentos existe em um intervalo e, portanto, a função geradora de momentos determina a distribuição.</p>
+<p>Uma condição suficiente para que a sequência de momentos seja única é a <em>Condição de Carleman</em> (Chung 1974). Se <span class="math inline">\(X \sim F_X\)</span> e denotamos <span class="math inline">\(EX^r = \mu'_r\)</span>, então a sequência de momentos é única se</p>
+<p><span id="eq-2.6.1"><span class="math display">\[
+\sum_{r=1}^{\infty} \frac{1}{(\mu'_{2r})^{1/(2r)}} = +\infty.
+\tag{3.39}\]</span></span></p>
+<p>Esta condição é, em geral, difícil de verificar.</p>
+<p>Feller (1971) apresenta um desenvolvimento muito completo das transformadas de Laplace, das quais as fgms são um caso especial. Em particular, Feller mostra (similarmente a Billingsley) que sempre que</p>
+<p><span class="math display">\[
+M_X(t) = \sum_{r=0}^{\infty} \frac{\mu'_r t^r}{r!}
+\]</span></p>
+<p>converge em um intervalo <span class="math inline">\(-t_0 \leq t &lt; t_0, t_0 &gt; 0\)</span>, a distribuição <span class="math inline">\(F_X\)</span> é unicamente determinada. Assim, quando a fgm existe, a sequência de momentos determina a distribuição <span class="math inline">\(F_X\)</span> univocamente.</p>
+<p>Deve estar claro que usar a fgm para determinar a distribuição é uma tarefa difícil. Um método melhor é através do uso de <em>funções características</em>, que são explicadas abaixo. Embora as funções características simplifiquem a caracterização de uma distribuição, elas necessitam da compreensão de análise complexa. Ganha-se por um lado e perde-se por outro.</p>
+</section>
+<section id="outras-funções-geradoras" class="level3">
+<h3 class="anchored" data-anchor-id="outras-funções-geradoras">2.6.2 Outras Funções Geradoras</h3>
+<p>Além da função geradora de momentos, há uma série de outras funções geradoras disponíveis. Na maioria dos casos, a função característica é a mais útil destas. Exceto por circunstâncias raras, as outras funções geradoras são menos úteis, mas há situações em que elas podem facilitar os cálculos.</p>
+<p><strong>Função geradora de cumulantes</strong> Para uma variável aleatória <span class="math inline">\(X\)</span>, a função geradora de cumulantes é a função <span class="math inline">\(\log[M_X(t)]\)</span>. Esta função pode ser usada para gerar os <em>cumulantes</em> de <span class="math inline">\(X\)</span>, que são definidos (de forma um tanto indireta) como os coeficientes na série de Taylor da função geradora de cumulantes (veja o Exercício 2.32).</p>
+<p><strong>Função geradora de momentos fatoriais</strong> A função geradora de momentos fatoriais de <span class="math inline">\(X\)</span> é definida como <span class="math inline">\(Et^X\)</span>, se a esperança existir. O nome advém do fato de que esta função satisfaz</p>
+<p><span class="math display">\[
+\frac{d^r}{dt^r} Et^X \Big|_{t=1} = E\{X(X-1)\dots(X-r+1)\},
+\]</span></p>
+<p>onde o lado direito é um <em>momento fatorial</em>. Se <span class="math inline">\(X\)</span> é uma variável aleatória discreta, então podemos escrever</p>
+<p><span class="math display">\[
+Et^X = \sum_{x} t^x P(X = x),
+\]</span></p>
+<p>e a função geradora de momentos fatoriais é chamada de <em>função geradora de probabilidades</em>, visto que os coeficientes da série de potências fornecem as probabilidades. Isto é, para obter a probabilidade de que <span class="math inline">\(X = k\)</span>, calcula-se</p>
+<p><span class="math display">\[
+\frac{1}{k!} \frac{d^k}{dt^k} Et^X \Big|_{t=0} = P(X = k).
+\]</span></p>
+</section>
+<section id="a-função-geradora-de-momentos-caracteriza-uma-distribuição" class="level3">
+<h3 class="anchored" data-anchor-id="a-função-geradora-de-momentos-caracteriza-uma-distribuição">2.6.3 A Função Geradora de Momentos Caracteriza uma Distribuição?</h3>
+<p>Em um artigo com o título acima, McCullagh (1994) analisa um par de densidades semelhantes às do Exemplo 2.3.10, mas que possuem fgms:</p>
+<p><span class="math display">\[
+f_1 = n(0,1) \quad \text{e} \quad f_2 = f_1(x) \left[ 1 + \frac{1}{2} \sin(2\pi x) \right]
+\]</span></p>
+<p>com funções geradoras de cumulantes</p>
+<p><span class="math display">\[
+K_1(t) = t^2/2 \quad \text{e} \quad K_2(t) = K_1(t) + \log \left[ 1 + \frac{1}{2} e^{-2\pi^2} \sin(2\pi t) \right].
+\]</span></p>
+<p>Ele observa que, embora as densidades sejam visivelmente dessemelhantes, as cgfs são virtualmente idênticas, com diferença máxima inferior a <span class="math inline">\(1,34 \times 10^{-9}\)</span> em todo o intervalo (menos que o tamanho de um pixel). Portanto, a resposta à pergunta feita no título é “sim para fins matemáticos, mas um retumbante não para fins numéricos”. Em contraste, Waller (1995) ilustra que, embora as fgms falhem em distinguir numericamente as distribuições, as <em>funções características</em> fazem um excelente trabalho. (Waller et al.&nbsp;(1995) e Luceño (1997) investigam mais a fundo a utilidade da função característica na obtenção numérica das fdas.) Veja o Exercício 2.37 para detalhes.</p>
+<p><strong>Função característica</strong> Talvez a mais útil de todos esses tipos de funções seja a função característica. A função característica de <span class="math inline">\(X\)</span> é definida por</p>
+<p><span class="math display">\[
+\phi_X(t) = Ee^{itX},
+\]</span></p>
+<p>onde <span class="math inline">\(i\)</span> é o número complexo <span class="math inline">\(\sqrt{-1}\)</span>, portanto a esperança acima requer integração complexa. A função característica faz muito mais do que a fgm faz. Quando os momentos de <span class="math inline">\(F_X\)</span> existem, <span class="math inline">\(\phi_X\)</span> pode ser usada para gerá-los, de forma muito semelhante a uma fgm. A função característica sempre existe e determina completamente a distribuição. Isto é, cada fda tem uma única função característica. Assim, podemos enunciar um teorema como o Teorema 2.3.11, por exemplo, mas sem ressalvas.</p>
+</section>
+<section id="teorema-2.6.1-convergência-de-funções-características" class="level3 theorem">
+<h3 class="anchored" data-anchor-id="teorema-2.6.1-convergência-de-funções-características">Teorema 2.6.1 (Convergência de Funções Características)</h3>
+<p>Suponha que <span class="math inline">\(X_k, k = 1, 2, \dots\)</span>, seja uma sequência de variáveis aleatórias, cada uma com função característica <span class="math inline">\(\phi_{X_k}(t)\)</span>. Além disso, suponha que <span class="math display">\[
+\lim_{k \to \infty} \phi_{X_k}(t) = \phi_X(t), \quad \text{para todo } t \text{ em uma vizinhança de 0}
+\]</span> e <span class="math inline">\(\phi_X(t)\)</span> seja uma função característica. Então, para todo <span class="math inline">\(X\)</span> onde <span class="math inline">\(F_X(x)\)</span> é contínua, <span class="math display">\[
+\lim_{k \to \infty} F_{X_k}(x) = F_X(x).
+\]</span></p>
+</section>
+<p>Um tratamento completo das funções geradoras é dado por Feller (1968). Funções características podem ser encontradas em quase qualquer texto avançado de probabilidade; veja Billingsley (1995) ou Resnick (1999).</p>
 
 
 </section>
