@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Inferência Estatística",
     "section": "",
-    "text": "Sobre Este Livro\nEste projeto é uma tradução não oficial para o português brasileiro do clássico Statistical Inference, de George Casella e Roger L. Berger. Seu único objetivo é facilitar o acesso de estudantes de estatística de língua portuguesa. Para uso acadêmico e profissional, recomendamos fortemente a aquisição da obra original em inglês.",
+    "text": "Sobre Este Livro\nEste projeto é uma tradução não oficial para o português brasileiro do livro Statistical Inference, de George Casella e Roger L. Berger. Seu único objetivo é facilitar o acesso de estudantes de estatística de língua portuguesa. Para uso acadêmico e profissional, recomendamos fortemente a aquisição da obra original em inglês.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
     ]
@@ -397,6 +397,16 @@
     "text": "Introdução aos Modelos de Regressão\nEstimação e Teste com Erros Normais\nEstimação e Predição em um Dado \\(x = x_0\\)\nInferência Simultânea",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Modelos de Regressão</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#sobre-este-livro",
+    "href": "index.html#sobre-este-livro",
+    "title": "Inferência Estatística",
+    "section": "",
+    "text": "📚 Referência Original\nCasella, G., & Berger, R. L. (2002). Statistical Inference (2nd ed.). Duxbury/Thomson Learning.\nISBN: 0-534-24312-6",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
     ]
   }
 ]
