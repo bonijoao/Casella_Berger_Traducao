@@ -10,26 +10,6 @@
     ]
   },
   {
-    "objectID": "index.html#segunda-edição",
-    "href": "index.html#segunda-edição",
-    "title": "Inferência Estatística",
-    "section": "1.1 Segunda Edição",
-    "text": "1.1 Segunda Edição\n\nGeorge Casella University of Florida\nRoger L. Berger North Carolina State University\n\n\nTradução para o Português Brasileiro",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#sobre-este-livro",
-    "href": "index.html#sobre-este-livro",
-    "title": "Inferência Estatística",
-    "section": "1.2 Sobre Este Livro",
-    "text": "1.2 Sobre Este Livro\nEste é um texto clássico e abrangente sobre inferência estatística, reconhecido mundialmente como uma das principais referências para estudantes de pós-graduação e pesquisadores em estatística. O livro oferece uma apresentação rigorosa e matematicamente elegante dos fundamentos da teoria estatística.\n\n\n\n\n\n\nNota sobre a Tradução\n\n\n\nEsta tradução para o português brasileiro foi elaborada com o objetivo de tornar este material fundamental mais acessível aos estudantes e pesquisadores lusófonos.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
-    ]
-  },
-  {
     "objectID": "index.html#estrutura-do-livro",
     "href": "index.html#estrutura-do-livro",
     "title": "Inferência Estatística",
@@ -40,31 +20,21 @@
     ]
   },
   {
-    "objectID": "index.html#pré-requisitos",
-    "href": "index.html#pré-requisitos",
+    "objectID": "index.html#sobre-os-autores",
+    "href": "index.html#sobre-os-autores",
     "title": "Inferência Estatística",
-    "section": "1.4 Pré-requisitos",
-    "text": "1.4 Pré-requisitos\nPara um aproveitamento pleno deste material, recomenda-se conhecimento prévio de:\n\nCálculo: Diferenciação, integração, séries e limites\nÁlgebra Linear: Matrizes, determinantes e autovalores\nTeoria dos Conjuntos: Noções básicas de conjuntos e operações",
+    "section": "Sobre os Autores",
+    "text": "Sobre os Autores\nGeorge Casella (1951–2012) foi um estatístico americano e professor da Universidade da Flórida. Reconhecido por suas contribuições em inferência estatística, estatística bayesiana e métodos de Monte Carlo, foi eleito Fellow da American Statistical Association e do Institute of Mathematical Statistics.\nRoger L. Berger é professor emérito da Universidade Estadual da Carolina do Norte. Suas áreas de pesquisa incluem inferência estatística, bioestatística e educação estatística.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
     ]
   },
   {
-    "objectID": "index.html#como-usar-este-material",
-    "href": "index.html#como-usar-este-material",
+    "objectID": "index.html#como-navegar",
+    "href": "index.html#como-navegar",
     "title": "Inferência Estatística",
-    "section": "1.5 Como Usar Este Material",
-    "text": "1.5 Como Usar Este Material\n\nEstudantesProfessoresPesquisadores\n\n\nEste livro é ideal para cursos de pós-graduação em estatística. Cada capítulo contém:\n\nDesenvolvimento teórico rigoroso\nExemplos detalhados\nExercícios com diferentes níveis de dificuldade\nTópicos avançados em seções especiais\n\n\n\nO material pode ser adaptado para diferentes cursos:\n\nProbabilidade I: Capítulos 1-4\nInferência Estatística: Capítulos 5-10\nTeoria Estatística Completa: Todos os capítulos\n\n\n\nAlém de ser uma referência fundamental, o livro inclui:\n\nDiscussões sobre fronteiras da pesquisa\nReferências bibliográficas extensas\nConexões entre diferentes áreas da estatística",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#referência-bibliográfica",
-    "href": "index.html#referência-bibliográfica",
-    "title": "Inferência Estatística",
-    "section": "1.6 Referência Bibliográfica",
-    "text": "1.6 Referência Bibliográfica\n\nCasella, G., & Berger, R. L. (2002). Statistical Inference (2nd ed.). Duxbury/Thomson Learning.\nISBN: 0-534-24312-6\n\n\n\n“A estatística é a gramática da ciência.” — Karl Pearson",
+    "section": "Como Navegar",
+    "text": "Como Navegar\nUtilize o menu lateral para acessar os capítulos disponíveis. Esta tradução está em andamento, e novos capítulos serão adicionados progressivamente.\n\n📚 Referência Original\nCasella, G., & Berger, R. L. (2002). Statistical Inference (2nd ed.). Duxbury/Thomson Learning.\nISBN: 0-534-24312-6",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
     ]
@@ -160,36 +130,6 @@
     ]
   },
   {
-    "objectID": "index.html#aviso-legal",
-    "href": "index.html#aviso-legal",
-    "title": "Inferência Estatística",
-    "section": "Aviso Legal",
-    "text": "Aviso Legal\n\n⚠️ Nota Importante\nEsta tradução não é licenciada e não tem fins lucrativos. Seu único objetivo é facilitar o acesso de estudantes de estatística de língua portuguesa a um conteúdo sólido e fundamental em inferência estatística.\nPara uso acadêmico e profissional, recomendamos fortemente a aquisição da obra original em inglês.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#sobre-os-autores",
-    "href": "index.html#sobre-os-autores",
-    "title": "Inferência Estatística",
-    "section": "Sobre os Autores",
-    "text": "Sobre os Autores\nGeorge Casella (1951–2012) foi um estatístico americano e professor da Universidade da Flórida. Reconhecido por suas contribuições em inferência estatística, estatística bayesiana e métodos de Monte Carlo, foi eleito Fellow da American Statistical Association e do Institute of Mathematical Statistics.\nRoger L. Berger é professor emérito da Universidade Estadual da Carolina do Norte. Suas áreas de pesquisa incluem inferência estatística, bioestatística e educação estatística.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#como-navegar",
-    "href": "index.html#como-navegar",
-    "title": "Inferência Estatística",
-    "section": "Como Navegar",
-    "text": "Como Navegar\nUtilize o menu lateral para acessar os capítulos disponíveis. Esta tradução está em andamento, e novos capítulos serão adicionados progressivamente.\n\n📚 Referência Original\nCasella, G., & Berger, R. L. (2002). Statistical Inference (2nd ed.). Duxbury/Thomson Learning.\nISBN: 0-534-24312-6",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inferência Estatística</span>"
-    ]
-  },
-  {
     "objectID": "cap-2.html",
     "href": "cap-2.html",
     "title": "Transformações e Esperanças",
@@ -197,235 +137,6 @@
     "text": "2.1 Distribuições de Funções de uma Variável Aleatória\nFrequentemente, se somos capazes de modelar um fenômeno em termos de uma variável aleatória \\(X\\) com fda \\(F_X(x)\\), também estaremos interessados no comportamento de funções de \\(X\\). Neste capítulo, estudamos técnicas que nos permitem obter informações sobre funções de \\(X\\) que podem ser de interesse, informações que podem variar desde muito completas (as distribuições dessas funções) até mais vagas (o comportamento médio).\nSe \\(X\\) é uma variável aleatória com fda \\(F_X(x)\\), então qualquer função de \\(X\\), digamos \\(g(X)\\), também é uma variável aleatória. Frequentemente, \\(g(X)\\) é de interesse por si só e escrevemos \\(Y = g(X)\\) para denotar a nova variável aleatória \\(g(X)\\). Como \\(Y\\) é uma função de \\(X\\), podemos descrever o comportamento probabilístico de \\(Y\\) em termos do comportamento de \\(X\\). Isto é, para qualquer conjunto \\(A\\),\n\\[\nP(Y \\in A) = P(g(X) \\in A),\n\\]\nmostrando que a distribuição de \\(Y\\) depende das funções \\(F_X\\) e \\(g\\). Dependendo da escolha de \\(g\\), às vezes é possível obter uma expressão tratável para essa probabilidade.\nFormalmente, se escrevermos \\(y = g(x)\\), a função \\(g(x)\\) define um mapeamento do espaço amostral original de \\(X\\), \\(\\mathcal{X}\\), para um novo espaço amostral, \\(\\mathcal{Y}\\), o espaço amostral da variável aleatória \\(Y\\). Isto é,\n\\[\ng(x): \\mathcal{X} \\to \\mathcal{Y}.\n\\]\nAssociamos a \\(g\\) um mapeamento inverso, denotado por \\(g^{-1}\\), que é um mapeamento de subconjuntos de \\(\\mathcal{Y}\\) para subconjuntos de \\(\\mathcal{X}\\), e é definido por\n\\[\ng^{-1}(A) = \\{x \\in \\mathcal{X} : g(x) \\in A\\}.\n\\tag{3.1}\\]\nNote que o mapeamento \\(g^{-1}\\) leva conjuntos em conjuntos, ou seja, \\(g^{-1}(A)\\) é o conjunto de pontos em \\(\\mathcal{X}\\) que \\(g(x)\\) leva para o conjunto \\(A\\). É possível que \\(A\\) seja um conjunto de um único ponto, digamos \\(A = \\{y\\}\\). Então\n\\[\ng^{-1}(\\{y\\}) = \\{x \\in \\mathcal{X} : g(x) = y\\}.\n\\]\nNeste caso, frequentemente escrevemos \\(g^{-1}(y)\\) em vez de \\(g^{-1}(\\{y\\})\\). A quantidade \\(g^{-1}(y)\\) ainda pode ser um conjunto, no entanto, se houver mais de um \\(x\\) para o qual \\(g(x) = y\\). Se houver apenas um \\(x\\) para o qual \\(g(x) = y\\), então \\(g^{-1}(y)\\) é o conjunto de ponto \\(\\{x\\}\\), e escreveremos \\(g^{-1}(y) = x\\). Se a variável aleatória \\(Y\\) for agora definida por \\(Y = g(X)\\), podemos escrever para qualquer conjunto \\(A \\subset \\mathcal{Y}\\),\n\\[\n\\begin{aligned}\nP(Y \\in A) &= P(g(X) \\in A) \\\\\n&= P(\\{x \\in \\mathcal{X} : g(x) \\in A\\}) \\\\\n&= P(X \\in g^{-1}(A)).\n\\end{aligned}\n\\tag{3.2}\\]\nIsto define a distribuição de probabilidade de \\(Y\\). É imediato mostrar que esta distribuição de probabilidade satisfaz os Axiomas de Kolmogorov.\nSe \\(X\\) é uma variável aleatória discreta, então \\(\\mathcal{X}\\) é enumerável. O espaço amostral para \\(Y = g(X)\\) é \\(\\mathcal{Y} = \\{y : y = g(x), x \\in \\mathcal{X}\\}\\), que também é um conjunto enumerável. Assim, \\(Y\\) também é uma variável aleatória discreta. Usando Equação 3.2, a fmp para \\(Y\\) é\n\\[\nf_Y(y) = P(Y = y) = \\sum_{x \\in g^{-1}(y)} P(X = x) = \\sum_{x \\in g^{-1}(y)} f_X(x), \\text{ para } y \\in \\mathcal{Y},\n\\]\ne \\(f_Y(y) = 0\\) para \\(y \\notin \\mathcal{Y}\\). Neste caso, encontrar a fmp de \\(Y\\) envolve simplesmente identificar \\(g^{-1}(y)\\), para cada \\(y \\in \\mathcal{Y}\\), e somar as probabilidades apropriadas.\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias contínuas, então em alguns casos é possível encontrar fórmulas simples para a fda e fdp de \\(Y\\) em termos da fda e fdp de \\(X\\) e da função \\(g\\). No restante desta seção, consideramos alguns desses casos.\nA fda de \\(Y = g(X)\\) é\n\\[\n\\begin{aligned}\nF_Y(y) &= P(Y \\leq y) \\\\\n&= P(g(X) \\leq y) \\\\\n&= P(\\{x \\in \\mathcal{X} : g(x) \\leq y\\}) \\\\\n&= \\int_{\\{x \\in \\mathcal{X} : g(x) \\leq y\\}} f_X(x) dx.\n\\end{aligned}\n\\tag{3.4}\\]\nÀs vezes, pode haver dificuldade em identificar \\(\\{x \\in \\mathcal{X} : g(x) \\leq y\\}\\) e realizar a integração de \\(f_X(x)\\) sobre esta região, como mostra o próximo exemplo.\nAo realizar transformações, é importante manter o controle sobre os espaços amostrais das variáveis aleatórias; caso contrário, muita confusão pode surgir. Ao fazer uma transformação de \\(X\\) para \\(Y = g(X)\\), é mais conveniente usar\n\\[\n\\mathcal{X} = \\{x : f_X(x) &gt; 0\\} \\quad \\text{e} \\quad \\mathcal{Y} = \\{y : y = g(x) \\text{ para algum } x \\in \\mathcal{X}\\}.\n\\tag{3.7}\\]\nA fdp da variável aleatória \\(X\\) é positiva apenas no conjunto \\(\\mathcal{X}\\) e é zero em outros lugares. Tal conjunto é chamado de conjunto suporte de uma distribuição ou, mais informalmente, o suporte de uma distribuição. Esta terminologia também pode ser aplicada a uma fmp ou, em geral, a qualquer função não negativa.\nÉ mais fácil lidar com funções \\(g(x)\\) que são monotônicas, isto é, aquelas que satisfazem ou\n\\[\nu &gt; v \\implies g(u) &gt; g(v) \\quad \\text{(crescente)} \\quad \\text{ou} \\quad u &lt; v \\implies g(u) &gt; g(v) \\quad \\text{(decrescente)}.\n\\]\nSe a transformação \\(x \\to g(x)\\) é monotônica, então ela é um-para-um (injetora) e sobre \\(\\mathcal{X} \\to \\mathcal{Y}\\) (sobrejetora). Isto é, cada \\(x\\) vai para apenas um \\(y\\) e cada \\(y\\) vem de no máximo um \\(x\\) (um-para-um). Além disso, para \\(\\mathcal{Y}\\) definido como em Equação 3.7, para cada \\(y \\in \\mathcal{Y}\\) existe um \\(x \\in \\mathcal{X}\\) tal que \\(g(x) = y\\) (sobre). Assim, a transformação \\(g\\) associa exclusivamente \\(xs\\) e \\(ys\\). Se \\(g\\) for monotônica, então \\(g^{-1}\\) terá um único valor, isto é, \\(g^{-1}(y) = x\\) se, e somente se, \\(y = g(x)\\). Se \\(g\\) for crescente, isso implica que\n\\[\n\\{x \\in \\mathcal{X} : g(x) \\leq y\\} = \\{x \\in \\mathcal{X} : g^{-1}(g(x)) \\leq g^{-1}(y)\\} = \\{x \\in \\mathcal{X} : x \\leq g^{-1}(y)\\}.\n\\tag{3.8}\\]\nSe \\(g\\) for decrescente, isso implica que\n\\[\n\\{x \\in \\mathcal{X} : g(x) \\leq y\\} = \\{x \\in \\mathcal{X} : g^{-1}(g(x)) \\geq g^{-1}(y)\\} = \\{x \\in \\mathcal{X} : x \\geq g^{-1}(y)\\}.\n\\tag{3.9}\\]\n(Um gráfico ilustrará por que a desigualdade se inverte no caso decrescente.) Se \\(g(x)\\) for uma função crescente, então usando Equação 3.4, podemos escrever\n\\[\nF_Y(y) = \\int_{\\{x \\in \\mathcal{X} : x \\leq g^{-1}(y)\\}} f_X(x) dx = \\int_{-\\infty}^{g^{-1}(y)} f_X(x) dx = F_X(g^{-1}(y)).\n\\]\nSe \\(g(x)\\) for decrescente, temos\n\\[\nF_Y(y) = \\int_{g^{-1}(y)}^{\\infty} f_X(x) dx = 1 - F_X(g^{-1}(y)).\n\\]\nA continuidade de \\(X\\) é usada para obter a segunda igualdade. Resumimos esses resultados no seguinte teorema.\nSe a fdp de \\(Y\\) for contínua, ela pode ser obtida diferenciando a fda. O resultado da expressão é dado no seguinte teorema.\nEm muitas aplicações, a função \\(g\\) pode não ser nem crescente nem decrescente, portanto os resultados acima não se aplicarão. No entanto, é frequente o caso em que \\(g\\) será monotônica em certos intervalos, e isso nos permite obter uma expressão para \\(Y = g(X)\\).\nNote que a fdp de \\(Y\\) em Equação 3.11 é expressa como a soma de duas partes, partes que representam os intervalos onde \\(g(x) = x^2\\) é monotônica. Em geral, este será o caso. ||\nO ponto importante no Teorema 2.1.8 é que \\(\\mathcal{X}\\) pode ser dividido em conjuntos \\(A_1, \\dots, A_k\\) tais que \\(g(x)\\) é monotônica em cada \\(A_i\\). Podemos ignorar o “conjunto excepcional” \\(A_0\\) já que \\(P(X \\in A_0) = 0\\).\nEncerramos esta seção com uma transformação especial e muito útil.\nAntes de provarmos este teorema, faremos uma breve digressão para analisar \\(F_X^{-1}\\), o inverso da fda \\(F_X\\), em mais detalhes. Se \\(F_X\\) for estritamente crescente, então \\(F_X^{-1}\\) é bem definida por\n\\[\nF_X^{-1}(y) = x \\iff F_X(x) = y.\n\\tag{3.12}\\]\nNo entanto, se \\(F_X\\) for constante em algum intervalo, então \\(F_X^{-1}\\) não é bem definida por Equação 3.12, como ilustra a Figura 3.2. Esse problema é evitado definindo \\(F_X^{-1}(y)\\) para \\(0 &lt; y &lt; 1\\) por\n\\[\nF_X^{-1}(y) = \\inf\\{x : F_X(x) \\geq y\\}.\n\\tag{3.13}\\]\nNos pontos extremos, temos \\(P(Y \\leq y) = 1\\) para \\(y \\geq 1\\) e \\(P(Y \\leq y) = 0\\) para \\(y \\leq 0\\), mostrando que \\(Y\\) possui uma distribuição uniforme.\nO raciocínio por trás da igualdade\n\\[P(F_X^{-1}(F_X(X)) \\leq F_X^{-1}(y)) = P(X \\leq F_X^{-1}(y))\\]\né um tanto sutil e merece atenção adicional. Se \\(F_X\\) for estritamente crescente, então é verdade que \\(F_X^{-1}(F_X(x)) = x\\) (consulte a Figura 3.2(a)). No entanto, se \\(F_X\\) for constante (plana), pode ser que \\(F_X^{-1}(F_X(x)) \\neq x\\). Suponha que \\(F_X\\) seja como na Figura 3.2(b) e considere \\(x \\in [x_1, x_2]\\). Então \\(F_X^{-1}(F_X(x)) = x_1\\) para qualquer \\(x\\) neste intervalo. Mesmo neste caso, a igualdade de probabilidade se mantém, visto que \\(P(X \\leq x) = P(X \\leq x_1)\\) para qualquer \\(x \\in [x_1, x_2]\\). A função de distribuição acumulada (cdf) plana denota uma região de probabilidade zero (\\(P(x_1 &lt; X \\leq x) = F_X(x) - F_X(x_1) = 0\\)).\nUma aplicação do Teorema 2.1.10 está na geração de amostras aleatórias de uma distribuição específica. Se for necessário gerar uma observação \\(X\\) de uma população com cdf \\(F_X\\), precisamos apenas gerar um número aleatório uniforme \\(U\\), entre 0 e 1, e resolver para \\(x\\) na equação \\(F_X(x) = u\\). (Para muitas distribuições, existem outros métodos de geração de observações que consomem menos tempo computacional, mas este método ainda é útil devido à sua aplicabilidade geral.)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformações e Esperanças</span>"
-    ]
-  },
-  {
-    "objectID": "cap-2.html#conteúdo-previsto",
-    "href": "cap-2.html#conteúdo-previsto",
-    "title": "Transformações e Esperanças",
-    "section": "",
-    "text": "Distribuições de Funções de uma Variável Aleatória\nValores Esperados (Esperança)\nMomentos e Funções Geradoras de Momentos\nDiferenciação sob o Sinal de Integral",
-    "crumbs": [
-      "Parte II: Transformações e Distribuições",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformações e Esperanças</span>"
-    ]
-  },
-  {
-    "objectID": "cap-3.html",
-    "href": "cap-3.html",
-    "title": "Famílias Comuns de Distribuições",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Famílias Comuns de Distribuições</span>"
-    ]
-  },
-  {
-    "objectID": "cap-3.html#conteúdo-previsto",
-    "href": "cap-3.html#conteúdo-previsto",
-    "title": "Famílias Comuns de Distribuições",
-    "section": "",
-    "text": "Introdução\nDistribuições Discretas\nDistribuições Contínuas\nFamílias Exponenciais\nFamílias de Localização e Escala\nDesigualdades e Identidades",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Famílias Comuns de Distribuições</span>"
-    ]
-  },
-  {
-    "objectID": "cap-4.html",
-    "href": "cap-4.html",
-    "title": "Múltiplas Variáveis Aleatórias",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte II: Transformações e Distribuições",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Múltiplas Variáveis Aleatórias</span>"
-    ]
-  },
-  {
-    "objectID": "cap-4.html#conteúdo-previsto",
-    "href": "cap-4.html#conteúdo-previsto",
-    "title": "Múltiplas Variáveis Aleatórias",
-    "section": "",
-    "text": "Distribuições Conjuntas e Marginais\nDistribuições Condicionais e Independência\nTransformações Bivariadas\nModelos Hierárquicos e Distribuições de Mistura\nCovariância e Correlação\nDistribuições Multivariadas\nDesigualdades",
-    "crumbs": [
-      "Parte II: Transformações e Distribuições",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Múltiplas Variáveis Aleatórias</span>"
-    ]
-  },
-  {
-    "objectID": "cap-5.html",
-    "href": "cap-5.html",
-    "title": "Propriedades de uma Amostra Aleatória",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte III: Amostras e Redução de Dados",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Propriedades de uma Amostra Aleatória</span>"
-    ]
-  },
-  {
-    "objectID": "cap-5.html#conteúdo-previsto",
-    "href": "cap-5.html#conteúdo-previsto",
-    "title": "Propriedades de uma Amostra Aleatória",
-    "section": "",
-    "text": "Conceitos Básicos de Amostras Aleatórias\nSomas de Variáveis Aleatórias de uma Amostra Aleatória\nAmostragem da Distribuição Normal\nEstatísticas de Ordem\nConceitos de Convergência\n\nConvergência em Probabilidade\nConvergência Quase Certa\nConvergência em Distribuição\nO Método Delta\n\nGerando uma Amostra Aleatória",
-    "crumbs": [
-      "Parte III: Amostras e Redução de Dados",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Propriedades de uma Amostra Aleatória</span>"
-    ]
-  },
-  {
-    "objectID": "cap-6.html",
-    "href": "cap-6.html",
-    "title": "Princípios de Redução de Dados",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte III: Amostras e Redução de Dados",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Princípios de Redução de Dados</span>"
-    ]
-  },
-  {
-    "objectID": "cap-6.html#conteúdo-previsto",
-    "href": "cap-6.html#conteúdo-previsto",
-    "title": "Princípios de Redução de Dados",
-    "section": "",
-    "text": "O Princípio da Suficiência\n\nEstatísticas Suficientes\nEstatísticas Suficientes Mínimas\nEstatísticas Ancilares\nEstatísticas Suficientes, Completas e Ancilares\n\nO Princípio da Verossimilhança\n\nA Função de Verossimilhança\nO Princípio da Verossimilhança Formal\n\nO Princípio da Equivariância",
-    "crumbs": [
-      "Parte III: Amostras e Redução de Dados",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Princípios de Redução de Dados</span>"
-    ]
-  },
-  {
-    "objectID": "cap-7.html",
-    "href": "cap-7.html",
-    "title": "Estimação Pontual",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Estimação Pontual</span>"
-    ]
-  },
-  {
-    "objectID": "cap-7.html#conteúdo-previsto",
-    "href": "cap-7.html#conteúdo-previsto",
-    "title": "Estimação Pontual",
-    "section": "",
-    "text": "Métodos para Encontrar Estimadores\n\nMétodo dos Momentos\nEstimadores de Máxima Verossimilhança\nEstimadores de Bayes\nO Algoritmo EM\n\nMétodos de Avaliação de Estimadores\n\nErro Quadrático Médio\nMelhores Estimadores Não Viesados\nSuficiência e Não-viesamento\nOtimalidade da Função de Perda",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Estimação Pontual</span>"
-    ]
-  },
-  {
-    "objectID": "cap-8.html",
-    "href": "cap-8.html",
-    "title": "Teste de Hipóteses",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teste de Hipóteses</span>"
-    ]
-  },
-  {
-    "objectID": "cap-8.html#conteúdo-previsto",
-    "href": "cap-8.html#conteúdo-previsto",
-    "title": "Teste de Hipóteses",
-    "section": "",
-    "text": "Métodos para Encontrar Testes\n\nTestes de Razão de Verossimilhança\nTestes Bayesianos\nTestes de União-Interseção e Interseção-União\n\nMétodos de Avaliação de Testes\n\nProbabilidades de Erro e Função Poder\nTestes Mais Poderosos\nTamanhos de Testes de União-Interseção\nP-valores",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teste de Hipóteses</span>"
-    ]
-  },
-  {
-    "objectID": "cap-9.html",
-    "href": "cap-9.html",
-    "title": "Estimação por Intervalo",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Estimação por Intervalo</span>"
-    ]
-  },
-  {
-    "objectID": "cap-9.html#conteúdo-previsto",
-    "href": "cap-9.html#conteúdo-previsto",
-    "title": "Estimação por Intervalo",
-    "section": "",
-    "text": "Métodos para Encontrar Estimadores de Intervalo\n\nInvertendo uma Estatística de Teste\nQuantidades Pivotais\nPivotando a FDA\nIntervalos Bayesianos\n\nMétodos de Avaliação de Estimadores de Intervalo\n\nTamanho e Probabilidade de Cobertura\nOtimalidade Relacionada a Testes\nOtimalidade Bayesiana\nOtimalidade da Função de Perda",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Estimação por Intervalo</span>"
-    ]
-  },
-  {
-    "objectID": "cap-10.html",
-    "href": "cap-10.html",
-    "title": "Avaliações Assintóticas",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Avaliações Assintóticas</span>"
-    ]
-  },
-  {
-    "objectID": "cap-10.html#conteúdo-previsto",
-    "href": "cap-10.html#conteúdo-previsto",
-    "title": "Avaliações Assintóticas",
-    "section": "",
-    "text": "Estimação Pontual\n\nConsistência\nEficiência\nCálculos e Comparações\nBootstrap\n\nRobustez\n\nA Média e a Mediana\nM-Estimadores\n\nTeste de Hipóteses\n\nDistribuição Assintótica de TRVs\nOutros Testes com Grandes Amostras\n\nEstimação por Intervalo\n\nIntervalos de Verossimilhança Aproximada\nOutros Intervalos Aproximados (e Robustos)",
-    "crumbs": [
-      "Parte IV: Inferência",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Avaliações Assintóticas</span>"
-    ]
-  },
-  {
-    "objectID": "cap-11.html",
-    "href": "cap-11.html",
-    "title": "Análise de Variância e Regressão",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte V: Modelos Lineares",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Análise de Variância e Regressão</span>"
-    ]
-  },
-  {
-    "objectID": "cap-11.html#conteúdo-previsto",
-    "href": "cap-11.html#conteúdo-previsto",
-    "title": "Análise de Variância e Regressão",
-    "section": "",
-    "text": "Análise de Variância (ANOVA) de Um Fator\nRegressão Linear Simples",
-    "crumbs": [
-      "Parte V: Modelos Lineares",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Análise de Variância e Regressão</span>"
-    ]
-  },
-  {
-    "objectID": "cap-12.html",
-    "href": "cap-12.html",
-    "title": "Modelos de Regressão",
-    "section": "",
-    "text": "Conteúdo Previsto\nEste capítulo abordará:",
-    "crumbs": [
-      "Parte V: Modelos Lineares",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Modelos de Regressão</span>"
-    ]
-  },
-  {
-    "objectID": "cap-12.html#conteúdo-previsto",
-    "href": "cap-12.html#conteúdo-previsto",
-    "title": "Modelos de Regressão",
-    "section": "",
-    "text": "Introdução aos Modelos de Regressão\nEstimação e Teste com Erros Normais\nEstimação e Predição em um Dado \\(x = x_0\\)\nInferência Simultânea",
-    "crumbs": [
-      "Parte V: Modelos Lineares",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Modelos de Regressão</span>"
     ]
   },
   {
@@ -469,6 +180,16 @@
     ]
   },
   {
+    "objectID": "cap-2.html#exercícios",
+    "href": "cap-2.html#exercícios",
+    "title": "Transformações e Esperanças",
+    "section": "2.5 Exercícios",
+    "text": "2.5 Exercícios\n2.1 Em cada um dos seguintes itens, encontre a fdp de \\(Y\\). Mostre que a fdp integra 1. (a) \\(Y = X^3\\) e \\(f_X(x) = 42x^5(1-x), 0 &lt; x &lt; 1\\). (b) \\(Y = 4X + 3\\) e \\(f_X(x) = 7e^{-7x}, 0 &lt; x &lt; \\infty\\). (c) \\(Y = X^2\\) e \\(f_X(x) = 30x^2(1-x)^2, 0 &lt; x &lt; 1\\). (Veja o Exemplo 12.6.2 no apêndice de Álgebra Computacional.)\n2.2 Em cada um dos seguintes itens, encontre a fdp de \\(Y\\). (a) \\(Y = X^2\\) e \\(f_X(x) = 1, 0 &lt; x &lt; 1\\). (b) \\(Y = -\\log X\\) e \\(X\\) tem fdp \\[\nf_X(x) = \\frac{(n+m+1)!}{n!m!} x^n (1-x)^m, \\quad 0 &lt; x &lt; 1, \\quad m, n \\text{ inteiros positivos}.\n\\] (c) \\(Y = e^X\\) e \\(X\\) tem fdp \\[\nf_X(x) = \\frac{1}{\\sigma^2} x e^{-(x/\\sigma)^2/2}, \\quad 0 &lt; x &lt; \\infty, \\quad \\sigma^2 \\text{ uma constante positiva}.\n\\]\n2.3 Suponha que \\(X\\) tenha a fmp geométrica, \\(f_X(x) = \\frac{1}{3} \\left(\\frac{2}{3}\\right)^x, x = 0, 1, 2, \\dots\\). Determine a distribuição de probabilidade de \\(Y = X/(X+1)\\). Note que aqui tanto \\(X\\) quanto \\(Y\\) são variáveis aleatórias discretas. Para especificar a distribuição de probabilidade de \\(Y\\), especifique sua fmp.\n2.4 Seja \\(\\lambda\\) uma constante positiva fixa, e defina a função \\(f(x)\\) por \\(f(x) = \\frac{1}{2}\\lambda e^{-\\lambda x}\\) se \\(x \\geq 0\\) e \\(f(x) = \\frac{1}{2}\\lambda e^{\\lambda x}\\) se \\(x &lt; 0\\). (a) Verifique que \\(f(x)\\) é uma fdp. (b) Se \\(X\\) é uma variável aleatória com fdp dada por \\(f(x)\\), encontre \\(P(X &lt; t)\\) para todo \\(t\\). Avalie todas as integrais. (c) Encontre \\(P(|X| &lt; t)\\) para todo \\(t\\). Avalie todas as integrais.\n2.5 Use o Teorema 2.1.8 para encontrar a fdp de \\(Y\\) no Exemplo 2.1.2. Mostre que a mesma resposta é obtida diferenciando a fda dada em (2.1.6).\n2.6 Em cada um dos seguintes itens, encontre a fdp de \\(Y\\) e mostre que a fdp integra 1. (a) \\(f_X(x) = \\frac{1}{2} e^{-|x|}, -\\infty &lt; x &lt; \\infty; Y = |X|^3\\). (b) \\(f_X(x) = \\frac{3}{8}(x+1)^2, -1 &lt; x &lt; 1; Y = 1 - X^2\\). (c) \\(f_X(x) = \\frac{3}{8}(x+1)^2, -1 &lt; x &lt; 1; Y = 1 - X^2\\) se \\(X \\leq 0\\) e \\(Y = 1 - X\\) se \\(X &gt; 0\\).\n2.7 Seja \\(X\\) com fdp \\(f_X(x) = \\frac{2}{9}(x+1), -1 \\leq x \\leq 2\\). (a) Encontre a fdp de \\(Y = X^2\\). Note que o Teorema 2.1.8 não é diretamente aplicável neste problema. (b) Mostre que o Teorema 2.1.8 permanece válido se os conjuntos \\(A_0, A_1, \\dots, A_k\\) contiverem \\(\\mathcal{X}\\), e aplique a extensão para resolver a parte (a) usando \\(A_0 = \\emptyset, A_1 = (-2, 0)\\) e \\(A_2 = (0, 2)\\).\n2.8 Em cada um dos seguintes itens, mostre que a função dada é uma fda e encontre \\(F_X^{-1}(y)\\). (a) \\(F_X(x) = \\begin{cases} 0 & \\text{se } x &lt; 0 \\\\ 1 - e^{-x} & \\text{se } x \\geq 0. \\end{cases}\\) (b) \\(F_X(x) = \\begin{cases} e^x/2 & \\text{se } x &lt; 0 \\\\ 1/2 & \\text{se } 0 \\leq x &lt; 1 \\\\ 1 - (e^{1-x}/2) & \\text{se } 1 \\leq x. \\end{cases}\\) (c) \\(F_X(x) = \\begin{cases} e^x/4 & \\text{se } x &lt; 0 \\\\ 1 - (e^{-x}/4) & \\text{se } x \\geq 0. \\end{cases}\\) Note que, na parte (c), \\(F_X(x)\\) é descontínua, mas (2.1.13) ainda é a definição apropriada de \\(F_X^{-1}(y)\\).\n2.9 Se a variável aleatória \\(X\\) tem fdp \\[\nf(x) = \\begin{cases} \\frac{x-1}{2} & 1 &lt; x &lt; 3 \\\\ 0 & \\text{caso contrário}, \\end{cases}\n\\] encontre uma função monotônica \\(u(x)\\) tal que a variável aleatória \\(Y = u(X)\\) tenha uma distribuição uniforme(0,1).\n2.10 No Teorema 2.1.10, a transformação integral de probabilidade foi provada, relacionando a fda uniforme a qualquer fda contínua. Neste exercício, investigamos a relação entre variáveis aleatórias discretas e variáveis aleatórias uniformes. Seja \\(X\\) uma variável aleatória discreta com fda \\(F_X(x)\\) e defina a variável aleatória \\(Y\\) como \\(Y = F_X(X)\\). (a) Prove que \\(Y\\) é estocasticamente maior que uma uniforme(0,1); isto é, se \\(U \\sim \\text{uniforme}(0,1)\\), então \\[\nP(Y &gt; y) \\geq P(U &gt; y) = 1 - y, \\quad \\text{para todo } y, 0 &lt; y &lt; 1,\n\\] \\[\nP(Y &gt; y) &gt; P(U &gt; y) = 1 - y, \\quad \\text{para algum } y, 0 &lt; y &lt; 1.\n\\] (Lembre-se que estocasticamente maior foi definido no Exercício 1.49.) (b) Equivalentemente, mostre que a fda de \\(Y\\) satisfaz \\(F_Y(y) \\leq y\\) para todo \\(0 &lt; y &lt; 1\\) e \\(F_Y(y) &lt; y\\) para algum \\(0 &lt; y &lt; 1\\). (Dica: Seja \\(x_0\\) um ponto de salto de \\(F_X\\), e defina \\(y_0 = F_X(x_0)\\). Mostre que \\(P(Y \\leq y_0) = y_0\\). Agora estabeleça a desigualdade considerando \\(y = y_0 + \\varepsilon\\). Imagens das fdas ajudarão.)\n2.11 Seja \\(X\\) com a fdp normal padrão, \\(f_X(x) = (1/\\sqrt{2\\pi})e^{-x^2/2}\\). (a) Encontre \\(EX^2\\) diretamente, e então usando a fdp de \\(Y = X^2\\) do Exemplo 2.1.7 e calculando \\(EY\\). (b) Encontre a fdp de \\(Y = |X|\\), e encontre sua média e variância.\n2.12 Um triângulo retângulo aleatório pode ser construído da seguinte maneira. Seja \\(X\\) um ângulo aleatório cuja distribuição é uniforme em \\((0, \\pi/2)\\). Para cada \\(X\\), construa um triângulo como ilustrado abaixo. Aqui, \\(Y = \\text{altura do triângulo retângulo}\\). Para uma constante fixa \\(d\\), encontre a distribuição de \\(Y\\) e \\(EY\\).\n\n\n\n\n\n\nFigura 3.6: Figura 2.5.1 - Triângulo retângulo aleatório\n\n\n\n2.13 Considere uma sequência de lançamentos de moedas independentes, cada um com probabilidade \\(p\\) de ser Cara. Defina uma variável aleatória \\(X\\) como o comprimento da sequência (de Caras ou Coras) iniciada pela primeira tentativa. (Por exemplo, \\(X = 3\\) se TTTC ou CCCK for observado.) Encontre a distribuição de \\(X\\) e encontre \\(EX\\).\n2.14 (a) Seja \\(X\\) uma variável aleatória contínua e não negativa [\\(f(x) = 0\\) para \\(x &lt; 0\\)]. Mostre que \\[\nEX = \\int_0^\\infty [1 - F_X(x)] dx,\n\\] onde \\(F_X(x)\\) é a fda de \\(X\\). (b) Seja \\(X\\) uma variável aleatória discreta cujo intervalo são os inteiros não negativos. Mostre que \\[\nEX = \\sum_{k=0}^\\infty (1 - F_X(k)),\n\\] onde \\(F_X(k) = P(X \\leq k)\\). Compare isso com a parte (a).\n2.15 Betteley (1977) fornece uma lei de adição interessante para expectativas. Sejam \\(X\\) e \\(Y\\) duas variáveis aleatórias quaisquer e defina \\[\nX \\land Y = \\min(X, Y) \\quad \\text{e} \\quad X \\lor Y = \\max(X, Y).\n\\] De forma análoga à lei de probabilidade \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\), mostre que \\[\nE(X \\lor Y) = EX + EY - E(X \\land Y).\n\\] (Dica: Estabeleça que \\(X + Y = (X \\lor Y) + (X \\land Y)\\).)\n2.16 Use o resultado do Exercício 2.14 para encontrar a duração média de certas chamadas telefônicas, onde assumimos que a duração, \\(T\\), de uma chamada particular pode ser descrita probabilisticamente por \\(P(T &gt; t) = ae^{-\\lambda t} + (1-a)e^{-\\mu t}\\), onde \\(a, \\lambda\\) e \\(\\mu\\) são constantes, \\(0 &lt; a &lt; 1, \\lambda &gt; 0, \\mu &gt; 0\\).\n2.17 Uma mediana de uma distribuição é um valor \\(m\\) tal que \\(P(X \\leq m) \\geq 1/2\\) e \\(P(X \\geq m) \\geq 1/2\\). (Se \\(X\\) é contínua, \\(m\\) satisfaz \\(\\int_{-\\infty}^m f(x) dx = \\int_m^\\infty f(x) dx = 1/2\\).) Encontre a mediana das seguintes distribuições. (a) \\(f(x) = 3x^2, 0 &lt; x &lt; 1\\) (b) \\(f(x) = \\frac{1}{\\pi(1+x^2)}, -\\infty &lt; x &lt; \\infty\\)\n2.18 Mostre que se \\(X\\) é uma variável aleatória contínua, então \\[\n\\min_a E|X - a| = E|X - m|,\n\\] onde \\(m\\) é a mediana de \\(X\\) (veja o Exercício 2.17).\n2.19 Prove que \\[\n\\frac{d}{da} E(X - a)^2 = 0 \\iff EX = a,\n\\] diferenciando a integral. Verifique, usando cálculo, que \\(a = EX\\) é de fato um mínimo. Liste as suposições sobre \\(F_X\\) e \\(f_X\\) que são necessárias.\n2.20 Um casal decide continuar a ter filhos até que uma filha nasça. Qual é o número esperado de filhos deste casal? (Dica: Veja o Exemplo 1.5.4.)\n2.21 Prove a regra de “duas vias” para expectativas, equação (2.2.5), que diz \\(Eg(X) = EY\\), onde \\(Y = g(X)\\). Assuma que \\(g(x)\\) é uma função monotônica.\n2.22 Seja \\(X\\) com a fdp \\[\nf(x) = \\frac{4}{\\beta^3\\sqrt{\\pi}} x^2 e^{-x^2/\\beta^2}, \\quad 0 &lt; x &lt; \\infty, \\quad \\beta &gt; 0.\n\\] (a) Verifique que \\(f(x)\\) é uma fdp. (b) Encontre \\(EX\\) e \\(Var X\\).\n2.23 Seja \\(X\\) com a fdp \\[\nf(x) = \\frac{1}{2}(1+x), \\quad -1 &lt; x &lt; 1.\n\\] (a) Encontre a fdp de \\(Y = X^2\\). (b) Encontre \\(EY\\) e \\(Var Y\\).\n2.24 Calcule \\(EX\\) e \\(Var X\\) para cada uma das seguintes distribuições de probabilidade. (a) \\(f_X(x) = ax^{a-1}, 0 &lt; x &lt; 1, a &gt; 0\\) (b) \\(f_X(x) = 1/n, x = 1, 2, \\dots, n, n &gt; 0\\) um inteiro (c) \\(f_X(x) = \\frac{3}{2}(x-1)^2, 0 &lt; x &lt; 2\\)\n2.25 Suponha que a fdp \\(f_X(x)\\) de uma variável aleatória \\(X\\) seja uma função par. (\\(f_X(x)\\) é uma função par se \\(f_X(x) = f_X(-x)\\) para todo \\(x\\).) Mostre que (a) \\(X\\) e \\(-X\\) são identicamente distribuídas. (b) \\(M_X(t)\\) é simétrica em torno de zero.\n2.26 Seja \\(f(x)\\) uma fdp e seja \\(a\\) um número tal que, para todo \\(\\varepsilon &gt; 0, f(a+\\varepsilon) = f(a-\\varepsilon)\\). Tal fdp é dita ser simétrica em torno do ponto a. (a) Dê três exemplos de fdps simétricas. (b) Mostre que se \\(X \\sim f(x)\\), simétrica, então a mediana de \\(X\\) (veja o Exercício 2.17) é o número \\(a\\). (c) Mostre que se \\(X \\sim f(x)\\), simétrica, e \\(EX\\) existe, então \\(EX = a\\). (d) Mostre que \\(f(x) = e^{-x}, x \\geq 0\\), não é uma fdp simétrica. (e) Mostre que para a fdp na parte (d), a mediana é menor que a média.\n2.27 Seja \\(f(x)\\) uma fdp e seja \\(a\\) um número tal que, se \\(a \\geq x \\geq y\\) então \\(f(a) \\geq f(x) \\geq f(y)\\) e, se \\(a \\leq x \\leq y\\) então \\(f(a) \\geq f(x) \\geq f(y)\\). Tal fdp é chamada de unimodal com um moda igual a \\(a\\). (a) Dê um exemplo de uma fdp unimodal para a qual a moda é única. (b) Dê um exemplo de uma fdp unimodal para a qual a moda não é única. (c) Mostre que se \\(f(x)\\) é tanto simétrica (veja o Exercício 2.26) quanto unimodal, então o ponto de simetria é uma moda. (d) Considere a fdp \\(f(x) = e^{-x}, x \\geq 0\\). Mostre que esta fdp é unimodal. Qual é sua moda?\n2.28 Seja \\(\\mu_n\\) o \\(n\\)-ésimo momento central de uma variável aleatória \\(X\\). Duas quantidades de interesse, além da média e variância, são \\[\n\\alpha_3 = \\frac{\\mu_3}{(\\mu_2)^{3/2}} \\quad \\text{e} \\quad \\alpha_4 = \\frac{\\mu_4}{\\mu_2^2}.\n\\] O valor \\(\\alpha_3\\) é chamado de assimetria e \\(\\alpha_4\\) é chamado de curtose. A assimetria mede a falta de simetria na fdp (veja o Exercício 2.26). A curtose, embora mais difícil de interpretar, mede o pico ou achatamento da fdp. (a) Mostre que se uma fdp é simétrica em torno de um ponto \\(a\\), então \\(\\alpha_3 = 0\\). (b) Calcule \\(\\alpha_3\\) para \\(f(x) = e^{-x}, x \\geq 0\\), uma fdp que é assimétrica à direita. (c) Calcule \\(\\alpha_4\\) para cada uma das seguintes fdps e comente sobre o pico de cada uma. \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2}, \\quad -\\infty &lt; x &lt; \\infty\n\\] \\[\nf(x) = \\frac{1}{2}, \\quad -1 &lt; x &lt; 1\n\\] \\[\nf(x) = \\frac{1}{2} e^{-|x|}, \\quad -\\infty &lt; x &lt; \\infty\n\\] Ruppert (1987) usa funções de influência (Seção 10.6.4) para explorar ainda mais o significado de curtose e Groeneveld (1991) as usa para explorar a assimetria; veja também Balanda e MacGillivray (1988) para mais sobre a interpretação de \\(\\alpha_4\\).\n2.29 Ao calcular momentos de distribuições discretas, muitas vezes é mais fácil trabalhar com os momentos fatoriais (veja Assuntos Diversos 2.6.2). (a) Calcule o momento fatorial \\(E[X(X-1)]\\) para as distribuições binomial e Poisson. (b) Use os resultados da parte (a) para calcular as variâncias da distribuição binomial e Poisson. (c) Uma distribuição discreta particularmente desagradável é a beta-binomial, com fmp \\[\nP(Y = y) = \\binom{n}{y} \\frac{\\Gamma(y+a)\\Gamma(n-y+b)\\Gamma(a+b)}{\\Gamma(a)\\Gamma(b)\\Gamma(n+a+b)}, \\quad y = 0, 1, \\dots, n.\n\\] onde \\(n, a\\) e \\(b\\) são inteiros positivos. Use momentos fatoriais para calcular a variância da beta binomial. (Veja o Exercício 4.34 para outra abordagem deste cálculo.)\n2.30 Encontre a função geradora de momentos correspondente a (a) \\(f(x) = \\frac{1}{c}, 0 &lt; x &lt; c\\) (b) \\(f(x) = \\frac{2x}{c^2}, 0 &lt; x &lt; c\\) (c) \\(f(x) = \\frac{1}{2\\beta} e^{-|x-\\alpha|/\\beta}, -\\infty &lt; x &lt; \\infty, -\\infty &lt; \\alpha &lt; \\infty, \\beta &gt; 0\\) (d) \\(P(X = x) = \\binom{r+x-1}{x} p^r(1-p)^x, x = 0, 1, \\dots, 0 &lt; p &lt; 1, r &gt; 0\\) um inteiro\n2.31 Existe uma distribuição para a qual \\(M_X(t) = t/(1-t), |t| &lt; 1\\)? Se sim, encontre-a. Se não, prove.\n2.32 Seja \\(M_X(t)\\) a função geradora de momentos de \\(X\\), e defina \\(S(t) = \\log(M_X(t))\\). Mostre que \\[\n\\frac{d}{dt} S(t) \\Big|_{t=0} = EX \\quad \\text{e} \\quad \\frac{d^2}{dt^2} S(t) \\Big|_{t=0} = Var X.\n\\]\n2.33 Em cada um dos seguintes casos, verifique a expressão dada para a função geradora de momentos e, em cada caso, use a fgm para calcular \\(EX\\) e \\(Var X\\). (a) \\(P(X = x) = \\frac{e^{-\\lambda} \\lambda^x}{x!}, M_X(t) = e^{\\lambda(e^t-1)}, x = 0, 1, \\dots; \\lambda &gt; 0\\) (b) \\(P(X = x) = p(1-p)^x, M_X(t) = \\frac{p}{1-(1-p)e^t}, x = 0, 1, \\dots; 0 &lt; p &lt; 1\\) (c) \\(f_X(x) = \\frac{e^{-(x-\\mu)^2/(2\\sigma^2)}}{\\sqrt{2\\pi}\\sigma}, M_X(t) = e^{\\mu t + \\sigma^2t^2/2}, -\\infty &lt; x &lt; \\infty; -\\infty &lt; \\mu &lt; \\infty, \\sigma &gt; 0\\)\n2.34 Uma distribuição não pode ser unicamente determinada por uma coleção finita de momentos, como mostra este exemplo de Romano e Siegel (1986). Seja \\(X\\) com distribuição normal, ou seja, \\(X\\) tem fdp \\[\nf_X(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2}, \\quad -\\infty &lt; x &lt; \\infty.\n\\] Defina uma variável aleatória discreta \\(Y\\) por \\[\nP(Y = \\sqrt{3}) = P(Y = -\\sqrt{3}) = 1/6, \\quad P(Y = 0) = 2/3.\n\\] Mostre que \\[\nEX^r = EY^r \\quad \\text{para } r = 1, 2, 3, 4, 5.\n\\] (Romano e Siegel (1986) apontam que para qualquer \\(n\\) finito existe uma variável aleatória discreta, e portanto não normal, cujos primeiros \\(n\\) momentos são iguais aos de \\(X\\).)\n2.35 Preencha as lacunas no Exemplo 2.3.10. (a) Mostre que se \\(X_1 \\sim f_1(x)\\), então \\[\nEX_1^r = e^{r^2/2}, \\quad r = 0, 1, \\dots.\n\\] Logo \\(f_1(x)\\) possui todos os seus momentos, e todos os momentos são finitos. (b) Agora mostre que \\[\n\\int_0^\\infty x^r f_1(x) \\sin(2\\pi \\log x) dx = 0,\n\\] para todos os inteiros positivos \\(r\\), logo \\(EX_1^r = EX_2^r\\) para todo \\(r\\). (Romano e Siegel (1986) discutem uma versão extrema deste exemplo, onde uma classe inteira de fdps distintas tem os mesmos momentos. Além disso, Berg (1988) mostrou que este comportamento de momentos pode surgir com transformadas mais simples da distribuição normal, como \\(X^3\\).)\n2.36 A distribuição lognormal, na qual o Exemplo 2.3.10 se baseia, tem uma propriedade interessante. Se tivermos a fdp \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi}x} e^{-(\\log x)^2/2}, \\quad 0 \\leq x &lt; \\infty,\n\\] então o Exercício 2.35 mostra que todos os momentos existem e são finitos. No entanto, esta distribuição não possui uma função geradora de momentos, isto é, \\[\nM_X(t) = \\int_0^\\infty \\frac{e^{tx}}{\\sqrt{2\\pi}x} e^{-(\\log x)^2/2} dx\n\\] não existe. Prove isso.\n2.37 Referindo-se à situação descrita em Assuntos Diversos 2.6.3: (a) Trace as fdps \\(f_1\\) e \\(f_2\\) para ilustrar sua diferença. (b) Trace as funções geradoras de cumulantes \\(K_1\\) e \\(K_2\\) para ilustrar sua semelhança. (c) Calcule as funções geradoras de momentos das fdps \\(f_1\\) e \\(f_2\\). Elas são semelhantes ou diferentes? (d) Como as fdps \\(f_1\\) e \\(f_2\\) se relacionam com as fdps descritas no Exemplo 2.3.10?\n2.38 Seja \\(X\\) com a distribuição binomial negativa com fmp \\[\nf(x) = \\binom{r+x-1}{x} p^r(1-p)^x, \\quad x = 0, 1, 2, \\dots\n\\] onde \\(0 &lt; p &lt; 1\\) e \\(r &gt; 0\\) é um inteiro. (a) Calcule a fgm de \\(X\\). (b) Defina uma nova variável aleatória por \\(Y = 2pX\\). Mostre que, conforme \\(p \\downarrow 0\\), a fgm de \\(Y\\) converge para a de uma variável aleatória qui-quadrado com \\(2r\\) graus de liberdade, mostrando que \\[\n\\lim_{p \\to 0} M_Y(t) = \\left( \\frac{1}{1-2t} \\right)^r, \\quad |t| &lt; 1/2.\n\\]\n2.39 Em cada um dos seguintes casos, calcule as derivadas indicadas, justificando todas as operações. (a) \\(\\frac{d}{dx} \\int_0^x e^{-\\lambda t} dt\\) (b) \\(\\frac{d}{d\\lambda} \\int_0^\\infty e^{-\\lambda t} dt\\) (c) \\(\\frac{d}{dt} \\int_t^1 \\frac{1}{x^2} dx\\) (d) \\(\\frac{d}{dt} \\int_1^\\infty \\frac{1}{(x-t)^2} dx\\)\n2.40 Prove \\[\n\\sum_{k=0}^x \\binom{n}{k} p^k(1-p)^{n-k} = (n-x) \\binom{n}{x} \\int_0^{1-p} t^{n-x-1}(1-t)^x dt.\n\\] (Dica: Integre por partes ou diferencie ambos os lados em relação a \\(p\\).)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformações e Esperanças</span>"
+    ]
+  },
+  {
     "objectID": "cap-2.html#assuntos-diversos",
     "href": "cap-2.html#assuntos-diversos",
     "title": "Transformações e Esperanças",
@@ -479,13 +200,203 @@
     ]
   },
   {
-    "objectID": "cap-2.html#exercícios",
-    "href": "cap-2.html#exercícios",
-    "title": "Transformações e Esperanças",
-    "section": "2.5 Exercícios",
-    "text": "2.5 Exercícios\n2.1 Em cada um dos seguintes itens, encontre a fdp de \\(Y\\). Mostre que a fdp integra 1. (a) \\(Y = X^3\\) e \\(f_X(x) = 42x^5(1-x), 0 &lt; x &lt; 1\\). (b) \\(Y = 4X + 3\\) e \\(f_X(x) = 7e^{-7x}, 0 &lt; x &lt; \\infty\\). (c) \\(Y = X^2\\) e \\(f_X(x) = 30x^2(1-x)^2, 0 &lt; x &lt; 1\\). (Veja o Exemplo 12.6.2 no apêndice de Álgebra Computacional.)\n2.2 Em cada um dos seguintes itens, encontre a fdp de \\(Y\\). (a) \\(Y = X^2\\) e \\(f_X(x) = 1, 0 &lt; x &lt; 1\\). (b) \\(Y = -\\log X\\) e \\(X\\) tem fdp \\[\nf_X(x) = \\frac{(n+m+1)!}{n!m!} x^n (1-x)^m, \\quad 0 &lt; x &lt; 1, \\quad m, n \\text{ inteiros positivos}.\n\\] (c) \\(Y = e^X\\) e \\(X\\) tem fdp \\[\nf_X(x) = \\frac{1}{\\sigma^2} x e^{-(x/\\sigma)^2/2}, \\quad 0 &lt; x &lt; \\infty, \\quad \\sigma^2 \\text{ uma constante positiva}.\n\\]\n2.3 Suponha que \\(X\\) tenha a fmp geométrica, \\(f_X(x) = \\frac{1}{3} \\left(\\frac{2}{3}\\right)^x, x = 0, 1, 2, \\dots\\). Determine a distribuição de probabilidade de \\(Y = X/(X+1)\\). Note que aqui tanto \\(X\\) quanto \\(Y\\) são variáveis aleatórias discretas. Para especificar a distribuição de probabilidade de \\(Y\\), especifique sua fmp.\n2.4 Seja \\(\\lambda\\) uma constante positiva fixa, e defina a função \\(f(x)\\) por \\(f(x) = \\frac{1}{2}\\lambda e^{-\\lambda x}\\) se \\(x \\geq 0\\) e \\(f(x) = \\frac{1}{2}\\lambda e^{\\lambda x}\\) se \\(x &lt; 0\\). (a) Verifique que \\(f(x)\\) é uma fdp. (b) Se \\(X\\) é uma variável aleatória com fdp dada por \\(f(x)\\), encontre \\(P(X &lt; t)\\) para todo \\(t\\). Avalie todas as integrais. (c) Encontre \\(P(|X| &lt; t)\\) para todo \\(t\\). Avalie todas as integrais.\n2.5 Use o Teorema 2.1.8 para encontrar a fdp de \\(Y\\) no Exemplo 2.1.2. Mostre que a mesma resposta é obtida diferenciando a fda dada em (2.1.6).\n2.6 Em cada um dos seguintes itens, encontre a fdp de \\(Y\\) e mostre que a fdp integra 1. (a) \\(f_X(x) = \\frac{1}{2} e^{-|x|}, -\\infty &lt; x &lt; \\infty; Y = |X|^3\\). (b) \\(f_X(x) = \\frac{3}{8}(x+1)^2, -1 &lt; x &lt; 1; Y = 1 - X^2\\). (c) \\(f_X(x) = \\frac{3}{8}(x+1)^2, -1 &lt; x &lt; 1; Y = 1 - X^2\\) se \\(X \\leq 0\\) e \\(Y = 1 - X\\) se \\(X &gt; 0\\).\n2.7 Seja \\(X\\) com fdp \\(f_X(x) = \\frac{2}{9}(x+1), -1 \\leq x \\leq 2\\). (a) Encontre a fdp de \\(Y = X^2\\). Note que o Teorema 2.1.8 não é diretamente aplicável neste problema. (b) Mostre que o Teorema 2.1.8 permanece válido se os conjuntos \\(A_0, A_1, \\dots, A_k\\) contiverem \\(\\mathcal{X}\\), e aplique a extensão para resolver a parte (a) usando \\(A_0 = \\emptyset, A_1 = (-2, 0)\\) e \\(A_2 = (0, 2)\\).\n2.8 Em cada um dos seguintes itens, mostre que a função dada é uma fda e encontre \\(F_X^{-1}(y)\\). (a) \\(F_X(x) = \\begin{cases} 0 & \\text{se } x &lt; 0 \\\\ 1 - e^{-x} & \\text{se } x \\geq 0. \\end{cases}\\) (b) \\(F_X(x) = \\begin{cases} e^x/2 & \\text{se } x &lt; 0 \\\\ 1/2 & \\text{se } 0 \\leq x &lt; 1 \\\\ 1 - (e^{1-x}/2) & \\text{se } 1 \\leq x. \\end{cases}\\) (c) \\(F_X(x) = \\begin{cases} e^x/4 & \\text{se } x &lt; 0 \\\\ 1 - (e^{-x}/4) & \\text{se } x \\geq 0. \\end{cases}\\) Note que, na parte (c), \\(F_X(x)\\) é descontínua, mas (2.1.13) ainda é a definição apropriada de \\(F_X^{-1}(y)\\).\n2.9 Se a variável aleatória \\(X\\) tem fdp \\[\nf(x) = \\begin{cases} \\frac{x-1}{2} & 1 &lt; x &lt; 3 \\\\ 0 & \\text{caso contrário}, \\end{cases}\n\\] encontre uma função monotônica \\(u(x)\\) tal que a variável aleatória \\(Y = u(X)\\) tenha uma distribuição uniforme(0,1).\n2.10 No Teorema 2.1.10, a transformação integral de probabilidade foi provada, relacionando a fda uniforme a qualquer fda contínua. Neste exercício, investigamos a relação entre variáveis aleatórias discretas e variáveis aleatórias uniformes. Seja \\(X\\) uma variável aleatória discreta com fda \\(F_X(x)\\) e defina a variável aleatória \\(Y\\) como \\(Y = F_X(X)\\). (a) Prove que \\(Y\\) é estocasticamente maior que uma uniforme(0,1); isto é, se \\(U \\sim \\text{uniforme}(0,1)\\), então \\[\nP(Y &gt; y) \\geq P(U &gt; y) = 1 - y, \\quad \\text{para todo } y, 0 &lt; y &lt; 1,\n\\] \\[\nP(Y &gt; y) &gt; P(U &gt; y) = 1 - y, \\quad \\text{para algum } y, 0 &lt; y &lt; 1.\n\\] (Lembre-se que estocasticamente maior foi definido no Exercício 1.49.) (b) Equivalentemente, mostre que a fda de \\(Y\\) satisfaz \\(F_Y(y) \\leq y\\) para todo \\(0 &lt; y &lt; 1\\) e \\(F_Y(y) &lt; y\\) para algum \\(0 &lt; y &lt; 1\\). (Dica: Seja \\(x_0\\) um ponto de salto de \\(F_X\\), e defina \\(y_0 = F_X(x_0)\\). Mostre que \\(P(Y \\leq y_0) = y_0\\). Agora estabeleça a desigualdade considerando \\(y = y_0 + \\varepsilon\\). Imagens das fdas ajudarão.)\n2.11 Seja \\(X\\) com a fdp normal padrão, \\(f_X(x) = (1/\\sqrt{2\\pi})e^{-x^2/2}\\). (a) Encontre \\(EX^2\\) diretamente, e então usando a fdp de \\(Y = X^2\\) do Exemplo 2.1.7 e calculando \\(EY\\). (b) Encontre a fdp de \\(Y = |X|\\), e encontre sua média e variância.\n2.12 Um triângulo retângulo aleatório pode ser construído da seguinte maneira. Seja \\(X\\) um ângulo aleatório cuja distribuição é uniforme em \\((0, \\pi/2)\\). Para cada \\(X\\), construa um triângulo como ilustrado abaixo. Aqui, \\(Y = \\text{altura do triângulo retângulo}\\). Para uma constante fixa \\(d\\), encontre a distribuição de \\(Y\\) e \\(EY\\).\n\n\n\n\n\n\nFigura 3.6: Figura 2.5.1 - Triângulo retângulo aleatório\n\n\n\n2.13 Considere uma sequência de lançamentos de moedas independentes, cada um com probabilidade \\(p\\) de ser Cara. Defina uma variável aleatória \\(X\\) como o comprimento da sequência (de Caras ou Coras) iniciada pela primeira tentativa. (Por exemplo, \\(X = 3\\) se TTTC ou CCCK for observado.) Encontre a distribuição de \\(X\\) e encontre \\(EX\\).\n2.14 (a) Seja \\(X\\) uma variável aleatória contínua e não negativa [\\(f(x) = 0\\) para \\(x &lt; 0\\)]. Mostre que \\[\nEX = \\int_0^\\infty [1 - F_X(x)] dx,\n\\] onde \\(F_X(x)\\) é a fda de \\(X\\). (b) Seja \\(X\\) uma variável aleatória discreta cujo intervalo são os inteiros não negativos. Mostre que \\[\nEX = \\sum_{k=0}^\\infty (1 - F_X(k)),\n\\] onde \\(F_X(k) = P(X \\leq k)\\). Compare isso com a parte (a).\n2.15 Betteley (1977) fornece uma lei de adição interessante para expectativas. Sejam \\(X\\) e \\(Y\\) duas variáveis aleatórias quaisquer e defina \\[\nX \\land Y = \\min(X, Y) \\quad \\text{e} \\quad X \\lor Y = \\max(X, Y).\n\\] De forma análoga à lei de probabilidade \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\), mostre que \\[\nE(X \\lor Y) = EX + EY - E(X \\land Y).\n\\] (Dica: Estabeleça que \\(X + Y = (X \\lor Y) + (X \\land Y)\\).)\n2.16 Use o resultado do Exercício 2.14 para encontrar a duração média de certas chamadas telefônicas, onde assumimos que a duração, \\(T\\), de uma chamada particular pode ser descrita probabilisticamente por \\(P(T &gt; t) = ae^{-\\lambda t} + (1-a)e^{-\\mu t}\\), onde \\(a, \\lambda\\) e \\(\\mu\\) são constantes, \\(0 &lt; a &lt; 1, \\lambda &gt; 0, \\mu &gt; 0\\).\n2.17 Uma mediana de uma distribuição é um valor \\(m\\) tal que \\(P(X \\leq m) \\geq 1/2\\) e \\(P(X \\geq m) \\geq 1/2\\). (Se \\(X\\) é contínua, \\(m\\) satisfaz \\(\\int_{-\\infty}^m f(x) dx = \\int_m^\\infty f(x) dx = 1/2\\).) Encontre a mediana das seguintes distribuições. (a) \\(f(x) = 3x^2, 0 &lt; x &lt; 1\\) (b) \\(f(x) = \\frac{1}{\\pi(1+x^2)}, -\\infty &lt; x &lt; \\infty\\)\n2.18 Mostre que se \\(X\\) é uma variável aleatória contínua, então \\[\n\\min_a E|X - a| = E|X - m|,\n\\] onde \\(m\\) é a mediana de \\(X\\) (veja o Exercício 2.17).\n2.19 Prove que \\[\n\\frac{d}{da} E(X - a)^2 = 0 \\iff EX = a,\n\\] diferenciando a integral. Verifique, usando cálculo, que \\(a = EX\\) é de fato um mínimo. Liste as suposições sobre \\(F_X\\) e \\(f_X\\) que são necessárias.\n2.20 Um casal decide continuar a ter filhos até que uma filha nasça. Qual é o número esperado de filhos deste casal? (Dica: Veja o Exemplo 1.5.4.)\n2.21 Prove a regra de “duas vias” para expectativas, equação (2.2.5), que diz \\(Eg(X) = EY\\), onde \\(Y = g(X)\\). Assuma que \\(g(x)\\) é uma função monotônica.\n2.22 Seja \\(X\\) com a fdp \\[\nf(x) = \\frac{4}{\\beta^3\\sqrt{\\pi}} x^2 e^{-x^2/\\beta^2}, \\quad 0 &lt; x &lt; \\infty, \\quad \\beta &gt; 0.\n\\] (a) Verifique que \\(f(x)\\) é uma fdp. (b) Encontre \\(EX\\) e \\(Var X\\).\n2.23 Seja \\(X\\) com a fdp \\[\nf(x) = \\frac{1}{2}(1+x), \\quad -1 &lt; x &lt; 1.\n\\] (a) Encontre a fdp de \\(Y = X^2\\). (b) Encontre \\(EY\\) e \\(Var Y\\).\n2.24 Calcule \\(EX\\) e \\(Var X\\) para cada uma das seguintes distribuições de probabilidade. (a) \\(f_X(x) = ax^{a-1}, 0 &lt; x &lt; 1, a &gt; 0\\) (b) \\(f_X(x) = 1/n, x = 1, 2, \\dots, n, n &gt; 0\\) um inteiro (c) \\(f_X(x) = \\frac{3}{2}(x-1)^2, 0 &lt; x &lt; 2\\)\n2.25 Suponha que a fdp \\(f_X(x)\\) de uma variável aleatória \\(X\\) seja uma função par. (\\(f_X(x)\\) é uma função par se \\(f_X(x) = f_X(-x)\\) para todo \\(x\\).) Mostre que (a) \\(X\\) e \\(-X\\) são identicamente distribuídas. (b) \\(M_X(t)\\) é simétrica em torno de zero.\n2.26 Seja \\(f(x)\\) uma fdp e seja \\(a\\) um número tal que, para todo \\(\\varepsilon &gt; 0, f(a+\\varepsilon) = f(a-\\varepsilon)\\). Tal fdp é dita ser simétrica em torno do ponto a. (a) Dê três exemplos de fdps simétricas. (b) Mostre que se \\(X \\sim f(x)\\), simétrica, então a mediana de \\(X\\) (veja o Exercício 2.17) é o número \\(a\\). (c) Mostre que se \\(X \\sim f(x)\\), simétrica, e \\(EX\\) existe, então \\(EX = a\\). (d) Mostre que \\(f(x) = e^{-x}, x \\geq 0\\), não é uma fdp simétrica. (e) Mostre que para a fdp na parte (d), a mediana é menor que a média.\n2.27 Seja \\(f(x)\\) uma fdp e seja \\(a\\) um número tal que, se \\(a \\geq x \\geq y\\) então \\(f(a) \\geq f(x) \\geq f(y)\\) e, se \\(a \\leq x \\leq y\\) então \\(f(a) \\geq f(x) \\geq f(y)\\). Tal fdp é chamada de unimodal com um moda igual a \\(a\\). (a) Dê um exemplo de uma fdp unimodal para a qual a moda é única. (b) Dê um exemplo de uma fdp unimodal para a qual a moda não é única. (c) Mostre que se \\(f(x)\\) é tanto simétrica (veja o Exercício 2.26) quanto unimodal, então o ponto de simetria é uma moda. (d) Considere a fdp \\(f(x) = e^{-x}, x \\geq 0\\). Mostre que esta fdp é unimodal. Qual é sua moda?\n2.28 Seja \\(\\mu_n\\) o \\(n\\)-ésimo momento central de uma variável aleatória \\(X\\). Duas quantidades de interesse, além da média e variância, são \\[\n\\alpha_3 = \\frac{\\mu_3}{(\\mu_2)^{3/2}} \\quad \\text{e} \\quad \\alpha_4 = \\frac{\\mu_4}{\\mu_2^2}.\n\\] O valor \\(\\alpha_3\\) é chamado de assimetria e \\(\\alpha_4\\) é chamado de curtose. A assimetria mede a falta de simetria na fdp (veja o Exercício 2.26). A curtose, embora mais difícil de interpretar, mede o pico ou achatamento da fdp. (a) Mostre que se uma fdp é simétrica em torno de um ponto \\(a\\), então \\(\\alpha_3 = 0\\). (b) Calcule \\(\\alpha_3\\) para \\(f(x) = e^{-x}, x \\geq 0\\), uma fdp que é assimétrica à direita. (c) Calcule \\(\\alpha_4\\) para cada uma das seguintes fdps e comente sobre o pico de cada uma. \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2}, \\quad -\\infty &lt; x &lt; \\infty\n\\] \\[\nf(x) = \\frac{1}{2}, \\quad -1 &lt; x &lt; 1\n\\] \\[\nf(x) = \\frac{1}{2} e^{-|x|}, \\quad -\\infty &lt; x &lt; \\infty\n\\] Ruppert (1987) usa funções de influência (Seção 10.6.4) para explorar ainda mais o significado de curtose e Groeneveld (1991) as usa para explorar a assimetria; veja também Balanda e MacGillivray (1988) para mais sobre a interpretação de \\(\\alpha_4\\).\n2.29 Ao calcular momentos de distribuições discretas, muitas vezes é mais fácil trabalhar com os momentos fatoriais (veja Assuntos Diversos 2.6.2). (a) Calcule o momento fatorial \\(E[X(X-1)]\\) para as distribuições binomial e Poisson. (b) Use os resultados da parte (a) para calcular as variâncias da distribuição binomial e Poisson. (c) Uma distribuição discreta particularmente desagradável é a beta-binomial, com fmp \\[\nP(Y = y) = \\binom{n}{y} \\frac{\\Gamma(y+a)\\Gamma(n-y+b)\\Gamma(a+b)}{\\Gamma(a)\\Gamma(b)\\Gamma(n+a+b)}, \\quad y = 0, 1, \\dots, n.\n\\] onde \\(n, a\\) e \\(b\\) são inteiros positivos. Use momentos fatoriais para calcular a variância da beta binomial. (Veja o Exercício 4.34 para outra abordagem deste cálculo.)\n2.30 Encontre a função geradora de momentos correspondente a (a) \\(f(x) = \\frac{1}{c}, 0 &lt; x &lt; c\\) (b) \\(f(x) = \\frac{2x}{c^2}, 0 &lt; x &lt; c\\) (c) \\(f(x) = \\frac{1}{2\\beta} e^{-|x-\\alpha|/\\beta}, -\\infty &lt; x &lt; \\infty, -\\infty &lt; \\alpha &lt; \\infty, \\beta &gt; 0\\) (d) \\(P(X = x) = \\binom{r+x-1}{x} p^r(1-p)^x, x = 0, 1, \\dots, 0 &lt; p &lt; 1, r &gt; 0\\) um inteiro\n2.31 Existe uma distribuição para a qual \\(M_X(t) = t/(1-t), |t| &lt; 1\\)? Se sim, encontre-a. Se não, prove.\n2.32 Seja \\(M_X(t)\\) a função geradora de momentos de \\(X\\), e defina \\(S(t) = \\log(M_X(t))\\). Mostre que \\[\n\\frac{d}{dt} S(t) \\Big|_{t=0} = EX \\quad \\text{e} \\quad \\frac{d^2}{dt^2} S(t) \\Big|_{t=0} = Var X.\n\\]\n2.33 Em cada um dos seguintes casos, verifique a expressão dada para a função geradora de momentos e, em cada caso, use a fgm para calcular \\(EX\\) e \\(Var X\\). (a) \\(P(X = x) = \\frac{e^{-\\lambda} \\lambda^x}{x!}, M_X(t) = e^{\\lambda(e^t-1)}, x = 0, 1, \\dots; \\lambda &gt; 0\\) (b) \\(P(X = x) = p(1-p)^x, M_X(t) = \\frac{p}{1-(1-p)e^t}, x = 0, 1, \\dots; 0 &lt; p &lt; 1\\) (c) \\(f_X(x) = \\frac{e^{-(x-\\mu)^2/(2\\sigma^2)}}{\\sqrt{2\\pi}\\sigma}, M_X(t) = e^{\\mu t + \\sigma^2t^2/2}, -\\infty &lt; x &lt; \\infty; -\\infty &lt; \\mu &lt; \\infty, \\sigma &gt; 0\\)\n2.34 Uma distribuição não pode ser unicamente determinada por uma coleção finita de momentos, como mostra este exemplo de Romano e Siegel (1986). Seja \\(X\\) com distribuição normal, ou seja, \\(X\\) tem fdp \\[\nf_X(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2}, \\quad -\\infty &lt; x &lt; \\infty.\n\\] Defina uma variável aleatória discreta \\(Y\\) por \\[\nP(Y = \\sqrt{3}) = P(Y = -\\sqrt{3}) = 1/6, \\quad P(Y = 0) = 2/3.\n\\] Mostre que \\[\nEX^r = EY^r \\quad \\text{para } r = 1, 2, 3, 4, 5.\n\\] (Romano e Siegel (1986) apontam que para qualquer \\(n\\) finito existe uma variável aleatória discreta, e portanto não normal, cujos primeiros \\(n\\) momentos são iguais aos de \\(X\\).)\n2.35 Preencha as lacunas no Exemplo 2.3.10. (a) Mostre que se \\(X_1 \\sim f_1(x)\\), então \\[\nEX_1^r = e^{r^2/2}, \\quad r = 0, 1, \\dots.\n\\] Logo \\(f_1(x)\\) possui todos os seus momentos, e todos os momentos são finitos. (b) Agora mostre que \\[\n\\int_0^\\infty x^r f_1(x) \\sin(2\\pi \\log x) dx = 0,\n\\] para todos os inteiros positivos \\(r\\), logo \\(EX_1^r = EX_2^r\\) para todo \\(r\\). (Romano e Siegel (1986) discutem uma versão extrema deste exemplo, onde uma classe inteira de fdps distintas tem os mesmos momentos. Além disso, Berg (1988) mostrou que este comportamento de momentos pode surgir com transformadas mais simples da distribuição normal, como \\(X^3\\).)\n2.36 A distribuição lognormal, na qual o Exemplo 2.3.10 se baseia, tem uma propriedade interessante. Se tivermos a fdp \\[\nf(x) = \\frac{1}{\\sqrt{2\\pi}x} e^{-(\\log x)^2/2}, \\quad 0 \\leq x &lt; \\infty,\n\\] então o Exercício 2.35 mostra que todos os momentos existem e são finitos. No entanto, esta distribuição não possui uma função geradora de momentos, isto é, \\[\nM_X(t) = \\int_0^\\infty \\frac{e^{tx}}{\\sqrt{2\\pi}x} e^{-(\\log x)^2/2} dx\n\\] não existe. Prove isso.\n2.37 Referindo-se à situação descrita em Assuntos Diversos 2.6.3: (a) Trace as fdps \\(f_1\\) e \\(f_2\\) para ilustrar sua diferença. (b) Trace as funções geradoras de cumulantes \\(K_1\\) e \\(K_2\\) para ilustrar sua semelhança. (c) Calcule as funções geradoras de momentos das fdps \\(f_1\\) e \\(f_2\\). Elas são semelhantes ou diferentes? (d) Como as fdps \\(f_1\\) e \\(f_2\\) se relacionam com as fdps descritas no Exemplo 2.3.10?\n2.38 Seja \\(X\\) com a distribuição binomial negativa com fmp \\[\nf(x) = \\binom{r+x-1}{x} p^r(1-p)^x, \\quad x = 0, 1, 2, \\dots\n\\] onde \\(0 &lt; p &lt; 1\\) e \\(r &gt; 0\\) é um inteiro. (a) Calcule a fgm de \\(X\\). (b) Defina uma nova variável aleatória por \\(Y = 2pX\\). Mostre que, conforme \\(p \\downarrow 0\\), a fgm de \\(Y\\) converge para a de uma variável aleatória qui-quadrado com \\(2r\\) graus de liberdade, mostrando que \\[\n\\lim_{p \\to 0} M_Y(t) = \\left( \\frac{1}{1-2t} \\right)^r, \\quad |t| &lt; 1/2.\n\\]\n2.39 Em cada um dos seguintes casos, calcule as derivadas indicadas, justificando todas as operações. (a) \\(\\frac{d}{dx} \\int_0^x e^{-\\lambda t} dt\\) (b) \\(\\frac{d}{d\\lambda} \\int_0^\\infty e^{-\\lambda t} dt\\) (c) \\(\\frac{d}{dt} \\int_t^1 \\frac{1}{x^2} dx\\) (d) \\(\\frac{d}{dt} \\int_1^\\infty \\frac{1}{(x-t)^2} dx\\)\n2.40 Prove \\[\n\\sum_{k=0}^x \\binom{n}{k} p^k(1-p)^{n-k} = (n-x) \\binom{n}{x} \\int_0^{1-p} t^{n-x-1}(1-t)^x dt.\n\\] (Dica: Integre por partes ou diferencie ambos os lados em relação a \\(p\\).)",
+    "objectID": "cap-3.html",
+    "href": "cap-3.html",
+    "title": "Famílias Comuns de Distribuições",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Transformações e Esperanças</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Famílias Comuns de Distribuições</span>"
+    ]
+  },
+  {
+    "objectID": "cap-3.html#conteúdo-previsto",
+    "href": "cap-3.html#conteúdo-previsto",
+    "title": "Famílias Comuns de Distribuições",
+    "section": "",
+    "text": "Introdução\nDistribuições Discretas\nDistribuições Contínuas\nFamílias Exponenciais\nFamílias de Localização e Escala\nDesigualdades e Identidades",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Famílias Comuns de Distribuições</span>"
+    ]
+  },
+  {
+    "objectID": "cap-4.html",
+    "href": "cap-4.html",
+    "title": "Múltiplas Variáveis Aleatórias",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Múltiplas Variáveis Aleatórias</span>"
+    ]
+  },
+  {
+    "objectID": "cap-4.html#conteúdo-previsto",
+    "href": "cap-4.html#conteúdo-previsto",
+    "title": "Múltiplas Variáveis Aleatórias",
+    "section": "",
+    "text": "Distribuições Conjuntas e Marginais\nDistribuições Condicionais e Independência\nTransformações Bivariadas\nModelos Hierárquicos e Distribuições de Mistura\nCovariância e Correlação\nDistribuições Multivariadas\nDesigualdades",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Múltiplas Variáveis Aleatórias</span>"
+    ]
+  },
+  {
+    "objectID": "cap-5.html",
+    "href": "cap-5.html",
+    "title": "Propriedades de uma Amostra Aleatória",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Propriedades de uma Amostra Aleatória</span>"
+    ]
+  },
+  {
+    "objectID": "cap-5.html#conteúdo-previsto",
+    "href": "cap-5.html#conteúdo-previsto",
+    "title": "Propriedades de uma Amostra Aleatória",
+    "section": "",
+    "text": "Conceitos Básicos de Amostras Aleatórias\nSomas de Variáveis Aleatórias de uma Amostra Aleatória\nAmostragem da Distribuição Normal\nEstatísticas de Ordem\nConceitos de Convergência\n\nConvergência em Probabilidade\nConvergência Quase Certa\nConvergência em Distribuição\nO Método Delta\n\nGerando uma Amostra Aleatória",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Propriedades de uma Amostra Aleatória</span>"
+    ]
+  },
+  {
+    "objectID": "cap-6.html",
+    "href": "cap-6.html",
+    "title": "Princípios de Redução de Dados",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Princípios de Redução de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "cap-6.html#conteúdo-previsto",
+    "href": "cap-6.html#conteúdo-previsto",
+    "title": "Princípios de Redução de Dados",
+    "section": "",
+    "text": "O Princípio da Suficiência\n\nEstatísticas Suficientes\nEstatísticas Suficientes Mínimas\nEstatísticas Ancilares\nEstatísticas Suficientes, Completas e Ancilares\n\nO Princípio da Verossimilhança\n\nA Função de Verossimilhança\nO Princípio da Verossimilhança Formal\n\nO Princípio da Equivariância",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Princípios de Redução de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "cap-7.html",
+    "href": "cap-7.html",
+    "title": "Estimação Pontual",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Estimação Pontual</span>"
+    ]
+  },
+  {
+    "objectID": "cap-7.html#conteúdo-previsto",
+    "href": "cap-7.html#conteúdo-previsto",
+    "title": "Estimação Pontual",
+    "section": "",
+    "text": "Métodos para Encontrar Estimadores\n\nMétodo dos Momentos\nEstimadores de Máxima Verossimilhança\nEstimadores de Bayes\nO Algoritmo EM\n\nMétodos de Avaliação de Estimadores\n\nErro Quadrático Médio\nMelhores Estimadores Não Viesados\nSuficiência e Não-viesamento\nOtimalidade da Função de Perda",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Estimação Pontual</span>"
+    ]
+  },
+  {
+    "objectID": "cap-8.html",
+    "href": "cap-8.html",
+    "title": "Teste de Hipóteses",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teste de Hipóteses</span>"
+    ]
+  },
+  {
+    "objectID": "cap-8.html#conteúdo-previsto",
+    "href": "cap-8.html#conteúdo-previsto",
+    "title": "Teste de Hipóteses",
+    "section": "",
+    "text": "Métodos para Encontrar Testes\n\nTestes de Razão de Verossimilhança\nTestes Bayesianos\nTestes de União-Interseção e Interseção-União\n\nMétodos de Avaliação de Testes\n\nProbabilidades de Erro e Função Poder\nTestes Mais Poderosos\nTamanhos de Testes de União-Interseção\nP-valores",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Teste de Hipóteses</span>"
+    ]
+  },
+  {
+    "objectID": "cap-9.html",
+    "href": "cap-9.html",
+    "title": "Estimação por Intervalo",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Estimação por Intervalo</span>"
+    ]
+  },
+  {
+    "objectID": "cap-9.html#conteúdo-previsto",
+    "href": "cap-9.html#conteúdo-previsto",
+    "title": "Estimação por Intervalo",
+    "section": "",
+    "text": "Métodos para Encontrar Estimadores de Intervalo\n\nInvertendo uma Estatística de Teste\nQuantidades Pivotais\nPivotando a FDA\nIntervalos Bayesianos\n\nMétodos de Avaliação de Estimadores de Intervalo\n\nTamanho e Probabilidade de Cobertura\nOtimalidade Relacionada a Testes\nOtimalidade Bayesiana\nOtimalidade da Função de Perda",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Estimação por Intervalo</span>"
+    ]
+  },
+  {
+    "objectID": "cap-10.html",
+    "href": "cap-10.html",
+    "title": "Avaliações Assintóticas",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Avaliações Assintóticas</span>"
+    ]
+  },
+  {
+    "objectID": "cap-10.html#conteúdo-previsto",
+    "href": "cap-10.html#conteúdo-previsto",
+    "title": "Avaliações Assintóticas",
+    "section": "",
+    "text": "Estimação Pontual\n\nConsistência\nEficiência\nCálculos e Comparações\nBootstrap\n\nRobustez\n\nA Média e a Mediana\nM-Estimadores\n\nTeste de Hipóteses\n\nDistribuição Assintótica de TRVs\nOutros Testes com Grandes Amostras\n\nEstimação por Intervalo\n\nIntervalos de Verossimilhança Aproximada\nOutros Intervalos Aproximados (e Robustos)",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Avaliações Assintóticas</span>"
+    ]
+  },
+  {
+    "objectID": "cap-11.html",
+    "href": "cap-11.html",
+    "title": "Análise de Variância e Regressão",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Análise de Variância e Regressão</span>"
+    ]
+  },
+  {
+    "objectID": "cap-11.html#conteúdo-previsto",
+    "href": "cap-11.html#conteúdo-previsto",
+    "title": "Análise de Variância e Regressão",
+    "section": "",
+    "text": "Análise de Variância (ANOVA) de Um Fator\nRegressão Linear Simples",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Análise de Variância e Regressão</span>"
+    ]
+  },
+  {
+    "objectID": "cap-12.html",
+    "href": "cap-12.html",
+    "title": "Modelos de Regressão",
+    "section": "",
+    "text": "Conteúdo Previsto\nEste capítulo abordará:",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Modelos de Regressão</span>"
+    ]
+  },
+  {
+    "objectID": "cap-12.html#conteúdo-previsto",
+    "href": "cap-12.html#conteúdo-previsto",
+    "title": "Modelos de Regressão",
+    "section": "",
+    "text": "Introdução aos Modelos de Regressão\nEstimação e Teste com Erros Normais\nEstimação e Predição em um Dado \\(x = x_0\\)\nInferência Simultânea",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Modelos de Regressão</span>"
     ]
   }
 ]

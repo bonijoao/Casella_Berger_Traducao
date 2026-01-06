@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: _book
+  output-dir: docs
 
 book:
   title: "Inferência Estatística"
@@ -51,3 +51,5 @@ format:
 
 execute:
   freeze: auto
+
+
